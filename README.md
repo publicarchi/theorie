@@ -1,3 +1,3 @@
-# Théorie
+# theorie
 
-Répertoire de travail sur la théorie architecturale
+Édition de textes théoriques sur l’architecture à l’âge classique
