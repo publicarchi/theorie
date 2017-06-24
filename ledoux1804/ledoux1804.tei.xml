@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Édition numérique de Ledoux</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Université Paris-X Nanterre</publisher>
+            <publisher>Université de Montréal</publisher>
+            <date from="2017">2017</date>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>L’architecture considérée sous le rapport de l’art, des mœurs et de la législation</title>
+                  <author>Claude-Nicolas Ledoux</author>
+                  <imprint>
+                     <publisher>l’auteur (Paris) </publisher>
+                     <publisher>de l’impr. de H. L. Peronneau (Paris)</publisher>
+                     <date>1804</date>
+                  </imprint>
+               </monogr>
+               <idno>http://gallica.bnf.fr/ark:/12148/bpt6k1047050b</idno>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <titlePage>
+            <titlePart>L’architecture<lb/> 
+            considérée<lb/> 
+            sous le rapport de l’art,<lb/> 
+            des mœurs<lb/>
+            et de la législation ;<lb/></titlePart>
+            <docAuthor>par C. N. Lecoux</docAuthor>
+            <epigraph>
+               <p><foreign xml:lang="lat">Exegi monumentum…</foreign></p></epigraph>
+            <titlePart>Tome Premier</titlePart>
+            <docImprint>
+               <publisher>de l’imprimerie de H. L. Peronneau</publisher>
+               <placeName>à Paris</placeName>
+               <publisher>chez l’auteur, rue neuve d’Orléans</publisher>
+            </docImprint>
+            <docDate>M.D.CCCIV</docDate>
+         </titlePage>
+         <pb/>
+         <div type="dedicace">
+            <head>À Sa Majesté<lb/> 
+               L’Empereur<lb/>
+               de toutes les Russies.</head>
+            <p>Les Scytes attaqués par Alexandre de Macédoine, jusques au milieu des déserts et des rochers qu’ils habitaient, dirent à ce conquérant : Tu n’es donc pas un dieu, puisque tu fais du mal aux hommes !</p>
+            <p>Tous les peuples de la terre diront à l’Alexande du Nord : Vous êtes un homme ! puisque vous voulez bien accueillir un système social, qui contribuera au bonheur du genre humain.</p>
+            <p>J’ai l’honneur d’être, avec la reconnaissance la plus respectueuse,<lb/> 
+               de Votre Majesté Impériale,<lb/> 
+               Le très-humbe &amp; très<lb/> 
+               déférent Serviteur</p>
+            <signed>Le doux</signed>
+            <fw>Gravé par Dien</fw>
+         </div>
+         <pb/>
+         <pb/>
+         <div type="introduction">
+            <head>Introduction</head>
+            <epigraph><p><foreign xml:lang="lat">Omnia vincit amor</foreign></p><note type="*"><p>C’est ce sentiment qui m’a inspiré et m’a soutenu dans ce long travail.</p></note></epigraph>
+            <p>Dans la foule des occupations dont on peut juger par l’immensité du travail que je mets sous les yeux des Nations ; au milieu des agitations dont on a fatigué ma constance ; au sein des persécutions inséparables de la publicité des grandes conceptions, et des passions qui se sont usées contre mon énergie ; assujetti presque toujours à des calculs rétrécis, à des fortunes craintives, à des volontés versatiles qui neutralisent les élans du génie, je n’offrirai point à mes lecteurs de ces projets qui se perdent dans le vague des combinaisons imaginaires, ou dont l’effrayante possibilité anéantit d’avance l’exécution.</p>
+            <p>Persuadé qu’en abrégeant les annales du temps, et en réunissant les modèles et les principes que l’art y a déposés, je peux lui imprimer à lui-même un mouvement créateur qui lui fasse enfanter des chefs-d’œuvres, et agrandir son domaine et sa gloire, j’ai rassemblé, dans une lecture de quelques jours, toutes les richesses des siècles qui nous ont précédés.</p>
+            <p>Avant que la nuit ne couvre de son voile obscur le vaste champ où j’ai placé tous les genres d’édifices que réclame l’ordre social, on verra des usines importantes, filles et mères de l’industrie, donner naissance à des réunions populeuses. Une ville s’élèvera pour les enceindre et les couronner. Le luxe vivifiant, ami nourricier des arts, y montrera tous les monuments que l’opulence aura fait éclore.</p>
+            <p>Ses environs seront embellis d’habitations consacrées au repos, aux plaisirs, et plantés de jardins rivaux du fameux <placeName>Eden</placeName>.</p>
+            <p>Asyles du laborieux artisan, les villages et les bourgs ajouteront à la beauté du coup d’œil par le contraste de leur simplicité. La maison du pauvre, par son extérieur modeste, rehaussera la splendeur de l’hôtel du riche, et de ces palais où sous les lames dorées qui les couvrent, les grands semblent rivaliser d’éclat avec l’astre du jour.</p>
+            <p><persName>Dieu</persName> ! qui <sic>créas</sic> les mondes, tu vois avec complaisance s’embellir une partie de celui que tu nous a cédé. Ton temple domine sur tous les édifices, comme<pb/><fw type="pagination">2</fw><fw type="runningHead">Introduction</fw> notre amour pour toi doit dominer sur tous les sentiments. L’homme naissant t’y est présenté ; les grands actes de sa vie y reçoivent ta sanction, et sa dépouille mortelle y vient solliciter ton regard, avant de s’enfoncer dans la tombe.</p>
+            <p>La morale qui est la religion active, la philosophie qui est la sœur de la religieux, ont aussi leurs sanctuaires. <persName>Les peuples du Thibet</persName> et les enfants de <persName>Confucius</persName> y retrouvent le temple de la loi que dans leurs cœurs a gravé le doigt de la nature. Où le vice ne règne pas, la vertu peu se passer d’autel. Rien de ce qui peut propager les bonnes mœurs, corriger les mauvaises, en punir et sur-tout en prévenir les effets, n’est négligé.</p>
+            <p>L’exemple est la plus puissante des leçons. Un bâtiment majestueux est consacré à la sagesse ; des portiques multipliés l’entourent ; l’enfance y joue à couvert ; la jeunesse les parcourt ; la vieillesse y médite. Un école y est ouverte, où l’on apprend à l’homme ses devoirs, avant de l’instruire de ses droits. Là on lui fait voir que toutes les vertus tirent leur origine les unes des autres ; que les <persName>Platon</persName>, les <persName>Socrate</persName>, les <persName><choice><abbr>S.</abbr><expan>Saint</expan></choice>-Augustin</persName>, ont tous travaillé au même édifice et marché vers le même but. Les tables de <persName>Solon</persName>, de <persName>Niger</persName>, les capitulaires de <persName>Charlemagne</persName>, s’y trouvent placés sous les yeux comme le calendrier de l’honnête homme.</p>
+            <p>La beauté qui n’est que la proportion, a un empire sur les humaines dont ils ne peuvent se défendre ; elles personnifient les principes, et par la seule influence de leurs charmes, elles en accélèrent le développement et en propagent les effets. Oh ! que de chefs-d’œuvre <persName>les Goths</persName> eussent laissés à la postérité, si les <persName>Phidias</persName> du temps avoient épuré leur style !</p>
+            <p>Vu de près, le vice n’influe pas moins puissamment sur l’âme ; par l’horreur qu’il lui imprime, il la fait réagir vers la vertu. L’<foreign xml:lang="grc">Oikema</foreign> présente à la bouillante et volage jeunesse qu’il attire la dépravation dans sa nudité, et le sentiment de la dégradation de l’homme ranimant la vertu qui sommeille, conduit l’homme à l’autel de l’<persName>Hymen</persName> vertueux qui l’embrasse et le couronne.</p>
+            <p>L’Atelier de corruption, sous ses autres obscurs et profonds, lui découvre les sources empoisonnées qui altèrent la vigueur de la morale, minent les trônes, renversent les empires, et il ne le rend au jour qu’avec la haine de toute ce qui peut corrompre les mœurs.</p>
+            <fw type="runningHead">Introduction</fw><fw type="pagination">3</fw>
+            <p>On peut être vertueux ou vicieux, comme le caillou rude ou poli, par le frottement de ce qui nous entoure ; le bonheur et le bien-être peuvent donc se trouver dans le sentiment attractif des jouissances communes, et de là ces cénobies construites à l’ombre des bois tranquilles, où des sages, vivant réunis sous les lois simples de la nature, cherchent à réaliser la désirable félicité des temps fabuleux de l’âge d’or. De là ces maisons destinées à plusieurs familles.</p>
+            <p>Tout s’anime par la concorde. Des deux premiers frères que nous présente l’histoire du monde, l’un fut homicide et mourut de repentir. Combien il seroit consolant de prévenir le crime et les remords ! Que d’avantages résulteroient pour la société des tendres affections que consolident les nœuds du sang ! Quand on est nourri dans le même berceau, tout, jusqu’au tombeau, doit unir. Les habitudes, les plaisirs, les pensées doivent être les mêmes et se confondre. L’or s’épure par le feu, l’amitié par l’or. En unissant et identifiant les intérêts, on les prolonge ; en les prolongeant, on double l’existence, on prévient les divisions, on oppose à leur naissance une liaison dont l’idée seule porte à l’âme un baume consolateur. Si la société est fondée sur un besoin mutuel qui commande une affection réciproque, pourquoi ne réuniroit-on pas, dans des maisons particulières, cette analogie de sentiments et de goûts qui honorent l’homme ? Aussi verra-t)on que ma cité possède des Maisons de frères. Le caractère des monuments, comme leur nature, sert à la propagation et à l’épuration des mœurs. Là sont élevés des théâtres sous la forme progressive qui <sic>nivêle</sic> l’humanité ; ici des arcs de triomphe qui la déifient ; plus loin des cimetières où elle va s’engloutir.</p>
+            <p>Les lois viennent au secours des mœurs. Le temple éclairé de la justice forme une opposition salutaire avec les lieux sombres destinés au crime, et qui jamais ne doivent <sic>recéler</sic> l’innocence.</p>
+            <p>Du Prétoire coule la source féconde et bienfaisante de la sécurité publique. Au Pacifère se concilient les intérêts des familles, et se préviennent ou se terminent leurs division. On y donne un frein à l’immoralité, et des chaînes aux passions des cités perverties.</p>
+            <p>Tous les arts, toutes les conditions trouvent des demeures qui leur sont propres. On y voit l’atelier où le machiniste moins fort, mais plus adroit qu’<persName>Atlas</persName>, comme lui peut soulever le monde.</p>
+            <fw type="pagination">4</fw><fw type="runningHead">Introduction</fw>
+            <p>Au sein des forêts d’une immense étendue, se font remarquer le Toit sacré de leur conservateur qui  </p>
+         </div>
+      </front>
+      <body>
+         <div>
+            <p></p>
+         </div>
+      </body>
+   </text>
+</TEI>
