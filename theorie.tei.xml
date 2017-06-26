@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Théorie, Schéma et documention 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   @todo revoir ensemble des classes d’attribut et des classes de modèles de tei
+-->
+  <teiHeader>
+    <fileDesc>
+            <titleStmt>
+                <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
+                <title xml:lang="fre" type="sub">Corpus de textes électroniques</title>
+        <principal>
+          <persName ref="#EC">
+            <forename>Emmanuel</forename>
+            <surname>Château</surname>
+          </persName>
+          <affiliation>
+            <orgName>Université de Montréal</orgName>
+            <orgName type="alt">UdeM</orgName>
+            <roleName>professeur adjoint</roleName>
+          </affiliation>
+        </principal>
+        <respStmt>
+          <resp key="prg">modélisation XML-TEI</resp>
+          <persName ref="#EC">
+            <forename>Emmanuel</forename>
+            <surname>Château</surname>
+          </persName>
+        </respStmt>
+        <respStmt>
+          <resp key="mrk">encodage</resp>
+          <persName ref="#EC">
+            <forename>Emmanuel</forename>
+            <surname>Château</surname>
+          </persName>
+        </respStmt>
+        <respStmt>
+          <resp key="edt">édition</resp>
+          <persName ref="#EC">
+            <forename>Emmanuel</forename>
+            <surname>Château</surname>
+          </persName>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="1">première édition électronique, <date from="2017">2017</date></edition>
+      </editionStmt>
+      <extent><!-- TODO : taille du fichier en octet --></extent>
+      <publicationStmt>
+          <publisher>Publicarchitectura</publisher>
+          <date from="2017">2017</date>
+        <!-- TODO attribuer un DOI ou un identifiant ARK aux fichiers -->
+        <idno>ark</idno>
+        <!-- responsable de la publication -->
+        <availability status="restricted" xml:id="ledoux1804Licence">
+          <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
+            <p>Texte de la licence</p>
+            <!-- TODO renseigner le texte de la licence -->
+            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
+        <title xml:lang="fre" type="sub">Corpus de textes électroniques</title>
+        <idno type="URI">http://theorie.publicarchitectura.org</idno>
+      </seriesStmt>
+      <!--
+         <notesStmt>
+            <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+            <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+         </notesStmt>
+         -->
+      <!-- description de la source -->
+      <sourceDesc xml:id="theorie">
+        <p>Fichier nativement numérique. Le document s’appuie sur le cadre de travail proposé par la <ref target="http://www.tei-c.org/index.xml">Text Encoding Initiative</ref>.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <!-- description du projet éditorial -->
+      <projectDesc>
+        <p>L’édition de ce texte s’inscrit dans un projet collaboratif d’édition numérique de textes fondamentaux sur l’architecture moderne.</p>
+      </projectDesc>
+      <!-- déclaration des principes éditoriaux -->
+            <editorialDecl>
+                <correction>
+                    <p>La syntaxe originale du manuscrit a été respectée en suivant les
+                        indications de Bernard Barbiche, <ref type="external"
+                            target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
+                            >Conseils pour l’édition des textes de l’époque moderne
+                                (XVI<hi rend="superscript">e</hi>-XVIII<hi
+                                rend="superscript">e</hi> siècle)</ref>.</p>
+                </correction>
+                <hyphenation>
+                    <p>Pour les ouvrages imprimés, il n'a pas été tenu compte de
+                        l'hyphénation.</p>
+                </hyphenation>
+                <interpretation>
+                    <p>Les interprétations sont traitées au moyen d'un élément supplied
+                        ou bien sont renvoyées en notes. Une mention de responsabilité
+                        est fournie grâce à l'attribut resp sur le passage
+                        concerné.</p>
+                </interpretation>
+                <normalization>
+                    <p>La ponctuation ainsi que les majuscules ont été normalisées. Les
+                        abréviations ont été développées.</p>
+                </normalization>
+                <stdVals>
+                    <p>On utilise...</p>
+                </stdVals>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d'un
+                        élément quote, soit au moyen d'un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique.</p>
+                <!-- TODO à renseigner avec une expression régulière -->
+            </refsDecl>
+            <samplingDecl>
+                <p>Échantillonnage</p>
+                <!-- TODO modifier à la fin du projet -->
+            </samplingDecl>
+            <variantEncoding method="location-referenced" location="external"/>
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <creation when="2013">2013</creation>
+            <langUsage>
+                <language ident="fre" usage="98">Français (langue principale du
+                    corpus)</language>
+                <language ident="lat" usage="2">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>18e siècle</term>
+                    <term>France</term>
+                </keywords>
+                <keywords xml:lang="eng"
+                    scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>17th-18th centuries</term>
+                    <term>France</term>
+                </keywords>
+                <classCode
+                    scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2017-06">Création du fichier corpus</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <!-- Inclusion du fichier Ledoux1804 -->
+    <xi:include href="ledoux1804/ledoux1804.tei.xml" parse="xml">
+        <xi:fallback>Fichier teiCorpus de Brice non trouvé</xi:fallback>
+    </xi:include>
+
+</teiCorpus>
