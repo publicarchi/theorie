@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../schema/theorieSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -63,7 +61,8 @@
             <fw>Gravé par Dien</fw>
          </div>
          <pb/>
-         <pb/>
+         <fw type="runningHead">Introduction</fw>
+         <fw type="pageNum">5</fw>
          <div type="introduction">
             <head>Introduction</head>
             <epigraph><p><foreign xml:lang="lat">Omnia vincit amor</foreign></p><note type="*"><p>C’est ce sentiment qui m’a inspiré et m’a soutenu dans ce long travail.</p></note></epigraph>
@@ -72,26 +71,336 @@
             <p>Avant que la nuit ne couvre de son voile obscur le vaste champ où j’ai placé tous les genres d’édifices que réclame l’ordre social, on verra des usines importantes, filles et mères de l’industrie, donner naissance à des réunions populeuses. Une ville s’élèvera pour les enceindre et les couronner. Le luxe vivifiant, ami nourricier des arts, y montrera tous les monuments que l’opulence aura fait éclore.</p>
             <p>Ses environs seront embellis d’habitations consacrées au repos, aux plaisirs, et plantés de jardins rivaux du fameux <placeName>Eden</placeName>.</p>
             <p>Asyles du laborieux artisan, les villages et les bourgs ajouteront à la beauté du coup d’œil par le contraste de leur simplicité. La maison du pauvre, par son extérieur modeste, rehaussera la splendeur de l’hôtel du riche, et de ces palais où sous les lames dorées qui les couvrent, les grands semblent rivaliser d’éclat avec l’astre du jour.</p>
-            <p><persName>Dieu</persName> ! qui <sic>créas</sic> les mondes, tu vois avec complaisance s’embellir une partie de celui que tu nous a cédé. Ton temple domine sur tous les édifices, comme<pb/><fw type="pagination">2</fw><fw type="runningHead">Introduction</fw> notre amour pour toi doit dominer sur tous les sentiments. L’homme naissant t’y est présenté ; les grands actes de sa vie y reçoivent ta sanction, et sa dépouille mortelle y vient solliciter ton regard, avant de s’enfoncer dans la tombe.</p>
+            <p><persName>Dieu</persName> ! qui <sic>créas</sic> les mondes, tu vois avec complaisance s’embellir une partie de celui que tu nous a cédé. Ton temple domine sur tous les édifices, comme<pb/><fw type="pageNum">2</fw><fw type="runningHead">Introduction</fw> notre amour pour toi doit dominer sur tous les sentiments. L’homme naissant t’y est présenté ; les grands actes de sa vie y reçoivent ta sanction, et sa dépouille mortelle y vient solliciter ton regard, avant de s’enfoncer dans la tombe.</p>
             <p>La morale qui est la religion active, la philosophie qui est la sœur de la religieux, ont aussi leurs sanctuaires. <persName>Les peuples du Thibet</persName> et les enfants de <persName>Confucius</persName> y retrouvent le temple de la loi que dans leurs cœurs a gravé le doigt de la nature. Où le vice ne règne pas, la vertu peu se passer d’autel. Rien de ce qui peut propager les bonnes mœurs, corriger les mauvaises, en punir et sur-tout en prévenir les effets, n’est négligé.</p>
             <p>L’exemple est la plus puissante des leçons. Un bâtiment majestueux est consacré à la sagesse ; des portiques multipliés l’entourent ; l’enfance y joue à couvert ; la jeunesse les parcourt ; la vieillesse y médite. Un école y est ouverte, où l’on apprend à l’homme ses devoirs, avant de l’instruire de ses droits. Là on lui fait voir que toutes les vertus tirent leur origine les unes des autres ; que les <persName>Platon</persName>, les <persName>Socrate</persName>, les <persName><choice><abbr>S.</abbr><expan>Saint</expan></choice>-Augustin</persName>, ont tous travaillé au même édifice et marché vers le même but. Les tables de <persName>Solon</persName>, de <persName>Niger</persName>, les capitulaires de <persName>Charlemagne</persName>, s’y trouvent placés sous les yeux comme le calendrier de l’honnête homme.</p>
             <p>La beauté qui n’est que la proportion, a un empire sur les humaines dont ils ne peuvent se défendre ; elles personnifient les principes, et par la seule influence de leurs charmes, elles en accélèrent le développement et en propagent les effets. Oh ! que de chefs-d’œuvre <persName>les Goths</persName> eussent laissés à la postérité, si les <persName>Phidias</persName> du temps avoient épuré leur style !</p>
             <p>Vu de près, le vice n’influe pas moins puissamment sur l’âme ; par l’horreur qu’il lui imprime, il la fait réagir vers la vertu. L’<foreign xml:lang="grc">Oikema</foreign> présente à la bouillante et volage jeunesse qu’il attire la dépravation dans sa nudité, et le sentiment de la dégradation de l’homme ranimant la vertu qui sommeille, conduit l’homme à l’autel de l’<persName>Hymen</persName> vertueux qui l’embrasse et le couronne.</p>
             <p>L’Atelier de corruption, sous ses autres obscurs et profonds, lui découvre les sources empoisonnées qui altèrent la vigueur de la morale, minent les trônes, renversent les empires, et il ne le rend au jour qu’avec la haine de toute ce qui peut corrompre les mœurs.</p>
-            <fw type="runningHead">Introduction</fw><fw type="pagination">3</fw>
+            <fw type="runningHead">Introduction</fw><fw type="pageNum">3</fw>
             <p>On peut être vertueux ou vicieux, comme le caillou rude ou poli, par le frottement de ce qui nous entoure ; le bonheur et le bien-être peuvent donc se trouver dans le sentiment attractif des jouissances communes, et de là ces cénobies construites à l’ombre des bois tranquilles, où des sages, vivant réunis sous les lois simples de la nature, cherchent à réaliser la désirable félicité des temps fabuleux de l’âge d’or. De là ces maisons destinées à plusieurs familles.</p>
             <p>Tout s’anime par la concorde. Des deux premiers frères que nous présente l’histoire du monde, l’un fut homicide et mourut de repentir. Combien il seroit consolant de prévenir le crime et les remords ! Que d’avantages résulteroient pour la société des tendres affections que consolident les nœuds du sang ! Quand on est nourri dans le même berceau, tout, jusqu’au tombeau, doit unir. Les habitudes, les plaisirs, les pensées doivent être les mêmes et se confondre. L’or s’épure par le feu, l’amitié par l’or. En unissant et identifiant les intérêts, on les prolonge ; en les prolongeant, on double l’existence, on prévient les divisions, on oppose à leur naissance une liaison dont l’idée seule porte à l’âme un baume consolateur. Si la société est fondée sur un besoin mutuel qui commande une affection réciproque, pourquoi ne réuniroit-on pas, dans des maisons particulières, cette analogie de sentiments et de goûts qui honorent l’homme ? Aussi verra-t)on que ma cité possède des Maisons de frères. Le caractère des monuments, comme leur nature, sert à la propagation et à l’épuration des mœurs. Là sont élevés des théâtres sous la forme progressive qui <sic>nivêle</sic> l’humanité ; ici des arcs de triomphe qui la déifient ; plus loin des cimetières où elle va s’engloutir.</p>
             <p>Les lois viennent au secours des mœurs. Le temple éclairé de la justice forme une opposition salutaire avec les lieux sombres destinés au crime, et qui jamais ne doivent <sic>recéler</sic> l’innocence.</p>
             <p>Du Prétoire coule la source féconde et bienfaisante de la sécurité publique. Au Pacifère se concilient les intérêts des familles, et se préviennent ou se terminent leurs division. On y donne un frein à l’immoralité, et des chaînes aux passions des cités perverties.</p>
             <p>Tous les arts, toutes les conditions trouvent des demeures qui leur sont propres. On y voit l’atelier où le machiniste moins fort, mais plus adroit qu’<persName>Atlas</persName>, comme lui peut soulever le monde.</p>
-            <fw type="pagination">4</fw><fw type="runningHead">Introduction</fw>
-            <p>Au sein des forêts d’une immense étendue, se font remarquer le Toit sacré de leur conservateur qui  </p>
+            <fw type="pageNum">4</fw><fw type="runningHead">Introduction</fw>
+            <p>Au sein des forêts d’une immense étendue, se font remarquer le Toit sacré de leur conservateur qui, nouveau Sylvain, les surveille et les protège ; la Retraite pyramidale du bûcheron qui, parmi les géants qui les peuplent, frappe au signal du maître, et fait tomber sous son utile coignée ceux de ces enfants de la terre, que leur taille élevée rend plus propres à conduire nos flottes à la fortune et à la victoire, et ceux dont les bras sont destinés à entretenir les foyers du frileux citadin, et le corps à nourrir les poëles affamés des usines ; la Coupole domestique du charbonnier qui prépare l’aliment nécessaire aux fourneaux des chimistes, et, dans les précautions que se travaux exigent, trace des leçons contre l’asphyxie ; enfin, les galeries compartimentées où, près de sa demeure, le charpentier façonne, appareille, nivèle ses bois, et par leur atténuation sage et combinée, va doubler, dans les longs bâtiments de graduation qu’ils doivent soutenir, le souffle propice et officieux des vents.</p>
+            <p>Dans les campagnes, l’<persName>Agriculture</persName> et tous les dieux champêtres ont des temples. Leurs noms inscrits sur les autels indiquent leurs droits à notre amour. À ce culte si naturel s’associent les parcs, quelque fiers qu’ils soient du voisinage des châteaux. De tous côtés sont des bâtiments économiques, des granges, des fermes parées, des bergeries productives, monuments trop dédaignés. <persName>Bacchus</persName> et <persName>Cérès</persName> voient leurs dons recueillis avec reconnoissance par les mains laborieuses de leurs ministres qui, puissants par l’exemple, en laissant tomber quelques épis de leurs riches moissons, apprennent à l’indigence que la richesse suit le travail comme elle fuit l’oisiveté.</p>
+            <p>Sous la protection de <persName>Pan</persName>, et plus encore sous celle de l’innocence, le monarque berger, au milieu de ses sujets, goûte avec sûreté le sommeil paisible qui s’éloigne si souvent du séjour inquiet des grands.</p>
+            <p>Chantre des dieux, des rois et des bergers, chantre de la nature, le poète dans sa demeure inspiratrice, voit accourir aux ordres du génie la troupe docile des sensations ; elles le placent sur le trépied d’<persName>Apollon</persName>, et dans ses transports extatiques il embouche à son gré la trompette d’<persName>Homère</persName>, le flageolet de <persName>Théocrite</persName>, ou fait résonner la lyre de <persName>Pindare</persName> ou le luth d’<persName>Anacréon</persName>.</p>
+            <p>Le commerce est un de ces canaux précieux qui répandent l’abondance ; il doit être secondé.</p>
+            <p>5</p>
          </div>
       </front>
       <body>
          <div>
-            <p></p>
+            <p>Des marchés publics appellent les productions variées, fruit du sol fécond et de l’industrie créatrice des nations ; cent voûtes les y protègent contre les intempéries destructives ; et des fleuves, par leurs courses combinées, facilitent les plus riches échanges.</p>
+            <p>De vastes magasins, sous leurs amples péristyles, recèlent les trésors de tous les climats, recueillis par le négociant habile, pour être distribués aux classes laborieuses.</p>
+            <p>Un caractère simple et grand fait reconnoître les caisses financières gardées par le respect public, nourries par le bien même qu’elles font refluer sur tous les membres de la société.</p>
+            <p>Chacun juge suivant ses penchants. Heureux l’homme dont les passions sont en harmonie au milieu d’un monde discord ! Le voluptueux, au sein de la mollesse laisse échapper pour de brillantes jouissances la fortune acquise par ses pères. Le paresseux offre la sienne comme excuse de son inutilité. Le pauvre, en convoitant leur or, en critique l’emploi, gémit sur sa détresse et reproche à <persName>Plutus</persName> ses aveugles faveurs et l’injuste répartition de ses bienfaits.</p>
+            <p>Faut-il que tout soit misère ou magnificence ? Faut-il anéantir la splendeur d’où la société tire son aisance ? Eh ! qu’importe de que quelle manière le prodigue dépense, s’il s’acquitte envers le pauvre qui reçoit le prix de ses sueurs. Qu’importe comment le pauvre emploie ce tribut du riche. Si l’art ne peut offrir aux uns qu’une habitation modeste, il la prémunira par le secours officieux de l’argile durcie, contre les caprices incendiaires de la foudre qui consume les chaumes voisins ; il la distinguera par ce goût qui plaît même dans les villes, quand il assujettit les plus simples fabriques à la pureté des lignes.</p>
+            <p>Mais il créera pour les autres des châteaux dominateurs, des communs populeux, des écuries fastueuses, vanités utiles ; il fera pour eux sortir du sein de la terre, comme autant de prodiges de la féerie, ces maisons de plaisance, séjours de délices, asyles des jeux, rendez-vous des <persName>Grâces</persName>, et quelquefois des <persName>Muses</persName>. Il donnera à des entrées de parcs le caractère merveilleux de l’antique chevalerie. Les retours de chasse des Potentats de la terre, célébrés par les cent bouches de la Renommée, appelleront chez nous les nations désireuses de nos arts. L’hotellerie leur offrira ses commandes<pb/><fw
+               type="pageNum">6</fw><fw type="runningHead"
+               >Introduction</fw> ressources et ses doux loisirs. L’hospice ouvert au voyageur, par ses utiles épurations, ne permettra l’entrée des frontières qu’à l’homme digne d’y pénétrer. L’intérieur des cités offrira les bains qui fortifient le corps ; le trésor provocateur des désirs brûlants qui l’attèrent ; les bibliothèques où se nourrit l’esprit ; le fisc où il se dessèche ; la maison d’étude où se dispensent les lumières, celle de jeu où elles s’éteignent ; les demeures vastes et somptueuses des gouverneurs, vuides de contentement et pleines d’amertumes ; l’étroite habitation de l’employé circonscrit au nécessaire ; les murs du traitant chargés des dépouilles de cent familles.</p>
+            <p>Peuple ! unité si respectable par l’importance de chaque partie qui le compose, tu ne seras pas oublié dans les constructions de l’art : à de justes distances des villes s’élèveront pour toi des monuments rivaux des palais des modérateurs du monde ; des maisons de réunion et de plaisirs. Là tu pourras, par des jeux qui te seront préparés, dans des fêtes dont tu seras l’objet, effacer le souvenir de tes peines, boire l’oubli de tes fatigues, et, dans un délassement réparateur, tu puiseras des forces nouvelles et le courage nécessaire à tes travaux.</p>
+            <p>C‘est par le tableau de ces compositions aussi variées que nombreuses, toutes marquées au caractère qui leur est propre, et qui, dans leur exécution offrent l’analyse de tous les principes, que j’instruirai, échaufferai, contiendrai l’artiste qui s’élance dans la carrière de l’Architecture.</p>
+            <p>Tous les hommes ont une propension naturelle qui dirige leur choix et base leurs résolutions. L’enthousiasme change d’objet, et l’intérêt de but ; elle est invariable la ligne que le sort nous a tracée ; et, semblable au char qui roule entre deux abîmes, nous ne saurions la quitter sans nous perdre.</p>
+            <p>À l’homme fidèle au vœu de la nature, et qu’emporte le sentiment brûlant de sa destinée, donnera-t-on de froids et assoupissants préceptes ? L’effraiera-t-on par le vague immense de l’horizon qu’on ira lui découvrir ? Ses yeux ne doivent-ils pas plutôt trouver où se reposer, voir le précept confirmé par l’exemple, et l’exemple amener cette discussion qui éclaire et donne aux facultés leur utile développement.</p>
+            <p>Tout tient à l’impression du maître.</p>
+            <p>Les projets les plus simples prennent la teinte de l’âme qui les conçoit ;<pb/><fw
+               type="runningHead">Introduction</fw><fw type="pageNum"
+               >7</fw> elle donne son empreinte à tout ce qu’elle touche, et si elle ne veut pas ressembler au grand nombre parce qu’elle est au-dessus de lui, elle ne le rabaissera point, parce qu’il n’est pas à sa hauteur. Rien n’est indifférent.</p>
+            <p>L‘homme qui ne seroit point pénétré de ce principe, seroit déplacé au milieu des hazards que les circonstances font éclore. Semblable au vaisseau lancé sur la vague agitée, jouet des aquilons capricieux, on le verroit indécis, incertain dans sa direction, éviter sans cesse le vent bienfaiteur qui seul peut le faire heureusement surgir au port.</p>
+            <p>Chacun, il faut en convenir, a sa manière de cingler ; mais quand on est tellement organisé qu’une voile oiseuse pour un pilote ordinaire, habilement dirigée, fasse franchir les pôles , on seroit condamnable de résister à sa destinée.</p>
+            <p>L’emploi du temps est comme le bonheur suprême, il presse la mesure et ne laisse rien à désirer. Ne croyez point que l’on ait besoin de cette gloire fugitive et stérile qui séduit le commun des humains et se borne à la vie, quand on a droit de prétendre à ce patrimoine inattaquable, fruit des sollicitudes, fondé par l’indépendance, assuré dans les fastes de l’art, et qui n’a rien à redouter des vacillations du globe.</p>
+            <p>Dans les préceptes il est une marche à suivre ; j’ai dû classer mes exemples. L’ordre chronologique m’a paru le plus simple ; il facilite le rapprochement des distances, la comparaison des productions et des temps qui les ont vu naître. On saisit plus aisément l’ensemble de l’espace que l’art a parcouru, des gouffres qu’il a comblés malgré la continuelle opposition de l’habitude et du faux goût, tyrans barbares dont l’homme du monde connoît le pouvoir et les effets. Souvent il aura vu la première se substituer furtivement même à l’amour, et le second doublant son bandeau, l’associer au vice et le prostituer à des monstres. Malgré l’application irrésolue et même vicieuse des principes de l’art, il sera facile de se convaincre de l’immutabilité des bases sur lesquelles ils sont fondés, par leur périodique reproduction.</p>
+            <p>Qu’ils disparoissent ces précepteurs à gages qui ont falsifié les idées mères en délayant le savoir dans le vase commun du métier ! ils ne sauroient atteindre à la hauteur de cet art sublime.</p>
+            <p>L’Architecture est semblable aux astres bienfaisants qui éclairent le monde. Elle a ses retours et ses phases comme eux ; comme eux elle éprouve de ces<pb/><fw
+               type="pageNum">8</fw><fw type="runningHead"
+               >Introduction</fw> chocs qui confondent les éléments ; sa lumière se dérobe ainsi que la leur, sous l’épaisseur des nuages, et victorieuse de leurs ténèbres, s’en élance plus brillante et plus belle. Elle est entourée d’éclatants satellites qui réfléchissent sa splendeur et se soutiennent avec elle au sein de l’immensité, par son imposant équilibre.</p>
+            <p>Pour développer tout l’ensemble d’un art qui exige l’universalité des connoissances, et se dirige par le sentiment attractif de toutes les modifications sociales, j’ai rassemblé, j’ai réuni des vues partielles sur son origine, ses progrès, ses écarts et ses variations. Le volume antique est dans mes mains, et plongé dans la profondeur des méditations qu’il présente, je vois s’élever lentement et passer devant mes yeux étonnés, ces ombres motrices de l’inspiration.</p>
+            <p>Voyez sur la masse du globe ces taches additionnelles qui effraient la pensée ; ces tombes où sommeille l’orgueil ; ces dépôts fastueux des chétifs débris de l’homme, s’élevant du sein des déserts qui rappellent son néant.</p>
+            <p>Voyez ces nuages sans nombre qui s’approchent, se pressent, se déchirent ; ne diroit-on pas que ce spectacle les inquiète et les tourmente ? Est-ce un nouveau monde dont les sommités s’échappent de la confusion du chaos, ou sont-ce les catacombes de l’univers ?</p>
+            <p>Quel mortel, à cet aspect imposant, ne sent pas toute sa petitesse et ne se prosterne pas devant l’Architecte rival du <persName>Créateur</persName> ?</p>
+            <p>Jettez les yeux du plus loin, vous verrez les prodiges de <persName>Sémiramis</persName>, les merveilles des <persName>Hébreux</persName>.</p>
+            <p>Interrogez les cendres d’<persName>Ilion</persName>, les annales des nations les plus célèbres ; tous ces hommes qui ont paru à leurs plus brillantes époques, pour le bonheur des arts autant que pour le progrès de la civilisation : que vous apprnedront-ils ?</p>
+            <p>Les <persName>Grecs</persName> dégrossissent les masses que la main patiente de l’<persName>Égyptien</persName> a formées ; les peuples plus modernes les atténuent ; elles s’appauvrissent sous <persName>Théodose</persName> ; les <persName>Goths occidentaux</persName> les divisent, et les rendent fatiguantes à l’œil par les ornements dont ils les surchargent.</p>
+            <p>Enfin le flambeau du génie ravive sa flamme, et l’excite en l’agitant conte les ruines des chefs-d’œuvre antiques ; l’art éclairé se ranime, et les grands<pb/><fw>Introduction</fw><fw>9</fw> principes s’adaptent jusqu’aux usages familiers, et c’est alors que ses bienfaits célestes se déploient et se généralisent.</p>
+            <p>J’appellerai l’homme heureusement organisé par la nature à sentir le profit qu’il peut tirer des découvertes des âges qui nous ont précédés, persuadé que les efforts qui contribuent à étendre les lumières ne sont jamais que relatifs au sentiment qui les provoque ; et convaincu que les folles productions d’une imagination délirante, officieusement couverte par les décombres du temps, ne peuvent laisser échapper qu’en faux éclat, je regarderai comme un devoir d’opposer à cette perfide lueur, la lumière vraie des principes destinés à éclairer notre âge.</p>
+            <p>L’impulsion qui met les hommes en action doit les porter tous à contribuer aux jouissances sociales.</p>
+            <p>Par cette utile direction, ils deviennent alors </p>
          </div>
       </body>
+      <back>
+         <pb xml:id="f252"/>
+         <pb xml:id="f253"/>
+         <div>
+            <figure>
+               <fw>Pl. 2</fw>
+               <byline>
+                  <docAuthor>C. N. Varin sculp.</docAuthor>
+               </byline>
+               <figDesc>
+                  <title>L’architecture considérée sous le rapport de l’art des mœurs et de la législation</title>
+                  <desc>[Frontispice]</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f254"/>
+            <pb xml:id="f255"/>
+            <figure>
+               <fw>Pl. 3</fw>
+               <head>Pont de la Loüe</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Gravé par N. Ransonnette</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>coupe, élévation, plan des fondations, plan des parapets, coupe</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f256"/>
+            <pb xml:id="f257"/>
+            <figure>
+               <fw>Pl. 4</fw>
+               <head>Vue perspective du pont de la Loüe</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Bovinet sculpsit</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>Coupe, Élévation, Plan des Fondations, Plan des Parapets, Coupe</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f258"/>
+            <pb xml:id="f259"/>
+            <figure>
+               <fw>Pl. 5</fw>
+               <head>Grange parée</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Gravé par Varin</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>Plan du rez-de-chaussée, Élévation Latérale, Plan du Second étage, Coupe, Plan des Souterrains, Élévation, Plan du Premier étage</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f260"/>
+            <pb xml:id="f261"/>
+            <figure>
+               <fw>Pl. 6</fw>
+               <head>Maison des Directeurs de la Loüe</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Gravé par Van Maëlle et Maillet</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>Vue Perspective, Coupe, Élévation, Second Étage, Troisième Étage, Premier Étage, Rez-de-Chaussée</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f262"/>
+            <pb xml:id="f263"/>
+            <figure>
+               <fw>Pl. 7</fw>
+               <head>Atelier et logement du charpentier de la graduation</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Gravé par N. Ransonnette</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>Coupe, [Plan du Rez-de-Chaussée], Élévation</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f264"/>
+            <pb xml:id="f265"/>
+            <figure>
+               <fw>Pl. 8</fw>
+               <head>Bâtiment de graduation</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Sellier sculp.</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>Logement du Charpentier [Plan]</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f266"/>
+            <pb xml:id="f267"/>
+            <figure>
+               <fw>Pl. 9</fw>
+               <head>Vue Perspective du Bâtiment de graduation de la Saline de Chaux</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Berthault Sc.</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc></desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f268"/>
+            <pb xml:id="f269"/>
+            <figure>
+               <fw>Pl. 10</fw>
+               <head>Petite Hôtellerie</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Gravé par N. Ransonnette</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>Élévation, Plan du Rez-de-Chaussée, Plan du Second Étage, Plan du Premier Étage, Plan des Souterrains, Coupe</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f270"/>
+            <pb xml:id="f271"/>
+            <figure>
+               <fw>Pl. 11</fw>
+               <head>Hospice</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Gravé par Van Maelle</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>Vue Perspective</desc>
+                  <desc>Élévation, Coupe</desc>
+                  <desc>[Plan d’ensemble]</desc>
+                  <desc>[Plan du Rez-de-Chaussée], [Plan du Premier étage]</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f272"/>
+            <pb xml:id="f273"/>
+            <figure>
+               <fw>Pl. 12</fw>
+               <head>Saline de chaux premier Projet</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Sellier Sculp.</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>[Plan]</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f274"/>
+            <pb xml:id="f275"/>
+            <figure>
+               <fw>Pl. 13</fw>
+               <head>Élévation de l’Entrée de la Saline de Chaux 1<hi rend="superscript">er</hi> Projet</head>
+               <head>Coupe sur la longueur</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Sellier Sc.</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>[Élévation]</desc>
+                  <desc>[Coupe]</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f276"/>
+            <pb xml:id="f277"/>
+            <figure>
+               <fw>Pl. 14</fw>
+               <head>Carte des Environs de la Saline de Chaux<lb/>
+               Bâtie entre les Villages Darc et Senans à la proximité de la Forest de Chaux et de la Rivière de Loüe</head>
+               <byline>
+                  <docAuthor>Le Doux Arch. du Roi</docAuthor>
+                  <docAuthor>Dupuis Sculpsit</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>[Carte]</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f278"/>
+            <pb xml:id="f279"/>
+            <figure>
+               <fw>Pl. 15</fw>
+               <head>Vue perspective de la Ville de Chaux</head>
+               <byline>
+                  <docAuthor>Le Doux Arch<hi rend="superscript">te</hi> du Roy</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>[Perspective]</desc>
+               </figDesc>
+               <note>
+                  <p>Sans marque de graveur</p>
+               </note>
+            </figure>
+            <pb xml:id="f280"/>
+            <pb xml:id="f281"/>
+            <figure>
+               <fw>Pl. 16</fw>
+               <head>Plan Général de la Saline de Chaux</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Sellier Sc.</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>[Plan]</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f282"/>
+            <pb xml:id="f283"/>
+            <figure>
+               <fw>Pl. 17</fw>
+               <head>Maison d’un employé</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Gravé par Varin</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>Coupe</desc>
+                  <desc>Plan du Rez-de-Chaussée, Plan du Premier Étage</desc>
+                  <desc>Élévation</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f284"/>
+            <pb xml:id="f285"/>
+            <figure>
+               <fw>Pl. 18</fw>
+               <head>Maison de Campagne</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+                  <docAuthor>Gravé par Maëlle</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>Vue Perspective</desc>
+                  <desc>Élévation Géométrale, Coupe</desc>
+                  <desc>Premier Étage, Second étage</desc>
+                  <desc>Rez-de-Chaussée, Souterrains</desc>
+               </figDesc>
+            </figure>
+            <pb xml:id="f286"/>
+            <pb xml:id="f287"/>
+            <figure>
+               <fw>Pl. 19</fw>
+               <head>Plan d’une Maison de Campagne</head>
+               <byline>
+                  <docAuthor>Le Doux Architecte du Roi</docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>Entresol</desc>
+                  <desc>Rez de Chaussées</desc>
+               </figDesc>
+               <note>
+                  <p>Sans marque de graveur</p>
+               </note>
+            </figure>
+            <pb xml:id="f288"/>
+            <pb xml:id="f289"/>
+            <figure>
+               <fw>Pl. 20</fw>
+               <head>Maison de Campagne</head>
+               <byline>
+                  <docAuthor>Le Doux Arch. du Roi</docAuthor>
+                  <docAuthor><unclear>Hetuis</unclear></docAuthor>
+               </byline>
+               <figDesc>
+                  <desc>Élévation</desc>
+                  <desc>Plan du Premier, Plan du Second</desc>
+                  <desc>Coupe</desc>
+               </figDesc>
+               <note>
+                  <p>Sans marque de graveur</p>
+               </note>
+            </figure>
+         </div>
+      </back>
    </text>
 </TEI>
