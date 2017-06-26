@@ -2,10 +2,9 @@
 <teiCorpus xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
   <!-- 
    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    Théorie, Schéma et documention 
+    Théorie de l’architecture moderne, Corpus de textes électroniques
    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-   @todo revoir ensemble des classes d’attribut et des classes de modèles de tei
--->
+  -->
   <teiHeader>
     <fileDesc>
             <titleStmt>
@@ -86,33 +85,22 @@
       <!-- déclaration des principes éditoriaux -->
             <editorialDecl>
                 <correction>
-                    <p>La syntaxe originale du manuscrit a été respectée en suivant les
-                        indications de Bernard Barbiche, <ref type="external"
-                            target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
-                            >Conseils pour l’édition des textes de l’époque moderne
-                                (XVI<hi rend="superscript">e</hi>-XVIII<hi
-                                rend="superscript">e</hi> siècle)</ref>.</p>
+                    <p>La syntaxe originale du manuscrit a été respectée en suivant les indications de Bernard Barbiche, <ref type="external" target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes">Conseils pour l’édition des textes de l’époque moderne (XVI<hi rend="superscript">e</hi>-XVIII<hi rend="superscript">e</hi> siècle)</ref>.</p>
                 </correction>
                 <hyphenation>
-                    <p>Pour les ouvrages imprimés, il n'a pas été tenu compte de
-                        l'hyphénation.</p>
+                    <p>Pour les ouvrages imprimés, il n'a pas été tenu compte de l’hyphénation.</p>
                 </hyphenation>
                 <interpretation>
-                    <p>Les interprétations sont traitées au moyen d'un élément supplied
-                        ou bien sont renvoyées en notes. Une mention de responsabilité
-                        est fournie grâce à l'attribut resp sur le passage
-                        concerné.</p>
+                    <p>Les interprétations sont traitées au moyen d'un élément <gi>supplied</gi> ou bien sont renvoyées en notes. Une mention de responsabilité est fournie grâce à l'attribut resp sur le passage concerné.</p>
                 </interpretation>
                 <normalization>
-                    <p>La ponctuation ainsi que les majuscules ont été normalisées. Les
-                        abréviations ont été développées.</p>
+                    <p>La ponctuation ainsi que les majuscules ont été normalisées. Les abréviations ont été développées.</p>
                 </normalization>
                 <stdVals>
                     <p>On utilise...</p>
                 </stdVals>
                 <quotation>
-                    <p>Les citations dans le texte sont encodées soit au moyen d'un
-                        élément quote, soit au moyen d'un élément...</p>
+                    <p>Les citations dans le texte sont encodées soit au moyen d'un élément <gi>quote</gi>, soit au moyen d’un élément...</p>
                 </quotation>
             </editorialDecl>
             <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
@@ -130,8 +118,7 @@
         <profileDesc>
             <creation when="2013">2013</creation>
             <langUsage>
-                <language ident="fre" usage="98">Français (langue principale du
-                    corpus)</language>
+                <language ident="fre" usage="98">Français (langue principale du corpus)</language>
                 <language ident="lat" usage="2">Latin</language>
             </langUsage>
             <textClass>
@@ -157,7 +144,43 @@
 
     <!-- Inclusion du fichier Ledoux -->
     <xi:include href="ledoux/ledoux1804.tei.xml" parse="xml">
-        <xi:fallback>Fichier teiCorpus de Brice non trouvé</xi:fallback>
+        <xi:fallback>Fichier TEI de Ledoux non trouvé</xi:fallback>
     </xi:include>
-
+    <TEI>
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>Bibliographie</title>
+                </titleStmt>
+                <publicationStmt>
+                    <p></p>
+                </publicationStmt>
+                <sourceDesc><p>Fichier nativement numérique</p></sourceDesc>
+            </fileDesc>
+        </teiHeader>
+        <text>
+            <body>
+                <listBibl type="biblio">
+                    <biblStruct>
+                        <monogr>
+                            <author>
+                                <persName>
+                                    <forename>Jacques-François</forename>
+                                    <surname>Blondel</surname>
+                                    <idno></idno>
+                                </persName>
+                            </author>
+                            <title>Cours d’architecture, ou Traité de la Décoration, Distribution &amp; Construction des Bâtiments ; Contenant les Leçons données en 1750, &amp; les années suivantes, par J. F. Blondel, Architecte dans son École des Arts</title>
+                            <imprint>
+                                <biblScope>Tome second</biblScope>
+                                <pubPlace>À Paris</pubPlace>
+                                <date when="1771">MDCCLXXI</date>
+                            </imprint>
+                        </monogr>
+                        <idno>http://gallica.bnf.fr/ark:/12148/bpt6k6558006r</idno>
+                    </biblStruct>
+                </listBibl>
+            </body>
+        </text>
+    </TEI>
 </teiCorpus>
