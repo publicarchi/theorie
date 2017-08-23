@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="schema/theorieSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<teiCorpus xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
-                <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
+                <title xml:lang="fre"
+                    >Bibliographie des ouvrages de théorie de l’architecture moderne, 1750-1850</title>
                 <principal> <persName ref="#EC"> <forename>Emmanuel</forename>
                     <surname>Château-Dutier</surname> </persName> <affiliation>
                     <orgName>Université de Montréal</orgName> <orgName type="alt">UdeM</orgName>
@@ -37,7 +37,7 @@
                 <!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers -->
                 <idno>ark</idno>
                 <!-- responsable de la publication -->
-                <availability status="restricted" xml:id="theorieLicence">
+                <availability status="restricted" xml:id="theorieBiblioLicence">
                     <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
                         <p>Texte de la licence</p>
                         <!-- @todo renseigner le texte de la licence --> <graphic
@@ -51,7 +51,7 @@
          </notesStmt>
          -->
             <!-- description de la source -->
-            <sourceDesc xml:id="theorie">
+            <sourceDesc xml:id="theorieBiblio">
                 <p>Fichier nativement numérique. Le document s’appuie sur le cadre de travail proposé par la <ref
                     target="http://www.tei-c.org/index.xml">Text Encoding Initiative</ref>.</p>
             </sourceDesc>
@@ -125,17 +125,74 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
-            <change when="2017-06">Création du fichier corpus</change>
+            <change when="2017-08">Création du fichier</change>
         </revisionDesc>
     </teiHeader>
+    <text>
+        <body>
+            <listBibl type="biblio">
+                <biblStruct>
+                    <monogr>
+                        <author> <persName> <forename>Germain</forename> <surname>Boffrand</surname>
+                            </persName> </author>
+                        <title>Livre d’architecture : contenant les principes généraux de cet art, et les plans, élévations et profils de quelques-uns des bâtimens faits en France &amp; dans les pays étrangers</title>
+                        <title xml:lang="lat"
+                            >De architectura liber : in quo continentur generalia hujus artis principia…</title>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Chez G. Cavelier père</publisher>
+                            <date when="1745">1745</date>
+                        </imprint>
+                        <extent>99 p., 70 feuillets de planches (certains pliés)</extent>
+                        <extent>43 cm</extent>
+                    </monogr>
+                    <note type="subject"> <p>Architecture -- Détails -- Ouvrages avant 1800</p>
+                        <p>Architecture -- Dessins et plans -- Ouvrages avant 1800</p>
+                        <p>Architecture -- Ouvrages avant 1800</p> </note>
+                    <note>
+                        <p>Page de titre additionnelle en latin. Texte français et latin sur deux colonnes. Restauration et boîtier de conservation : Terry Rutherford. Accompagné d’un dossier de restauration. Édité avec Description de ce qui a été pratiqué pour fondre en bronze d’un seul jet la figure équestre de Louis XIV… de l’auteur. Paris. 1743.</p> </note>
+                    <idno type="udem"
+                        >http://atrium.umontreal.ca/UM:Tout_sauf_articles:UM-ALEPH001722009</idno>
+                    <idno type="udemCote">NA 2520 B64</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author> <persName> <forename>Jacques-François</forename>
+                            <surname>Blondel</surname> <idno/> </persName> </author>
+                        <title>Cours d’architecture, ou Traité de la Décoration, Distribution &amp; Construction des Bâtiments ; Contenant les Leçons données en 1750, &amp; les années suivantes, par J. F. Blondel, Architecte dans son École des Arts</title>
+                        <imprint>
+                            <biblScope>Tome second</biblScope>
+                            <pubPlace>À Paris</pubPlace>
+                            <date when="1771">MDCCLXXI</date>
+                        </imprint>
+                    </monogr>
+                    <idno>http://gallica.bnf.fr/ark:/12148/bpt6k6558006r</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author> <persName> <forename>Guillaume Abel</forename>
+                            <surname>Blouet</surname> </persName> </author>
+                        <author> <persName> <forename>Jean</forename> <surname>Rondelet</surname>
+                            </persName> </author>
+                        <title>Traité théorique et pratique de l’art de bâtir de Jean Rondelet</title>
+                        <title>Supplément</title>
+                        <imprint>
+                            <biblScope>F. Didot</biblScope>
+                            <pubPlace>Paris</pubPlace>
+                            <date from="1847" to="1848">1847-1848</date>
+                        </imprint>
+                        <extent>2 vol.</extent>
+                        <extent>52 cm</extent>
+                        <extent>105 fol. de planches</extent>
+                    </monogr>
+                    <idno type="udem"
+                        >http://atrium.umontreal.ca/UM:Tout_sauf_articles:UM-ALEPH000337331</idno>
+                    <idno type="udemCote">NA 2520 R65 1847 suppl.</idno>
+                    <note type="subject"> <p>	Construction -- Manuels</p>
+                        <p>Architecture -- Manuels</p> <p>Maçonnerie -- Manuels</p> </note>
+                </biblStruct>
+            </listBibl>
+        </body>
+    </text>
 
-    <!-- Inclusion du fichier Ledoux -->
-    <xi:include href="ledoux/ledoux1804.tei.xml" parse="xml">
-        <xi:fallback>Fichier TEI de Ledoux non trouvé</xi:fallback>
-    </xi:include>
-    <!-- Inclusion du fichier biblio -->
-    <xi:include href="theorieBiblio.tei.xml" parse="xml">
-        <xi:fallback>Fichier TEI de biblio théorie non trouvé</xi:fallback>
-    </xi:include>
-
-</teiCorpus>
+</TEI>
