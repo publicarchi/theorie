@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="schema/theorieSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<teiCorpus xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
-                <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
+                <title xml:lang="fre">Index des auteurs</title>
                 <principal> <persName ref="#EC"> <forename>Emmanuel</forename>
                     <surname>Château-Dutier</surname> </persName> <affiliation>
                     <orgName>Université de Montréal</orgName> <orgName type="alt">UdeM</orgName>
@@ -30,25 +29,30 @@
                 <edition n="1">première édition électronique, <date from="2017"
                     >2017</date></edition>
             </editionStmt>
-            <extent><!-- @todo : taille du fichier en octet --></extent>
+            <extent><!-- @todo taille du fichier en octet --></extent>
             <publicationStmt>
                 <publisher>Publicarchitectura</publisher>
                 <date from="2017">2017</date>
                 <idno><!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers --></idno>
-                <availability status="restricted" xml:id="theorieLicence">
+                <availability status="restricted" xml:id="theorieBiblioLicence">
                     <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
-                        <p><!-- @todo renseigner le texte de la licence --></p>
-                        <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/>
-                    </licence>
+                        <p><!-- @todo renseigner le texte de la licence --></p> <graphic
+                        url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/> </licence>
                 </availability>
             </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main"
+                    >Recueils d’architecture français de l’époque moderne, 1750-18450</title>
+                <title xml:lang="fre" type="sub">Corpus électroniques</title>
+                <idno type="URI"><!-- @todo --></idno>
+            </seriesStmt>
             <!--
             <notesStmt>
                 <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
                 <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
             </notesStmt>
             -->
-            <sourceDesc xml:id="theorie">
+            <sourceDesc xml:id="recueilsBiblio">
                 <p>Fichier nativement numérique. Le document s’appuie sur le cadre de travail proposé par la <ref
                     target="http://www.tei-c.org/index.xml">Text Encoding Initiative</ref>.</p>
             </sourceDesc>
@@ -118,21 +122,107 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
-            <change when="2017-06">Création du fichier corpus</change>
+            <change when="2017-08">Création du fichier</change>
         </revisionDesc>
     </teiHeader>
+    <text>
+        <body>
+            <listPerson>
+                <person xml:id="leCamusDeMezieresNicolas">
+                    <persName>Le Camus de Mézières, Nicolas (1721-1789)</persName>
+                    <persName>
+                        <forename>Nicolas</forename>
+                        <surname>Le Camus de Mézières</surname>
+                    </persName>
+                    <birth>
+                        <date when="1721-03-26">26 mars 1721</date>
+                        <placeName>Paris</placeName>
+                    </birth>
+                    <death>
+                        <date when="1789-07-27">27 juillet 1789</date>
+                        <placeName>Paris</placeName>
+                    </death>
+                    <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12309812b</idno>
+                    <idno type="isni">http://isni.org/isni/0000000080986156</idno>
+                </person>
+                <person xml:id="cordemoyJL">
+                    <persName></persName>
+                    <persName>
+                        <forename>J.-L.</forename>
+                        <nameLink>de</nameLink>
+                        <surname>Cordemoy</surname>
+                    </persName>
+                    <idno type="isni">http://isni.org/isni/0000000061243840</idno>
+                    <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb13012154g</idno>
+                </person>
+                <person xml:id="blondelJacquesFrançois">
+                    <persName full="yes">Blondel, Jacques-François (1705-1774)</persName>
+                    <idno type="isni">http://isni.org/isni/0000000121365605</idno>
+                    <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12442563q</idno>
+                </person>
+                <person xml:id="guadetJulien">
+                    <persName full="yes">Guadet, Julien (1834-1908)</persName>
+                    <persName>
+                        <forename>Julien</forename>
+                        <surname>Guadet</surname>
+                    </persName>
+                    <birth>
+                        <date when="1834-12-23">23 décembre 1834</date>
+                    </birth>
+                    <death>
+                        <date when="1908-05-17">17 mai 1908</date>
+                    </death>
+                    <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb124425731</idno>
+                    <idno type="isni">http://isni.org/isni/0000000066490664</idno>
+                </person>
+                <person xml:id="laugierMarcAntoine">
+                    <persName full="yes">Laugier, Marc-Antoine (1713-1769)</persName>
+                    <persName>
+                        <forename>Marc-Antoine</forename> <surname>Laugier</surname> </persName>
+                    <birth>
+                        <date when="1713-01-22">22 janvier 1713</date>
+                        <placeName>Manosque (Alpes de-Haute-Provence)</placeName>
+                    </birth>
+                    <death>
+                        <date when="1769-04-05">5 avril 1769</date>
+                        <placeName>Paris</placeName>
+                    </death>
+                    <idno type="isni">http://isni.org/isni/0000000115807593</idno>
+                    <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb120003457</idno>
+                </person>
+                <person>
+                    <persName>Patte, Pierre (1723-1814)</persName>
+                    <persName>
+                        <forename>Pierre</forename>
+                        <surname>Patte</surname>
+                    </persName>
+                    <birth>
+                        <date when="1723">1723</date>
+                    </birth>
+                    <death>
+                        <date when="1814">1814</date>
+                    </death>
+                    <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12332287h</idno>
+                    <idno type="isni">http://isni.org/isni/0000000108914366</idno>
+                </person>
+                <person xml:id="reynaudLeonce">
+                    <persName>Reynaud, Léonce (1803-1880)</persName>
+                    <persName>
+                        <forename>Léonce</forename>
+                        <surname>Reynaud</surname>
+                    </persName>
+                    <birth>
+                        <date when="1803-11-01">Lyon</date>
+                        <placeName>Lyon (Rhône)</placeName>
+                    </birth>
+                    <death>
+                        <date when="1880">1880</date>
+                    </death>
+                    <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12109056d</idno>
+                    <idno type="isni">http://isni.org/isni/0000000080936095</idno>
+                </person>
+            </listPerson>
+        </body>
+    </text>
 
-    <!-- Inclusion du fichier Ledoux -->
-    <xi:include href="ledoux/ledoux1804.tei.xml" parse="xml">
-        <xi:fallback>Fichier TEI de Ledoux non trouvé</xi:fallback>
-    </xi:include>
-    <!-- Inclusion du fichier biblio -->
-    <xi:include href="theorieBiblio.tei.xml" parse="xml">
-        <xi:fallback>Fichier TEI de biblio théorie non trouvé</xi:fallback>
-    </xi:include>
-    <!-- Inclusion du fichier index -->
-    <xi:include href="authors.tei.xml" parse="xml">
-        <xi:fallback>Fichier TEI d’index non trouvé</xi:fallback>
-    </xi:include>
-
-</teiCorpus>
+</TEI>

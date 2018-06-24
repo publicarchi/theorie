@@ -4,38 +4,50 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
-                <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
-                <principal> <persName ref="#EC"> <forename>Emmanuel</forename>
-                    <surname>Château-Dutier</surname> </persName> <affiliation>
-                    <orgName>Université de Montréal</orgName> <orgName type="alt">UdeM</orgName>
-                    <roleName>professeur adjoint</roleName> </affiliation> </principal>
+                <title xml:lang="fre" type="main">Recueils d’architecture française de l’époque moderne, 1750-18450</title>
+                <title xml:lang="fre" type="sub">Corpus électroniques</title>
+                <principal>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château-Dutier</surname>
+                    </persName>
+                    <affiliation>
+                        <orgName>Université de Montréal</orgName>
+                        <orgName type="alt">UdeM</orgName>
+                        <roleName>professeur adjoint</roleName>
+                    </affiliation>
+                </principal>
                 <respStmt>
                     <resp key="prg">modélisation XML-TEI</resp>
-                    <persName ref="#EC"> <forename>Emmanuel</forename>
-                        <surname>Château-Dutier</surname> </persName>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château-Dutier</surname>
+                    </persName>
                 </respStmt>
                 <respStmt>
                     <resp key="mrk">encodage</resp>
-                    <persName ref="#EC"> <forename>Emmanuel</forename>
-                        <surname>Château-Dutier</surname> </persName>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château-Dutier</surname>
+                    </persName>
                 </respStmt>
                 <respStmt>
                     <resp key="edt">édition</resp>
-                    <persName ref="#EC"> <forename>Emmanuel</forename>
-                        <surname>Château-Dutier</surname> </persName>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château-Dutier</surname>
+                    </persName>
                 </respStmt>
             </titleStmt>
             <editionStmt>
-                <edition n="1">première édition électronique, <date from="2017"
-                    >2017</date></edition>
+                <edition n="1">première édition électronique, <date from="2017">2017-..</date></edition>
             </editionStmt>
-            <extent><!-- @todo : taille du fichier en octet --></extent>
+            <extent><!-- @todo taille du fichier en octet --></extent>
             <publicationStmt>
                 <publisher>Publicarchitectura</publisher>
-                <date from="2017">2017</date>
+                <date from="2017">2017-..</date>
                 <idno><!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers --></idno>
-                <availability status="restricted" xml:id="theorieLicence">
+                <availability status="restricted" xml:id="recueilsLicence">
                     <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
                         <p><!-- @todo renseigner le texte de la licence --></p>
                         <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/>
@@ -48,21 +60,17 @@
                 <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
             </notesStmt>
             -->
-            <sourceDesc xml:id="theorie">
-                <p>Fichier nativement numérique. Le document s’appuie sur le cadre de travail proposé par la <ref
-                    target="http://www.tei-c.org/index.xml">Text Encoding Initiative</ref>.</p>
+            <sourceDesc xml:id="recueils">
+                <p>Fichier nativement numérique. Le document s’appuie sur le cadre de travail proposé par la <ref target="http://www.tei-c.org/index.xml">Text Encoding Initiative</ref>.</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <p>L’édition de ce texte s’inscrit dans un projet collaboratif d’édition numérique de textes fondamentaux sur l’architecture moderne.</p>
+                <p>L’édition de ce texte s’inscrit dans un projet collaboratif de publication numérique d’ouvrages fondamentaux sur l’architecture du XIX<hi rend="superscript">e</hi> siècle.</p>
             </projectDesc>
             <editorialDecl>
                 <correction>
-                    <p>La syntaxe originale des œuvres a été respectée et modernisée en suivant les indications de Bernard Barbiche, <ref
-                        type="external"
-                        target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
-                        >Conseils pour l’édition des textes de l’époque moderne (XVI<hi rend="superscript">e</hi>-XVIII<hi rend="superscript">e</hi> siècle)</ref>.</p>
+                    <p>La syntaxe originale des œuvres a été respectée en suivant les indications de Bernard Barbiche, <ref type="external" target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes">Conseils pour l’édition des textes de l’époque moderne (XVI<hi rend="superscript">e</hi>-XVIII<hi rend="superscript">e</hi> siècle)</ref>.</p>
                 </correction>
                 <hyphenation>
                     <p>Pour les ouvrages imprimés, il n’a pas été tenu compte de l’hyphénation.</p>
@@ -82,11 +90,11 @@
             </editorialDecl>
             <refsDecl>
                 <p>Description du système de référence canonique.</p>
-                <!-- @todo à renseigner avec une expression régulière -->
+                <!-- TODO à renseigner avec une expression régulière -->
             </refsDecl>
             <samplingDecl>
                 <p>Échantillonnage</p>
-                <!-- @todo modifier à la fin du projet -->
+                <!-- TODO modifier à la fin du projet -->
             </samplingDecl>
             <variantEncoding method="location-referenced" location="external"/>
         </encodingDesc>
@@ -98,15 +106,7 @@
             </langUsage>
             <textClass>
                 <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
-                    <term>Dix-huitième siècle</term>
-                    <term>France</term>
-                </keywords>
-                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
                     <term>Dix-neuvième siècle</term>
-                    <term>France</term>
-                </keywords>
-                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
-                    <term>Eighteenth century</term>
                     <term>France</term>
                 </keywords>
                 <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
@@ -114,25 +114,18 @@
                     <term>France</term>
                 </keywords>
                 <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
-                    <term>Text</term> </classCode>
+                    <term>Text</term>
+                </classCode>
             </textClass>
         </profileDesc>
         <revisionDesc>
-            <change when="2017-06">Création du fichier corpus</change>
+            <change when="2017-08">Création du fichier corpus</change>
         </revisionDesc>
     </teiHeader>
 
-    <!-- Inclusion du fichier Ledoux -->
-    <xi:include href="ledoux/ledoux1804.tei.xml" parse="xml">
-        <xi:fallback>Fichier TEI de Ledoux non trouvé</xi:fallback>
-    </xi:include>
     <!-- Inclusion du fichier biblio -->
-    <xi:include href="theorieBiblio.tei.xml" parse="xml">
-        <xi:fallback>Fichier TEI de biblio théorie non trouvé</xi:fallback>
+    <xi:include href="recueilsBiblio.tei.xml" parse="xml">
+        <xi:fallback>Fichier TEI de bibliographie des recueils non trouvé</xi:fallback>
     </xi:include>
-    <!-- Inclusion du fichier index -->
-    <xi:include href="authors.tei.xml" parse="xml">
-        <xi:fallback>Fichier TEI d’index non trouvé</xi:fallback>
-    </xi:include>
-
+    
 </teiCorpus>

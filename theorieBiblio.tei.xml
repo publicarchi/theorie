@@ -34,34 +34,33 @@
             <publicationStmt>
                 <publisher>Publicarchitectura</publisher>
                 <date from="2017">2017</date>
-                <!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers -->
-                <idno>ark</idno>
-                <!-- responsable de la publication -->
+                <idno><!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers --></idno>
                 <availability status="restricted" xml:id="theorieBiblioLicence">
                     <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
-                        <p>Texte de la licence</p>
-                        <!-- @todo renseigner le texte de la licence --> <graphic
+                        <p><!-- @todo renseigner le texte de la licence --></p> <graphic
                         url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/> </licence>
                 </availability>
             </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
+                <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
+                <idno type="URI"><!-- @todo --></idno>
+            </seriesStmt>
             <!--
-         <notesStmt>
-            <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
-            <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
-         </notesStmt>
-         -->
-            <!-- description de la source -->
+            <notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>
+            -->
             <sourceDesc xml:id="theorieBiblio">
                 <p>Fichier nativement numérique. Le document s’appuie sur le cadre de travail proposé par la <ref
                     target="http://www.tei-c.org/index.xml">Text Encoding Initiative</ref>.</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <!-- description du projet éditorial -->
             <projectDesc>
                 <p>L’édition de ce texte s’inscrit dans un projet collaboratif d’édition numérique de textes fondamentaux sur l’architecture moderne.</p>
             </projectDesc>
-            <!-- déclaration des principes éditoriaux -->
             <editorialDecl>
                 <correction>
                     <p>La syntaxe originale des œuvres a été respectée et modernisée en suivant les indications de Bernard Barbiche, <ref
@@ -73,7 +72,7 @@
                     <p>Pour les ouvrages imprimés, il n’a pas été tenu compte de l’hyphénation.</p>
                 </hyphenation>
                 <interpretation>
-                    <p>Les interprétations sont traitées au moyen d’un élément <gi>supplied</gi> ou bien sont renvoyées en notes. Une mention de responsabilité est fournie grâce à l’attribut resp sur le passage concerné.</p>
+                    <p>Les interprétations sont traitées au moyen d’un élément supplied ou bien sont renvoyées en notes. Une mention de responsabilité est fournie grâce à l’attribut resp sur le passage concerné.</p>
                 </interpretation>
                 <normalization>
                     <p>La ponctuation ainsi que les majuscules ont été normalisées. Les abréviations ont été développées.</p>
@@ -82,10 +81,9 @@
                     <p>On utilise...</p>
                 </stdVals>
                 <quotation>
-                    <p>Les citations dans le texte sont encodées soit au moyen d’un élément <gi>quote</gi>, soit au moyen d’un élément...</p>
+                    <p>Les citations dans le texte sont encodées soit au moyen d’un élément quote, soit au moyen d’un élément...</p>
                 </quotation>
             </editorialDecl>
-            <!-- déclaration concernant la méthode d’établissement du corpus (sélection) -->
             <refsDecl>
                 <p>Description du système de référence canonique.</p>
                 <!-- @todo à renseigner avec une expression régulière -->
@@ -96,7 +94,6 @@
             </samplingDecl>
             <variantEncoding method="location-referenced" location="external"/>
         </encodingDesc>
-        <!-- présentation du profil de fichier -->
         <profileDesc>
             <creation when="2017">2017</creation>
             <langUsage>
@@ -133,6 +130,25 @@
             <listBibl type="biblio">
                 <biblStruct>
                     <monogr>
+                        <author>
+                            <persName ref="#cordmoyJL">
+                                <forename>J.-L. de</forename>
+                                <surname>Cordemoy</surname>
+                            </persName>
+                        </author>
+                        <title>Nouveau traité de toute l’architecture</title>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>J.-B. Coignard</publisher>
+                            <date when="1706">1706</date>
+                        </imprint>
+                        <extent>XIX-230 p., 7 pl., in-12</extent>
+                    </monogr>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb302694456</idno>
+                    <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k856710</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
                         <author> <persName> <forename>Germain</forename> <surname>Boffrand</surname>
                             </persName> </author>
                         <title>Livre d’architecture : contenant les principes généraux de cet art, et les plans, élévations et profils de quelques-uns des bâtimens faits en France &amp; dans les pays étrangers</title>
@@ -157,8 +173,81 @@
                 </biblStruct>
                 <biblStruct>
                     <monogr>
-                        <author> <persName> <forename>Jacques-François</forename>
-                            <surname>Blondel</surname> <idno/> </persName> </author>
+                        <author> <persName> <forename>Marc-Antoine</forename>
+                            <surname>Laugier</surname> </persName> </author>
+                        <title>Essai sur l’architecture</title>
+                        <imprint>
+                            <pubPlace>À Paris</pubPlace>
+                            <publisher>Chez Duchesne</publisher>
+                            <date when="1753">1753</date>
+                        </imprint>
+                        <extent>293 p.</extent>
+                    </monogr>
+                    <idno type="google">https://books.google.fr/books?id=-K05AAAAcAAJ</idno>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb307495270</idno>
+                    <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k856908</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName ref="#laugierMarcAntoine"> <forename>Marc-Antoine</forename>
+                            <surname>Laugier</surname> </persName> </author>
+                        <title type="main">Essai sur l’architecture</title>
+                        <title type="sub"
+                            >Nouvelle édition, revue, corrigée, &amp; augmentée ; avec un dictionnaire des termes, et des Planches qui en facilitent l’explication</title>
+                        <imprint>
+                            <pubPlace>À Paris</pubPlace>
+                            <publisher>Chez Duchesne</publisher>
+                            <date when="1755">1755</date>
+                        </imprint>
+                        <extent>318 p.</extent>
+                    </monogr>
+                    <idno type="google">https://books.google.fr/books?id=IfNbAAAAcAAJ</idno>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb33995915x</idno>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30749528b</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName ref="#laugierMarAntoine"> <forename>Marc-Antoine</forename>
+                            <surname>Laugier</surname> </persName> </author>
+                        <title>Observations sur l’architecture</title>
+                        <imprint>
+                            <pubPlace>À La Haye</pubPlace>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Chez Saillant</publisher>
+                            <date when="1765">1765</date>
+                        </imprint>
+                        <extent>326 p.</extent>
+                    </monogr>
+                    <idno type="google">https://books.google.fr/books?id=baw5AAAAcAAJ</idno>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb307495348</idno>
+                    <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k85694n</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName ref="#blondelJacquesFrançois">
+                               <forename>Jacques-François</forename>
+                               <surname>Blondel</surname>
+                            </persName>
+                        </author>
+                        <title>Discours sur la manière d’étudier l’architecture et les arts qui sont relatifs à celui de bastir, prononcé par M. Blondel,… à l’ouverture de son deuxième cours public sur l’architecture, le 16 juin 1747</title>
+                        <imprint>
+                            <publisher/>
+                            <pubPlace/>
+                            <date notBefore="1747">[ap. 1747]</date>
+                        </imprint>
+                        <extent>In-4°, 14 p.</extent>
+                    </monogr>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb301151576</idno>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30115158j</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author> <persName ref="#blondelJacquesFrançois">
+                            <forename>Jacques-François</forename> <surname>Blondel</surname> <idno/>
+                            </persName> </author>
                         <title>Cours d’architecture, ou Traité de la Décoration, Distribution &amp; Construction des Bâtiments ; Contenant les Leçons données en 1750, &amp; les années suivantes, par J. F. Blondel, Architecte dans son École des Arts</title>
                         <imprint>
                             <biblScope>Tome second</biblScope>
@@ -166,7 +255,124 @@
                             <date when="1771">MDCCLXXI</date>
                         </imprint>
                     </monogr>
-                    <idno>http://gallica.bnf.fr/ark:/12148/bpt6k6558006r</idno>
+                    <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k6558006r</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName ref="#pattePierre">
+                                <forename>Pierre</forename>
+                                <surname>Patte</surname>
+                            </persName>
+                        </author>
+                        <title>Monuments érigés en France à la gloire de Louis XV , précédés d’un tableau du progrès des arts &amp; des sciences sous ce règne</title>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>l’Auteur</publisher>
+                            <publisher>Desaint</publisher>
+                            <publisher>Saillant</publisher>
+                            <date when="1767">1767</date>
+                        </imprint>
+                        <extent>[4]-232 p.-LVII p. de pl. ; in-fol.</extent>
+                    </monogr>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb39316887w</idno>
+                    <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k1041169x</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName ref="#pattePierre">
+                                <forename>Pierre</forename>
+                                <surname>Patte</surname>
+                            </persName>
+                        </author>
+                        <title>Mémoires sur les objets les plus importans de l’architecture</title>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Rozet</publisher>
+                            <date when="1769">1769</date>
+                        </imprint>
+                        <extent>[IV]-375 p. : ill. ; in-4°</extent>
+                    </monogr>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb31067097n</idno>
+                    <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k85699c</idno>
+                    <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k5701519t</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName ref="#blondelJacquesFrançois">
+                                <forename>Jacques-François</forename>
+                                <surname>Blondel</surname>
+                            </persName>
+                        </author>
+                        <title type="main">Cours d’architecture</title>
+                        <title type="sub">ou Traité de la décoration, distribution et construction des bâtiments, contenant les leçons données en 1750 et les années suivantes</title>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Desaint, puis Vve Desaint</publisher>
+                            <date from="1771" to="1777">1771-1777</date>
+                        </imprint>
+                        <extent>6 vol. ; in-8°</extent>
+                    </monogr>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30115156v</idno>
+                    <idno type="gallica" n="vol1">http://gallica.bnf.fr/ark:/12148/bpt6k65578971</idno>
+                    <idno type="gallica" n="vol2">http://gallica.bnf.fr/ark:/12148/bpt6k6558006r</idno>
+                    <idno type="gallica" n="vol3">http://gallica.bnf.fr/ark:/12148/bpt6k6557942d</idno>
+                    <idno type="gallica" n="vol4">http://gallica.bnf.fr/ark:/12148/bpt6k6557915h</idno>
+                    <idno type="gallica" n="vol5">http://gallica.bnf.fr/ark:/12148/bpt6k6558090p</idno>
+                    <idno type="gallica" n="vol6">http://gallica.bnf.fr/ark:/12148/bpt6k6557566f</idno>
+                    <idno type="gallica" n="plt1">http://gallica.bnf.fr/ark:/12148/bpt6k6566294p</idno>
+                    <idno type="gallica" n="plt2">http://gallica.bnf.fr/ark:/12148/bpt6k65662953</idno>
+                    <idno type="gallica" n="plt3">http://gallica.bnf.fr/ark:/12148/bpt6k6566338d</idno>
+                    <idno type="gallica" n="plt4">http://gallica.bnf.fr/ark:/12148/bpt6k6566339t</idno>
+                    <idno type="gallica" n="plt3-4">http://gallica.bnf.fr/ark:/12148/bpt6k65687852</idno>
+                    <idno type="gallica" n="plt5">http://gallica.bnf.fr/ark:/12148/bpt6k65602564</idno>
+                    <idno type="gallica" n="plt6">http://gallica.bnf.fr/ark:/12148/bpt6k6560257j</idno>
+                    <idno type="gallica" n="pl1-2">http://gallica.bnf.fr/ark:/12148/bpt6k6574362q</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName>
+                                <forename>Le Camus de Mézières</forename>
+                                <surname>Nicolas</surname>
+                            </persName>
+                        </author>
+                        <title>Le génie de l’architecture, ou L’analogie de cet art avec nos sensations</title>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>l’auteur</publisher>
+                            <date when="1780">1780</date>
+                        </imprint>
+                        <extent>1 vol. in-8° ; VII-276 p.</extent>
+                    </monogr>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30763829g</idno>
+                    <idno type="gallica">https://gallica.bnf.fr/ark:/12148/bpt6k857133</idno>
+                </biblStruct>
+                <!-- Memmo, A., Elementi dell’architettura Lodoliana o sia l’arte del fabbricare con solidità scientifica e con eleganza non capricciosa. Libri due. Rome, 1786. -->
+                <!-- Viel de St Maux, J.-L., Lettres sur l’architecture des anciens et celle des modernes. Paris, 1779-87. -->
+                <!-- Quatremère de Quincy, A.-Chr., ‘Architecture’, Encyclopédie Méthodique.Architecture. Paris, 1788, vol. I, pp. 109-116. -->
+                <!-- Reynaud, L., ‘Architecture’, Encyclopédie Nouvelle. Paris, 1836-41, vol. 1, pp. 770-78.  -->
+                <!-- Charles-Nicolas Cochin -->
+                <!-- Charles-François Viel -->
+                <!-- Antoine-Chrysostome Quatremère de Quincy -->
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName>
+                                <forename>Louis-Pierre</forename>
+                                <surname>Baltard</surname>
+                            </persName>
+                        </author>
+                        <title>Introduction au cours de théorie d’architecture de l’année 1840</title>
+                        <imprint>
+                            <publisher>École royale des beaux-arts.</publisher>
+                            <pubPlace>Paris</pubPlace>
+                            <date when="1840">1840</date>
+                        </imprint>
+                        <extent>28 p., 8°</extent>
+                    </monogr>
                 </biblStruct>
                 <biblStruct>
                     <monogr>
@@ -190,6 +396,55 @@
                     <idno type="udemCote">NA 2520 R65 1847 suppl.</idno>
                     <note type="subject"> <p>	Construction -- Manuels</p>
                         <p>Architecture -- Manuels</p> <p>Maçonnerie -- Manuels</p> </note>
+                    <!-- https://lib.ugent.be/en/catalog/rug01:001709095 édition de Liège de 1848, https://lib.ugent.be/en/catalog?q=Blouet+traité, pl. http://bvpb.mcu.es/es/catalogo_imagenes/grupo.cmd?path=44004 https://books.google.be/books?vid=GENT900000134456 -->
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName ref="#reynaudLeonce">
+                                <forename>Léonce</forename>
+                                <surname>Reynaud</surname>
+                            </persName>
+                        </author>
+                        <title>Traité d’architecture</title>
+                        <edition>2e édition</edition>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Dalmont et Dunod</publisher>
+                            <date from="1860" to="1863">1860-1863</date>
+                        </imprint>
+                        <extent>2 vol. + 2 vol. de pl. ; in-4 + in-fol.</extent>
+                    </monogr>
+                    <idno type="catBnf"></idno>
+                    <idno type="gallica" n="vol1">http://gallica.bnf.fr/ark:/12148/bpt6k866310</idno>
+                    <idno type="gallica" n="pl1">http://gallica.bnf.fr/ark:/12148/bpt6k86633p</idno>
+                    <idno type="gallica" n="vol2">http://gallica.bnf.fr/ark:/12148/bpt6k86632b</idno>
+                    <idno type="gallica" n="pl2">http://gallica.bnf.fr/ark:/12148/bpt6k866341</idno>
+                    <idno type="mdz">http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10871478-7</idno>
+                    <idno type="mdz">http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10871479-7</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName ref="#guadetJulien">
+                                <forename>Julien</forename>
+                                <surname>Guadet</surname>
+                            </persName>
+                        </author>
+                        <title type="main">Éléments et théorie de l’architecture</title>
+                        <title type="sub">cours professé à l'École nationale et spéciale des beaux-arts</title>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Aulanier</publisher>
+                            <date from="1901" to="1904">1901-1904</date>
+                        </imprint>
+                        <extent>4 vol. : ill. ; gr. in-8°</extent>
+                    </monogr>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30548435r</idno>
+                    <idno type="gallica" n="vol1">http://gallica.bnf.fr/ark:/12148/bpt6k866163</idno>
+                    <idno type="gallica" n="vol2">http://gallica.bnf.fr/ark:/12148/bpt6k86617f</idno>
+                    <idno type="gallica" n="vol3">http://gallica.bnf.fr/ark:/12148/bpt6k86618s</idno>
+                    <idno type="gallica" n="vol4">http://gallica.bnf.fr/ark:/12148/bpt6k866194</idno>
                 </biblStruct>
             </listBibl>
         </body>

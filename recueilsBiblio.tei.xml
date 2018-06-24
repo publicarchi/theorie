@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="schema/theorieSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<teiCorpus xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
-                <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
+                <title xml:lang="fre"
+                    >Bibliographie de recueils d’architecture française, 1750-1850</title>
                 <principal> <persName ref="#EC"> <forename>Emmanuel</forename>
                     <surname>Château-Dutier</surname> </persName> <affiliation>
                     <orgName>Université de Montréal</orgName> <orgName type="alt">UdeM</orgName>
@@ -30,25 +30,30 @@
                 <edition n="1">première édition électronique, <date from="2017"
                     >2017</date></edition>
             </editionStmt>
-            <extent><!-- @todo : taille du fichier en octet --></extent>
+            <extent><!-- @todo taille du fichier en octet --></extent>
             <publicationStmt>
                 <publisher>Publicarchitectura</publisher>
                 <date from="2017">2017</date>
                 <idno><!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers --></idno>
-                <availability status="restricted" xml:id="theorieLicence">
+                <availability status="restricted" xml:id="theorieBiblioLicence">
                     <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
                         <p><!-- @todo renseigner le texte de la licence --></p>
                         <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/>
                     </licence>
                 </availability>
             </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Recueils d’architecture français de l’époque moderne, 1750-18450</title>
+                <title xml:lang="fre" type="sub">Corpus électroniques</title>
+                <idno type="URI"><!-- @todo --></idno>
+            </seriesStmt>
             <!--
             <notesStmt>
                 <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
                 <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
             </notesStmt>
             -->
-            <sourceDesc xml:id="theorie">
+            <sourceDesc xml:id="recueilsBiblio">
                 <p>Fichier nativement numérique. Le document s’appuie sur le cadre de travail proposé par la <ref
                     target="http://www.tei-c.org/index.xml">Text Encoding Initiative</ref>.</p>
             </sourceDesc>
@@ -118,21 +123,57 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
-            <change when="2017-06">Création du fichier corpus</change>
+            <change when="2017-08">Création du fichier</change>
         </revisionDesc>
     </teiHeader>
+    <text>
+        <body>
+            <listBibl type="biblio">
+                <biblStruct>
+                    <monogr>
+                        <title type="main">Architecture françoise</title>
+                        <title type="sub">ou Recueil des plans, élévations, coupes et profils des églises, maisons royales, palais, hôtels &amp; édifices les plus considérables de Paris</title>
+                        <imprint>
+                            <pubPlace>À Paris</pubPlace>
+                            <publisher>Chez Charles-Antoine Jombert</publisher>
+                            <date from="1752" to="1756">1752-1756</date>
+                        </imprint>
+                        <extent>4 vol., pl., in-fol.</extent>
+                    </monogr>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30115155h</idno>
+                    <idno type="gallica" n="vol1">http://gallica.bnf.fr/ark:/12148/bpt6k108033j</idno>
+                    <idno type="gallica" n="vol2">http://gallica.bnf.fr/ark:/12148/bpt6k108034x</idno>
+                    <idno type="gallica" n="vol3">http://gallica.bnf.fr/ark:/12148/bpt6k1080325</idno>
+                    <idno type="gallica" n="vol4">http://gallica.bnf.fr/ark:/12148/bpt6k1080359</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <forename>Jean-François</forename>
+                            <nameLink>de</nameLink>
+                            <surname>Neufforge</surname>
+                        </author>
+                        <title>Recueil élémentaire d’architecture</title>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>l’Auteur</publisher>
+                            <date from="1757" to="1768">1757-1768</date>
+                        </imprint>
+                        <extent>8 tomes en 6 vol. pl. gravées : gravure à l’eau-forte</extent>
+                    </monogr>
+                    <note>
+                        <p>Tomes I et II. Ordres d'architecture d'après l'opinion des Anciens et le sentiment des Modernes..., 1757-1758 ; Tomes III et IV. Distributions de bâtimens bourgeois..., 1760-1761 ; Tome V. Cheminées, bordures, plafonds..., jardins..., [1763] ; Tome VI. Places triomphales et publiques, hôtels-de-ville, châteaux..., [1765] ; Tome VII. Églises, chapelles, salles de spectacle..., 1767 ; Tome VIII. Églises, chapelles, salles de spectacle..., 1768</p>
+                        <p>Exemplaire des EST : Un 7e volume, édition corrigée des tomes I-III, avec certaines différences dans les planches prend place dans cette suite. Une note manuscrite, en tête de l'ouvrage donne les détails relatifs à cette édition dite avec variantes</p>
+                    </note>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb31010621b</idno>
+                    <idno type="gallica" n="vol1">http://gallica.bnf.fr/ark:/12148/btv1b84559144</idno>
+                    <idno type="gallica" n="vol2">http://gallica.bnf.fr/ark:/12148/btv1b8455913q</idno>
+                    <idno type="gallica" n="vol3">http://gallica.bnf.fr/ark:/12148/btv1b8455911w</idno>
+                    <idno type="gallica" n="vol4">http://gallica.bnf.fr/ark:/12148/btv1b8455909t</idno>
+                    <idno type="gallica" n="vol5">http://gallica.bnf.fr/ark:/12148/btv1b8455910g</idno>
+                </biblStruct>
+            </listBibl>
+        </body>
+    </text>
 
-    <!-- Inclusion du fichier Ledoux -->
-    <xi:include href="ledoux/ledoux1804.tei.xml" parse="xml">
-        <xi:fallback>Fichier TEI de Ledoux non trouvé</xi:fallback>
-    </xi:include>
-    <!-- Inclusion du fichier biblio -->
-    <xi:include href="theorieBiblio.tei.xml" parse="xml">
-        <xi:fallback>Fichier TEI de biblio théorie non trouvé</xi:fallback>
-    </xi:include>
-    <!-- Inclusion du fichier index -->
-    <xi:include href="authors.tei.xml" parse="xml">
-        <xi:fallback>Fichier TEI d’index non trouvé</xi:fallback>
-    </xi:include>
-
-</teiCorpus>
+</TEI>
