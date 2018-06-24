@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/theorieSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Notice rapide sur la vie et les ouvrages de Claude-Nicolas Ledoux</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Publicarchitectura</publisher>
+        <date from="2017">2018</date>
+        <idno><!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers --></idno>
+        <availability status="restricted" xml:id="cellerie1806Licence">
+          <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
+            <p><!-- @todo renseigner le texte de la licence --></p>
+            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
+        <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
+        <idno type="URI"><!-- @todo --></idno>
+      </seriesStmt>
+      <!--<notesStmt>
+            <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+            <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+         </notesStmt>-->
+      <sourceDesc xml:id="cellerier1806">
+        <biblStruct>
+          <monogr>
+            <author>J. C. [Jacques Cellerier]</author>
+            <title>Notice rapide sur la vie et les ouvrages de Claude-Nicolas Ledoux</title>
+            <imprint>
+              <publisher>Impr. des Annales de l'architecture et des arts</publisher>
+              <date>[1806]</date>
+            </imprint>
+          </monogr>
+          <idno>http://gallica.bnf.fr/ark:/12148/bpt6k5623242z/</idno>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>L’édition de ce texte s’inscrit dans un projet collaboratif d’édition numérique de textes fondamentaux sur l’architecture moderne.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction>
+          <p>La syntaxe originale des œuvres a été respectée et modernisée en suivant les indications de Bernard Barbiche, <ref type="external" target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes">Conseils pour l’édition des textes de l’époque moderne (XVI<hi rend="superscript">e</hi>-XVIII<hi rend="superscript">e</hi> siècle)</ref>.</p>
+        </correction>
+        <hyphenation>
+          <p>Pour les ouvrages imprimés, il n’a pas été tenu compte de l’hyphénation.</p>
+        </hyphenation>
+        <interpretation>
+          <p>Les interprétations sont traitées au moyen d’un élément supplied ou bien sont renvoyées en notes. Une mention de responsabilité est fournie grâce à l’attribut resp sur le passage concerné.</p>
+        </interpretation>
+        <normalization>
+          <p>La ponctuation ainsi que les majuscules ont été normalisées. Les abréviations ont été développées.</p>
+        </normalization>
+        <stdVals>
+          <p>On utilise...</p>
+        </stdVals>
+        <quotation>
+          <p>Les citations dans le texte sont encodées soit au moyen d’un élément quote, soit au moyen d’un élément...</p>
+        </quotation>
+      </editorialDecl>
+      <refsDecl>
+        <p>Description du système de référence canonique.</p>
+        <!-- @todo à renseigner avec une expression régulière -->
+      </refsDecl>
+      <samplingDecl>
+        <p>Échantillonnage</p>
+        <!-- @todo modifier à la fin du projet -->
+      </samplingDecl>
+      <variantEncoding method="location-referenced" location="external"/>
+    </encodingDesc>
+    <profileDesc>
+      <creation when="2017">2017</creation>
+      <langUsage>
+        <language ident="fre" usage="98">Français (langue principale du corpus)</language>
+        <language ident="lat" usage="2">Latin</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+          <term>Dix-huitième siècle</term>
+          <term>France</term>
+        </keywords>
+        <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+          <term>Dix-neuvième siècle</term>
+          <term>France</term>
+        </keywords>
+        <keywords xml:lang="eng"
+          scheme="http://id.loc.gov/authorities/about.html#lcsh">
+          <term>Eighteenth century</term>
+          <term>France</term>
+        </keywords>
+        <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+          <term>Nineteenth century</term>
+          <term>France</term>
+        </keywords>
+        <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+          <term>Text</term>
+        </classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2017-06">Création du fichier</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage>
+        <titlePart>Notice<lb/> 
+          rapide<lb/> 
+          sur la vie et les ouvrages<lb/> 
+          de Claude-Nicolas <hi rend="capital">Ledoux</hi></titlePart>
+        <titlePart>Membre de l’ancienne Académie Royale d’architecture</titlePart>
+      </titlePage>
+    </front>
+    <body>
+      <div>
+        <head>Notice 
+          <lb/>rapide 
+          <lb/>sur la vie et les ouvrages 
+          <lb/>de Claude-Nicolas Ledoux, 
+          <lb/>Membre de l’ancienne Académie Royale d’Architecture</head>
+        <quote>Les Arts sont à l’homme ce que les rayons du soleil sont à la nature. <hi rend="italic">Mercure trismegiste</hi></quote>
+        <!-- encoder comme épigraphe -->
+        <p>Claude-Nicolas <hi rend="capital">Ledoux</hi>, naquit en 1736, à Dormant, département de la Marne ; ses parens, peu fortunés, l’envoyèrent à <placeName>Paris</placeName> pour y faire ses études ; il entra au <orgName>Collège de Beauvais</orgName> comme boursier, et en sortit à 15 ans. Il se livra alors tout entier aux arts du dessin, pour lesquels il avait un penchant décidé.</p>
+        <p>Ses premiers essais furent dans la gravure ; il grava des batailles pour fournir à ses dépenses.</p>
+        <p>Mais bientôt son goût l’entraîna vers l’art dans lequel il s’est rendu si célèbre ; il suivit, d’abord le cours d’architecture de <persName>Blondel</persName>, professeur, dont le zèle ardent a contribué d’une manière si efficace à propager l’étude de l’architecture ; il travailla ensuite chez <persName>Trouard</persName>, architecte du roi.</p>
+        <p>Ledoux, avec une âme ardente, un amour passionné pour la gloire, ne put long-temps s’assujétir aux principes<pb/><fw
+          type="pageNum"
+          >4</fw> de ces écoles ; il lui fallait un champ plus vaste pour se livrer à tout l’essor de son génie.</p>
+        <p>Doué d’un extérieur agréable, d’un esprit fin, il avait ces manières aisées, ce ton d’assurance qui séduisent et inspirent la confiance ; il fut bientôt répandu dans le monde d’une manière avantageuse.</p>
+        <p>Le premier hôtel qu’il bâtit pour le <persName>comte d’Halleville</persName>, <placeName>rue Michel-le-Comte</placeName>, lui mérita les suffrages du public et des gens de l’art, et le fit rechercher par les riches propriétaires.</p>
+        <p>Il construisit, successivement et en peu d’années, les <placeName>hôtels d’Usèz, rue Montmartre</placeName> ; <placeName>du prince de Montmorency, au coin du Boulevard</placeName> ; <placeName>de M. Hocquart, rue de la Chaussée-d’Antin</placeName> ; <placeName>de <abbr>Mad.</abbr> Thélusson, rue de Provence</placeName> ; <placeName>de <abbr>M.</abbr> de Montesquiou, rue de Lille</placeName>, les <placeName>maisons de <abbr>Mlle</abbr> Guimard</placeName> ; <placeName>de <abbr>Mad.</abbr> Leduc</placeName> ; le <placeName>château de Bénouville en Normandie</placeName> ; et beaucoup d’autres maisons particulières dont il serait trop long de faire ici l’énumération.</p>
+        <p>La réputation de Ledoux allait croissant en raison de ses succès. <persName><abbr>Mad.</abbr> Dubarry</persName> le choisit, en 1771, pour son architecte. Il fit construire pour elle, <placeName>le pavillon de Louveciennes</placeName>, qui se voit de <placeName>la route de Saint-Germain-en-Laye</placeName></p>
+        <gap reason="sampling"/>
+        <pb/><fw type="pageNum">8</fw>
+        <p>Nous renvoyons à son grand ouvrage ; on y trouvera les détails de l’immense quantité d’édifices de tous genres qu’il a fait ériger, ou qu’il a projetés. Près de 600 planches y sont employées, et en présentent les plans, coupes, façades géométrales, et vues perspectives : c’est une encyclopédie architecturale, un véritable dictionnaire élémentaire, où l’exemple se trouve toujours à côté du précepte.</p>
+        <p>Nous dirons avec l’auteur de l’annonce du Prospectus, que ce n’est point une description sèche et aride des monumens que l‘on doit à l’architecture. Ledoux l’a semée d’observations profondes et judicieuses sur la salubrité et la situation des constructions, la variété des formes, le goût, le caractère, la convenance et la beauté. Les propriétaires y trouveront des distributions, des décorations de tous genres ; les artistes, des motifs que leur génie multipliera ; les administrations des vues d’économie politique, de bienfaisance, de commerce, d’industrie, etc.</p>
+        <p>Cet ouvrage, en un mot, étonnant par sa vaste étendue, par l’érudition, le génie, le style magique et poétique de l’auteur ; par l’exécution typographique, et celles des planches, excite l’admiration des gens de l’art, et honore les vastes connaissances de son auteur.</p>
+        <p>On reproche assez généralement à cet architecte d’avoir employé, dans le texte de son ouvrage, un style ampoulé et surchargé de figures ; on désirerait plus de <pb/><fw type="pageNum">9</fw> simplicité et moins d’exaltation dans un livre élémentaire. </p>
+        
+      </div>
+    </body>
+  </text>
+</TEI>

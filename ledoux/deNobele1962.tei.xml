@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/theorieSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Avertissement de la réimpression de Nobele en 1961</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Publicarchitectura</publisher>
+        <date from="2017">2017</date>
+        <idno><!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers --></idno>
+        <availability status="restricted" xml:id="deNobele1961Licence">
+          <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
+            <p><!-- @todo renseigner le texte de la licence --></p> <graphic
+            url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/> </licence>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
+        <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
+        <idno type="URI"><!-- @todo --></idno>
+      </seriesStmt>
+      <!--<notesStmt>
+            <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+            <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+         </notesStmt>-->
+      <sourceDesc xml:id="deNobele1961">
+        <biblStruct>
+          <monogr>
+            <title>L’architecture considérée sous le rapport de l’art, des mœurs et de la législation</title>
+            <author>Claude-Nicolas Ledoux</author>
+            <imprint>
+              <publisher>l’auteur (Paris) </publisher>
+              <publisher>Réimpression de F. de Nobele</publisher>
+              <date>1961</date>
+            </imprint>
+          </monogr>
+          <idno>https://gallica.bnf.fr/ark:/12148/bpt6k5401411f</idno>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>L’édition de ce texte s’inscrit dans un projet collaboratif d’édition numérique de textes fondamentaux sur l’architecture moderne.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction>
+          <p>La syntaxe originale des œuvres a été respectée et modernisée en suivant les indications de Bernard Barbiche, <ref
+            type="external"
+            target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
+            >Conseils pour l’édition des textes de l’époque moderne (XVI<hi rend="superscript">e</hi>-XVIII<hi rend="superscript">e</hi> siècle)</ref>.</p>
+        </correction>
+        <hyphenation>
+          <p>Pour les ouvrages imprimés, il n’a pas été tenu compte de l’hyphénation.</p>
+        </hyphenation>
+        <interpretation>
+          <p>Les interprétations sont traitées au moyen d’un élément supplied ou bien sont renvoyées en notes. Une mention de responsabilité est fournie grâce à l’attribut resp sur le passage concerné.</p>
+        </interpretation>
+        <normalization>
+          <p>La ponctuation ainsi que les majuscules ont été normalisées. Les abréviations ont été développées.</p>
+        </normalization>
+        <stdVals>
+          <p>On utilise...</p>
+        </stdVals>
+        <quotation>
+          <p>Les citations dans le texte sont encodées soit au moyen d’un élément quote, soit au moyen d’un élément...</p>
+        </quotation>
+      </editorialDecl>
+      <refsDecl>
+        <p>Description du système de référence canonique.</p>
+        <!-- @todo à renseigner avec une expression régulière -->
+      </refsDecl>
+      <samplingDecl>
+        <p>Échantillonnage</p>
+        <!-- @todo modifier à la fin du projet -->
+      </samplingDecl>
+      <variantEncoding method="location-referenced" location="external"/>
+    </encodingDesc>
+    <profileDesc>
+      <creation when="2017">2017</creation>
+      <langUsage>
+        <language ident="fre" usage="98">Français (langue principale du corpus)</language>
+        <language ident="lat" usage="2">Latin</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+          <term>Dix-huitième siècle</term>
+          <term>France</term>
+        </keywords>
+        <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+          <term>Dix-neuvième siècle</term>
+          <term>France</term>
+        </keywords>
+        <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+          <term>Eighteenth century</term>
+          <term>France</term>
+        </keywords>
+        <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+          <term>Nineteenth century</term>
+          <term>France</term>
+        </keywords>
+        <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+          <term>Text</term> </classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2017-06">Création du fichier</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="foreword">
+        <head>Avertissement</head>
+        <p>L’œuvre d’architecture de <persName>Claude-Nicolas Ledoux</persName> devait se composer de cinq gros volumes ainsi que l’annonce un prospectus publié en 1802, qui ne nous apporte guère de précisions quant à leur contenu. Mais la mort de l’auteur interrompit la publication, nous dit le bibliographe <persName>Quérard</persName>. Il faut cependant noter que notre architecte céda ses droits sur la publication de son œuvre à <persName>Vignon</persName> moyennant la somme de vingt-quatre mille francs, somme dont on ne retrouva d’ailleurs pas trace à sa mort ; <persName>Vignon</persName>, également architecte, était son ami, et peut-être son fils naturel.</p>
+        <p>On sait seulement que ces cinq volumes devaient comprendre toutes les œuvres et projets de <persName>Ledoux</persName>. Il est certain que, en plus des cent vingt-cinq planches dont se compose le tome premier – seul paru – de l’édition de <date
+          when="1804"
+          >1804</date>, d’autres étaient prêtes et tirées, ou du moins gravées, avant le décès de l’artiste. C’est ce qui ressort de l’examen de deux recueils contenant des planches de <persName>Ledoux</persName> dont certains cuivres portent déjà la date de <date
+          when="1771"
+          >1771</date> (recueil <persName>André Carlhian</persName> et recueil de la Bibliothèque d’Art et d’Archéologie) et de plusieurs exemplaires de l’édition en deux volumes publiée par <persName>Ramée</persName> en <date
+          when="1847">1847</date>.</p>
+        <p>Quelques mots sur chacun de ces volumes :</p>
+        <p>Le recueil <persName>André Carlhian</persName>, déjà décrit par les bibliographes de <persName>Ledoux</persName>, se compose de 48 planches à raison d’un ou plusieurs cuivres par planches. Certains de ces cuivres sont de dimensions différentes de ceux qui ont été tirés plus tard dans les éditions de <date
+          when="1804">1804</date> ou de <date when="1847"
+          >1847</date> ; d’autres ont été modifiés ultérieurement : additions de paysages, de grilles ; ornements différents, traits ombrés, plans complétés, etc. Nous avons reproduit, de ce recueil, onze documents inédits ou présentant des variantes suffisamment importantes pour pouvoir être retenus.</p>
+        <p>Quant au recueil de la Bibliothèque Doucet (Bibliothèque d’Art et d’Archéologie ; fol. Rés. 169) il se compose, comme le recueil Carlhian, de planches gravées avant l’édition de <date
+          when="1804"
+          >1804</date>, car, pour la plupart, les cuivres sont tirés sans indication générale et, en tout cas, sans numéro. Nous avons reproduit, de celui-ci, trois planches.</p>
+        <p>L’édition <persName>Lenoir</persName>, publiée avec préface par <persName>Ramée</persName>, se rencontre sous deux formes : la première présentation est en deux volumes dont un sous la date de <date
+          when="1804"
+          >1804</date> avec texte et <num>125</num> planches, et l’autre sous un titre daté de <date
+          when="1847"
+          >1847</date> et composé de <num>23o</num> nouvelles planches avec une table descriptive de celles-ci.</p>
+        <p>La seconde forme un recueil de <num>3oo</num> planches dont <num>70</num> de l’édition de <date
+          when="1804"
+          >1804</date> et <num>23o</num> planches nouvelles ; il n’y a pas de texte sauf la préface de <persName>Ramée</persName> et une table descriptive à chaque volume, table évidemment différente de celle qui accompagne le deuxième volume de la présentation décrite précédemment.</p>
+        <p>Quelles que soient les combinaisons employées par l’imprimeur ou l’éditeur, il apparaît donc que des exemplaires du premier volume de <date
+          when="1804"
+          >1804</date> restaient invendus quarante-trois ans plus tard et que furent refondus des exemplaires avec des planches déjà tirées. Quel fut le tirage initial et combien furent composés d’exemplaires en <date
+          when="1847"
+          >1847</date> ? On ne peut absolument rien dire sinon que l’ouvrage, sous n’importe quelle forme, est extrêmement rare. Est-ce la raison pour laquelle on ne le voit pas figurer dans les <pb/> bibliothèques célèbres d’architectes comme <persName>Bérard</persName>, <persName>Destailleur</persName>, <persName>Foulc</persName>, <persName>Goddé</persName>, <persName>Bertone</persName>, <persName>Mauban</persName>, <persName>Penard</persName> et autres ? Ou est-ce parce que l’opinion du XIX<hi rend="superscript">e</hi> siècle non seulement le négligea mais le méprisa ?</p>
+        <p><persName>Quérard</persName>, déjà cité, annote sa description bibliographique du commentaire suivant : <q>Mais le texte en a été écrit par <persName>Ledoux</persName> avec une emphase et des écarts d’imagination qui le rendent peu intelligible</q>. De son côté, <persName>Ernest Vinet</persName>, autre bibliographe et, de plus, bibliothécaire de l’École nationale des Beaux-Arts s’exprime ainsi : <q>Le texte de ce volume nous autorise à croire que la perte n’est pas énorme (l’interruption de la publication). Il est impossible de parler d’architecture avec une emphase plus ridicule</q>.</p>
+        <p>Ce texte est peut-être illisible ; <persName>Marcel Raval</persName> le qualifie d’<q>atteint de moralisme frissonnant, de prophétisme éperdu, de naturisme ingénu</q>, le compare à <q>une échauffourée d’abstractions et de symboles qui s’abattent en de pesantes prosopopées, dans un cliquetis d’apostrophes et de majuscules</q> ; nous n’avons cependant pas cru pouvoir le séparer de la présente reproduction de son œuvre. Probablement conçue et écrite dans les geôles de la Révolution, cette littérature témoigne, malgré ses excès, du génie de son auteur qui eut la prescience du rôle que l’architecture avait à jouer au milieu des idées philosophiques nouvelles. Ce style romantico-social n’est d’ailleurs pas seulement de la littérature : <persName>Claude-Nicolas Ledoux</persName> en lit la transcription matérielle en dessinant la première ville ouvrière, <emph
+          rend="capital"
+          >La ville idéale</emph>, ceci bien avant le siècle de l’industrie. On sait qu’une ébauche de cette <soCalled>cité radieuse</soCalled> avant la lettre fut construite et qu’un témoignage en subsiste — après avoir subi bien des vicissitudes — à <placeName>Arc-et-Senans</placeName>, en Franche-Comté.</p>
+        <p>C’est bien l’incompréhension du dix-neuvième siècle qui éteignit ou étouffa, comme on voudra, son souvenir : <persName>Madame du Barry</persName>, curieuse de connaître l’hôtel de <persName>la Guimard</persName> où le tout-Paris d’alors se précipitait, ne put résister à l’envie de voir l’œuvre due à son protégé, dont on parlait tant ; elle vint donc, masquée, afin de n’être point reconnue en un tel lieu de débauche. Quant au menu peuple de <persName>Paris</persName>, il bailla d’étonnement devant l’<placeName>hôtel Thélusson</placeName>. Telle était la curiosité qu’il soulevait chez ses contemporains.</p>
+        <p>Par contre, la conspiration du silence des bourgeois du siècle de la machine, l’urbanisme du <placeName>baron Haussmann</placeName>, l’impopularité des <placeName>barrières de Paris</placeName>, la pioche du vandalisme, le feu, tous ces éléments ont persécuté, détruit et anéanti la plupart des monuments érigés par <persName>Claude-Nicolas Ledoux</persName>.</p>
+        <p>Il nous a donc paru utile de publier intégralement ce que nous connaissons de son œuvre gravé ; l’amateur, l’architecte, le bibliothécaire trouveront ici <num>355</num> planches tirées de l’édition originale de <date
+          when="1804"
+          >1804</date> et de l’édition <persName>Ramée</persName>. Grâce à l’obligeance de Mademoiselle <persName>Suzanne Damiron</persName>, directeur de la Bibliothèque d’Art et d’Archéologie, et à l’amabilité de <persName>M. André Carlhian</persName>, nous avons également pu reproduire plusieurs planches restées inédites et comparer les deux recueils entre eux. On trouvera, à la table, la description de toutes les planches. </p>
+        <p>Toute notre gratitude va également à nos confrères MM. <persName>Vincent</persName>, <persName>Fréal et Cie</persName> qui ont mis à notre disposition les archives de leur maison d édition.</p>
+        <p>Pour terminer, précisons que nous n’avons pas la prétention d’apporter un élément nouveau à la biographie de <persName>Cl.-N. Ledoux</persName> ; tous nos renseignements ont pour source les ouvrages de <persName>Madame <hi rend="capital">Leyallet-Haug</hi></persName> (Paris et Strasbourg, <date
+          when="1934">1934</date>) et de MM. <persName rend="capital">Raval</persName> et <persName
+          rend="capital">Moreux</persName> (Paris, <date when="1945"
+          >1945</date>) auxquels nous prions le lecteur de se reporter, ainsi que la thèse (non publiée) de <persName>M. J. <hi rend="capital">LANGNER</hi></persName>. </p>
+        <docAuthor>F. D. N.</docAuthor>
+      </div>
+    </body>
+  </text>
+</TEI>

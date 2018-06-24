@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/theorieSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Avertissement, de l’édition Ramée de 1847</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Publicarchitectura</publisher>
+        <date from="2017">2018</date>
+        <idno><!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers --></idno>
+        <availability status="restricted" xml:id="ramee1847Licence">
+          <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
+            <p><!-- @todo renseigner le texte de la licence --></p>
+            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
+        <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
+        <idno type="URI"><!-- @todo --></idno>
+      </seriesStmt>
+      <!--<notesStmt>
+            <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+            <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+         </notesStmt>-->
+      <sourceDesc xml:id="ramee1847">
+        <biblStruct>
+          <monogr>
+            <author>Claude-Nicolas Ledoux</author>
+            <editor>Daniel Ramée</editor>
+            <title>Architecture de C. N. Ledoux. Premier Volume contenant des plans, élévations, coupes, vues perspectives, de Palais, Hôtels-de-Ville, Temples, Bibliothèques publiques, Bourses, Théâtres, Usines, Greniers à sel, Bâtiment de graduation, Bains publics, Marchés, Églises, Cimetières, Propylées de Paris, etc., etc., etc.</title>
+            <title>Collection qui rassemble tous les genres de bâtiments employés dans l’ordre social</title>
+            <imprint>
+              <pubPlace>Paris</pubPlace>
+              <publisher>Leloir, Éditeur, 5, quai Malaquais</publisher>
+              <date>1847</date>
+            </imprint>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>L’édition de ce texte s’inscrit dans un projet collaboratif d’édition numérique de textes fondamentaux sur l’architecture moderne.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction>
+          <p>La syntaxe originale des œuvres a été respectée et modernisée en suivant les indications de Bernard Barbiche, <ref type="external" target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes">Conseils pour l’édition des textes de l’époque moderne (XVI<hi rend="superscript">e</hi>-XVIII<hi rend="superscript">e</hi> siècle)</ref>.</p>
+        </correction>
+        <hyphenation>
+          <p>Pour les ouvrages imprimés, il n’a pas été tenu compte de l’hyphénation.</p>
+        </hyphenation>
+        <interpretation>
+          <p>Les interprétations sont traitées au moyen d’un élément supplied ou bien sont renvoyées en notes. Une mention de responsabilité est fournie grâce à l’attribut resp sur le passage concerné.</p>
+        </interpretation>
+        <normalization>
+          <p>La ponctuation ainsi que les majuscules ont été normalisées. Les abréviations ont été développées.</p>
+        </normalization>
+        <stdVals>
+          <p>On utilise...</p>
+        </stdVals>
+        <quotation>
+          <p>Les citations dans le texte sont encodées soit au moyen d’un élément quote, soit au moyen d’un élément...</p>
+        </quotation>
+      </editorialDecl>
+      <refsDecl>
+        <p>Description du système de référence canonique.</p>
+        <!-- @todo à renseigner avec une expression régulière -->
+      </refsDecl>
+      <samplingDecl>
+        <p>Échantillonnage</p>
+        <!-- @todo modifier à la fin du projet -->
+      </samplingDecl>
+      <variantEncoding method="location-referenced" location="external"/>
+    </encodingDesc>
+    <profileDesc>
+      <creation when="2017">2017</creation>
+      <langUsage>
+        <language ident="fre" usage="98">Français (langue principale du corpus)</language>
+        <language ident="lat" usage="2">Latin</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+          <term>Dix-huitième siècle</term>
+          <term>France</term>
+        </keywords>
+        <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+          <term>Dix-neuvième siècle</term>
+          <term>France</term>
+        </keywords>
+        <keywords xml:lang="eng"
+          scheme="http://id.loc.gov/authorities/about.html#lcsh">
+          <term>Eighteenth century</term>
+          <term>France</term>
+        </keywords>
+        <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+          <term>Nineteenth century</term>
+          <term>France</term>
+        </keywords>
+        <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+          <term>Text</term>
+        </classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2017-06">Création du fichier</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="foreword">
+      <head>Avertissement</head>
+      <p>L’auteur de cet ouvrage est un de ces hommes qu’une critique partiale et superficielle a jeté dans l’oubli et l’indifférence dont on a enveloppé les arts et les artistes du dix-huitième siècle, parce qu’on les a jugés légèrement, non-seulement sur certaines de leurs œuvres, mais encore sans tenir le moindre compte des influences sociales sous lesquelles l’art a été conçu pendant le règne de <persName>Louis XV</persName>. Il faut convenir cependant que les architectes <persName>Antoine</persName> et <persName>Gabriel</persName> n’étaient point des hommes sans talent ; et l’étude de monuments tels que la <placeName>Monnaie de Paris</placeName> et le <placeName>Garde-Meuble de la place de la Concorde</placeName>, prouveront que, du temps de <persName>Louis XV</persName>, il y avait des hommes doués du génie de l’architecture. On a le grand tort, aujourd’hui, de mépriser l’étude des édifices des dix-septième et dix-huitième siècles, et c’est pour cette raison aussi qu’on en parle avec le plus grand dédain. Peut-être la passion pour l’art du moyen âge est-elle cause des jugements absurdes et injustes qu‘on prononce sur notre architecture postérieure à celle de la renaissance.</p>
+      <p><persName>Charles-Nicolas Ledoux</persName>, né en 1736, à <placeName>Dormans en Champagne</placeName>, eut pour maître <persName>Jacques-François Blondel</persName>, neveu du grand architecte qui bâtit la <persName>porte Saint-Denis</persName>. Ledoux a prouvé par ses ouvrages, qu’il n’était pas un homme ordinaire, pas un artiste d’un talent vulgaire. Il était doué d‘une imagination ardente et laborieuse, mais qui semble n’avoir pu souffrir aucunes bornes. Son enthousiasme et son exaltation pour l’architecture lui firent quelquefois concevoir des créations extraordinaires, excentriques même. Ledoux, théoricien plutôt qu’homme de pratique, semble avoir voulu secouer les errements indigents avec lesquels on avait, à son époque, constitué les principes d’architecture, qu’il tenta de faire sortir de la déplorable monotonie où les traditions d’école l’avaient ensevelie. Il ne connaissait naturellement que l’architecture romaine, faiblement celle de la renaissance, qu’on n’étudiait pas de son temps, mais plus particulièrement le grand style formé et pratiqué par les architectes éminents du siècle de <persName>Louis XIV</persName>. Ledoux étudiait avec une prédilection toute particulière les créations de Servandoni, et les ouvrages de ce constructeur et peintre décorateur influèrent puissamment sur le développement de son goût. Les plans de presque tous ses projets sont conçus avec liberté, habileté et élégance ; quant aux façades, elles ont souvent du grandiose ; mais l’amour de la nouveauté chez Ledoux, et l’impétuosité de son sentiment, lui firent commettre quelques fois des fautes contre le bon goût. Dans la dernière moitié de sa vie surtout, il a souvent pêché contre les règles sévères de l’esthétique en architecture.</p>
+      <p>Dans sa jeunesse, Ledoux semble s’être tenu, dans ses œuvres, aux règles consacrées par <persName>Vitruve</persName>. Mais lorsque parut la traduction française des monuments de <placeName><sic>Pœstum</sic></placeName>, de <persName>Thomas Major</persName>, par <persName>Butel-Dumont</persName>, en 1769, Ledoux semble avoir quitté ses anciens types, et alors il se mit à composer, en s’inspirant aussi des œuvres de <persName>Palladio</persName>, des façades de monuments entiers, qui témoignent toujours d’une grande imagination, mais souvent aussi d‘un trop grand laisser-aller. Il nous semble qu’il fit un abus des colonnes et des pilastres, des fenêtres circulaires, des salles et parties rondes, etc. Il supprima les cordons et les frises, les archivoltes et les chapiteaux. En examinant les œuvres d’une certaine époque de sa vie, on s’aperçoit aisément qu’il a voulu inventer une nouvelle architecture. S’il ne s’était pas trop précipité, s’il avait étudié davantage ses compositions, s’il avait mûri ses idées, peut-être aurait-il réussi à produire un style offrant un grand caractère d’originalité. On ne peut nier cependant qu’il n’y en ait beaucoup dans ses créations. Mais il n’eut pas assez de sagesse ni d’empire sur lui-même pour châtier et dompter convenablement les bizarreries de cette originalité. Il semble qu’aucune règle, qu’aucune considération ne put arrêter l’activité turbulente et inquiète de son esprit. Lorsqu’il écrit, et que le compas et la règle ne sont plus là pour le conduire et l’arrêter, sa pensée est emportée impétueusement sur les ailes rapides de l’imagination, qui la mènent dans des régions indéterminées et souvent trop éloignées du sujet qu’il traite ou des dessins qu’il explique. La cause principale de ses défauts est sans doute due à la frivolité du siècle dans lequel il vécut, et à l’éducation des artistes à son époque. Ledoux ne manquait cependant pas de connaissances, sur la mythologie ancienne surtout ; mais elles étaient indigestement classées dans son esprit, et l’artiste leur laissait prendre une direction trop indépendante, trop étrangère et surtout éloignée du sujet auquel il les rattachait. Tel il est comme écrivain, tel est-il aussi comme architecte.</p>
+      <p>Il était, toutefois, loin de copier servilement les œuvres de ses devanciers, ainsi qu’on ne l’a fait que trop souvent depuis lui. Il employait très-librement, très-habilement, avec de grandes licences, les éléments de l’art dont les monuments antiques lui fournissaient de nombreux modèles. Dans la seconde moitié de sa vie, le caractère distinctif de ses compositions, c’est un goût pour les parties lisses. Il en a peut-être même abusé, et c’est ce qui rend ses créations un peu trop froides et un peu monotones. Cela est surtout visible dans quelques-unes de ses barrières de Paris.</p>
+      <p>Parmi les œuvres de Ledoux qui doivent attirer notre attention, nous citerons d’abord l’<placeName>hôtel d’Uzès</placeName> et la porte de cet hôtel, rue Montmartre, 176<note
+        n="1">
+        <p>Pl. 152.</p>
+        </note>. Nous remarquerons à la fois de l’originalité, de l’élégance et de l’étude dans cette porte, l’un des premiers ouvrages de notre artiste. L’idée des deux colonnes triomphales est heureuse, et elles sont parfaitement bien conçues et ajustées. Les trophées militaires qui les décorent sont sculptés par <persName>F. Lecomte</persName>, membre de l’<orgName>Académie des Beaux-Arts</orgName>. Ledoux revêtit l’<placeName>hôtel d’Uzès</placeName> d’une nouvelle façade<note
+        n="2">
+        <p>Pl. 153, 154, 155</p>
+        </note>, et dans cet ouvrage l’on voit de l’harmonie, de l’application, de l’étude et du goût. L’ordre corinthien y est employé d’une manière heureuse et agréable. Le péristyle sur la cour est d’une belle proportion, et il se soude convenablement au reste de l’hôtel. La façade sur le jardin est fort simple et composée avec goût. On y voit dominer un péristyle à hut colonnes qui a du grandiose.</p>
+      <p>Ledoux est l’auteur de l’<placeName>hôtel<note n="1"><p>Pl. 160 à 166</p></note>/ de madame Thélusson</placeName>, ainsi que de l’entrée de cette habitation, à laquelle il donna l‘apparence d’un arc de triomphe d’ordre dorique. L’hôtel Thélusson et son entrée étaient situés <placeName>rue de Provence</placeName>, en face la <placeName>rue Laffitte</placeName>. L’entrée triomphale sur la rue de Provence avait dix-huit mètres de longueur. Quoiqu’on ait critiqué, dans le temps, la porte imitant un arc de triomphe, comme peu convenable pour l’habitation d’un particulier, son ensemble offrait cependant un aspect imposant et neuf, et prouvait que son auteur avait de l’imagination et de l’originalité.</p>
+      <p>Au coin de la <placeName>rue Ollivier</placeName> et de celle <placeName>Saint-Georges</placeName>, on voit encore aujourd‘ui la façade d’une maison<note n="2"><p>Pl. 178 à 180</p></note> que Ledoux éleva pour <persName>M. Hosten</persName>. Là, notre architecte s’est inspiré du style de <persName>Palladio</persName>, et nous y remarquons beaucoup de simplicité et d’élégance</p>
+      <p>Dans les plans de la maison<note n="3"><p>Pl. 168 à 172</p></note> projetée pour <persName>madame Dubarry</persName>, nous voyons régner une parfaite convenance et une habileté de distribution que l’on ne rencontre que très-rarement chez la plupart de nos architectes. Les façades de cet hôtel, qui aurait été un vrai palais s’il eût été exécuté, sont conçues avec coquetterie, et offrent en même temps de la majeté, quoique d’une très-grande simplicité. L’architecte avait choisi l’ordre ionique pour l’hôtel que devait habiter la royale maîtresse, <placeName>rue d’Artois</placeName>, aujourd’hui <placeName>rue Laffitte</placeName>.</p>
+      <p>Ledoux conçut un projet d’écuries<note n="4"><p>Pl. 173 à 174</p></note> pour <persName>madame Dubarry</persName>, à <placeName>Versailles</placeName>, et qui porte tout à fait le caractère que doit avoir une semblable construction. L’artiste l’a composé avec une grande sévérité de style, et a choisi l’ordre dorique. La porte de l’élévation sur l’avenue de Versailles est élégante et fort bien ajustée.</p>
+      <p>Nous recommandons à l’attention des architectes la jolie façade de la maison de <persName>mademoiselle Guimard</persName><note n="5"><p>Pl. 175 à 176</p></note>, qui a été copiée souvent par bon nombre d’architectes, qui se sont bien gardés de faire connaître l’original.</p>
+      <p>En 1773, Ledoux fut nommé, à l’âge de trente-sept ans, architecte du roi, par <persName>M. de Saint-Florentin duc de La Vrillière</persName>, et <persName>Louis XV</persName> le chargea immédiatement de construire, à <placeName>Luciennes</placeName>, un château digne de la résidence du roi. La mort du monarque interrompit l’exécution de ce projet. Nous avons, dans trois planches<note n="6"><p>Pl. 267 à 269</p></note> tous les plans et les façades de ce château, dont la longueur ne devait pas avoir moins de cent-dix-neuf mètres. Trois autres planches nous donnent les plans et les élévations du <placeName>pavillon de Luciennes ou Louveciennes</placeName>, d’ordre ionique et d’une élégante et gracieuse composition.</p>
+      <p>Dès l’année 1782, le commerce de la ville de <placeName>Paris</placeName> se plaignit au gouvernement qu’il ne pouvait plus soutenir la concurrence avec la fraude qui se pratiquait sur les limites de la capitale. Il fut résolu d’enfermer <placeName>Paris</placeName> dans une enceinte sur laquelle on établirait des barrières. C’est pendant cette année 1782 que Ledoux fut nommé architecte des Fermes. L’année suivante, on fixa les lignes et les plans généraux des bornages et des constructions. C’était sous l’administration de <persName>M. Joly de Fleury</persName>, contrôleur-général des finances. Ledoux, dont on reconnaissait le mérite, fut chargé de la composition et de l’exécution des <placeName>barrières de Paris</placeName> qui existent encore aujourd’hui. On ne peut nier qu’il n’y ait une grande variété dans les <soCalled>Propylées</soCalled> de Paris, comme les appelle Ledoux ; ces barrières témoignent d’une manière irrécusable de la fécondité de son imagination. Parmi elles, nous citerons comme les plus remarquables celles des Bons-Hommes, d’Italie, de Pantin, de la Villette, de l’Étoile ou Champs-Élysées, de Monceaux, du Maine, de Charonne, et, par-dessus tout, les colonnes triomphales de la barrière du Trône.</p>
+      <p>Ces monuments de toutes formes et de toutes grandeurs ont été élevés avec solidité, et remplissent à l’intérieur toutes les exigences du service. Les plans sont très-variés et conçus avec habileté. Quant aux façades, c’est dans leur composition que Ledoux a souvent pêché contre le bon goût ; c’est contre elles que se sont dirigées toutes les attaques de la critique. On ne peut cependant pas s’empêcher de s’arrêter à la barrière des Bons-Hommes, dont la façade occidentale offre un emploi heureux des éléments de l’architecture grecques. La barrière d’Italie est d’une belle composition ; celle de la Villette n’est point non plus une création sans mérite ; mais il est malheureux de voir, dans celle de l’Étoile et quelques autre,s cet emploi bizarre d’assises carrées et circulaires pour les colonnes.</p>
+      <p>Sous le règne du <persName>grand Frédéric</persName>, vers 1783, l’envoyé de Prusse demanda à Ledoux un projet d’Hôtel-de-Ville pour <placeName>Neufchatel</placeName> en Suisse. Nous avons les plans, coupes et élévations de ce monument rendus par quatre de nos planches<note
+        n="7">
+        <p>Pl. 37 à 40</p>
+        </note>. Nous retrouvons dans ce projet l’originalité de l’auteur, et la façade de l’Hôtel-de-Ville de Neufchatel est empreinte, quant à l’ensemble, de ce grandiose qui frappe dans l’architecture du règne de Louis XIII. Le péristyle ionique se soude cependant mal au reste de la façade. Notre architecte n’a point sur l’appuyer sur des pilastres, ayant choisi l’ordre qui n’en admet point.</p>
+      <p>Les plans de son projet de palais pour le gouverneur d’<placeName>Aix</placeName> sont étudiés avec art, mais l’extérieur rentre dans le caractère qu’il a donné à ses barrières ; on y remarque cependant de la légèreté et de l’élégance.</p>
+      <p>Pendant son premier ministère (de 1788 à 1789), <persName>Necker</persName> ordonna ) Ledoux un projet pour une Caisse d’escompte. Nous avons deux projets de ce monument, qui n’a pas été exécuté par suite de la révolution qui éclata bientôt après.</p>
+      <p>La réputation de Ledoux s’étant répandue à l’étranger, le <persName>landgrave de Hesse-Cassel Frédéric II</persName> (mort en 1785) lui demanda les dessins d’une Bibliothèque pour sa capitale. Ce prince nomma Ledoux en outre le contrôleur et ordonnateur général de ses bâtiments.</p>
+      <p>On ne peut se dissimuler que Ledoux, malgré ses écarts en architecture, n’ai fait école. Il a créé le style qui dominait pendant le règne de <persName>Louis XVI</persName>, et dont l’époque du Directoire a hérité en partie. L’architecte ne doit consulter les œuvres de Ledoux qu’avec une grande réserve. Il pourra y puiser des idées, des inspirations, que les connaissances étendues et actuelle sur les monuments antiques revêtiront d’une expression plus correcte et plus sage. Pour l’histoire de l’art au dix-huitième siècle, le livre que le lecteur a sous les yeux est d’autant plus précieux, qu’il renferme une quantité de planches de constructions connues, mais qui n’existent plus. Et parmi celles représentant des projets exécutés ou non, il en est beaucoup qui serviront à apprécier le caractère de l’architecture pratiquée au dix-huitième siècle, et qui nous mettront sur la trace des sources où ont puisé une infinité d’architectes contemporains. Nous espérons que la publication du présent ouvrage réhabilitera en parie la réputation d’un artiste qu’on a critiqué et jugé d’une manière trop légère et trop superficielle, en ne s’attaquant qu’à certaines de ses barrières de Paris, et en ne tenant malheureusement aucun compte de ses autres constructions.</p>
+      <docAuthor>Daniel Ramée</docAuthor>
+      </div>
+      <pb/>
+      <div type="toc">
+        <head>Table des planches du premier volume</head>
+        <list>
+          <head>Propylées de Paris sur les chemins ci-après</head>
+          <label>1</label>
+          <item><label rend="capital">Chartres</label> Plans des caves, rez-de-chaussée et premier étage</item>
+          <label>2</label>
+          <item><label rend="idem">Chartres</label> Élévation principale et latérale, coupe</item>
+          <label>3</label>
+          <item><label rend="capital">Monceaux</label> Plan général, plans des souterrains, rez-de-chaussée, entre-sol et premier étage</item>
+          <label>4</label>
+          <item><label rend="idem">Monceaux</label> Élévation et coupe</item>
+          <label>5</label>
+          <item><label rend="capital">Saint-Denis</label> Plan du rez-de-chaussée, élévations principale et latérale</item>
+          <label>6</label>
+          <item><label rend="capital">Belleville</label> Plans du rez-de-chaussée, premier étage et attique</item>
+          <label>7</label>
+          <item><label rend="idem">Belleville</label> Élévations principale et latérale, coupe</item>
+          <label>8</label>
+          <item><label rend="capital">Trois-couronnes</label> Plans du rez-de-chaussée, premier étage, élévation et coupe</item>
+          <label>9</label>
+          <item><label rend="capital">Rats</label> Plans des souterrains, rez-de-chaussée, premier étage, élévations principale et latérale, coupe</item>
+          <label>10</label>
+          <item><label rend="capital">Picpus</label> Plans des souterrains, rez-de-chaussée, premier étage et des combles</item>
+          <label>11</label>
+          <item><label rend="idem">Picpus</label> Plans général, élévation et coupe</item>
+          <label>12</label>
+          <item><label rend="capital">Reuilly</label> Plan général, entre-sol et premier étage</item>
+          <label>13</label>
+          <item><label rend="idem">Reuilly</label> Élévation et coupe</item>
+          <label>14</label>
+          <item><label rend="capital">Rapée</label> Plan du rez-de-chaussée, élévations principale et latérale, coupe et vue perspective</item>
+          <label>15</label>
+          <item><label rend="capital">Ivry</label> Plan du rez-de-chausse et vue perspective</item>
+          <label>16</label>
+          <item><label rend="idem">Ivry</label> Plan général, élévation et coupe</item>
+          <label>17</label>
+          <item><label rend="capital">Glacière</label> Plans des caves, rez-de-chaussée et premier étage</item>
+          <label>18</label>
+          <item><label rend="idem">Glacières</label> Élévations principale et latérale, coupe</item>
+          <label>19</label>
+          <item><label rend="capital">Groseillers</label> Plan général et deux vues perspectives</item>
+          <label>20.</label>
+          <item><label rend="idem">Groseillers</label> Plan du rez-de-chaussée, élévation et coupe</item>
+          <label>21</label>
+          <item><label rend="capital">Santé</label> Plan du rez-de-chaussée, élévation et coupe</item>
+          <label>22</label>
+          <item><label rend="capital">Vaugirard</label> Plan général, plan du rez-de-chaussée et vue perspective</item>
+          <label>23</label>
+          <item><label rend="capital">École militaire</label> Plan du rez-de-chaussée, élévation et vue perspective</item>
+          <label>24</label>
+          <item><label rend="capital">Chaillot</label> Plans des souterrains, rez-de-chaussée et premier étage</item>
+          <label>25</label>
+          <item><label rend="idem">Chaillot</label> Plan général, élévation et coupe</item>
+          <label>26</label>
+          <item><label rend="capital">Carrières</label> Plan du rez-de-chaussée et vue perspective</item>
+          <label>27</label>
+          <item><label rend="idem">Carrières</label> Élévation et coupe</item>
+        </list>
+        <list>
+          <head>Projets de Propylées</head>
+          <label>28</label>
+          <item><label n="1">I<hi rend="superscript">er</hi> projet</label> Plans du rez-de-chaussée, premier et second étages</item>
+          <label>29</label>
+          <item><label n="1" rend="idem">I<hi rend="superscript">er</hi> projet</label> Élévation, coupe et vue perspective</item>
+          <label>30</label>
+          <item><label n="2">II<hi rend="superscript">e</hi> projet</label> Plans des souterrains, rez-de-chaussée, entre-sol et premier étage</item>
+          <label>31</label>
+          <item><label n="2" rend="idem">II<hi rend="superscript">e</hi> projet</label> Élévation, coupe et vue perspective</item>
+          <label>32</label>
+          <item><label n="3">III<hi rend="superscript">e</hi> projet</label> Représentant une colonne rostrale, plans, élévation, coupe et vue perspective</item>
+          <label>33</label>
+          <item><label n="4">IV<hi rend="superscript">e</hi> projet</label> Plans du rez-de-chaussée, élévations principale et latérale</item>
+          <label>34</label>
+          <item><label n="5">V<hi rend="superscript">e</hi> projet</label> Plans des caves, rez-de-chaussée, premier étage, élévation, coupe et deux figures allégoriques des Propylées de Paris</item>
+          <label>35</label>
+          <item><label n="6">VI<hi rend="superscript">e</hi> projet</label> Plans du rez-de-chaussée, premier étage, éléavtion, coupe et deux figures allégoriques des Propylées des Paris</item>
+          <label>36</label>
+          <item><label n="7">VII<hi rend="superscript">e</hi> projet</label> Guérite pour placer à l’angle de la voirie, plan, coupe et vue perspective</item>
+        </list>
+        <cb/>
+        <list>
+          <head>Hôtel-de-Ville de Neuchâtel</head>
+          <label>37</label>
+          <item>Plans du rez-de-chaussée, premier entre-sol et premier étage</item>
+          <label>38</label>
+          <item>Plans du deuxième entre-sol, deuxième étage et des combles</item>
+          <label>39</label>
+          <item>Élévation</item>
+          <label>40</label>
+          <item>Vue perspective</item>
+        </list>
+        <list>
+          <head>Constructions d’Aix</head>
+          <label>41</label>
+          <item><label rend="capital">Palais du Gouverneur</label> Plans des souterrains et du rez-de-chaussée</item>
+          <label>42</label>
+          <item><label rend="idem">Palais du Gouverneur</label> Plan général et plan du premier étage</item>
+          <label>43</label>
+          <item><label rend="idem">Palais du Gouverneur</label> Élévation et coupe</item>
+          <label>44</label>
+          <item><label rend="capital">Palais de Justice</label> Plan général du Palais-de-Justice et des prisons</item>
+          <label>45</label>
+          <item><label rend="idem">Palais de Justice</label> Plan des souterrains</item>
+          <label>46</label>
+          <item><label rend="idem">Palais de Justice</label> Plan du rez-de-chaussée</item>
+          <label>47</label>
+          <item><label rend="idem">Palais de Justice</label> Plan du premier entre-sol</item>
+          <label>48</label>
+          <item><label rend="idem">Palais de Justice</label> Plan du premier étage</item>
+          <label>49</label>
+          <item><label rend="idem">Palais de Justice</label> Plan de l’entre-sol compris dans le premier étage</item>
+          <label>50</label>
+          <item><label rend="idem">Palais de Justice</label> Plan du second étage</item>
+          <label>51</label>
+          <item><label rend="idem">Palais de Justice</label> Plan des archives compris dans le second étage</item>
+          <label>52</label>
+          <item><label rend="idem">Palais de Justice</label> Plan des combles</item>
+          <label>53</label>
+          <item><label rend="idem">Palais de Justice</label> Élévation principale</item>
+          <label>54</label>
+          <item><label rend="idem">Palais de Justice</label> Élévation latérale</item>
+          <label>55</label>
+          <item><label rend="idem">Palais de Justice</label> Coupe sur la ligne AB</item>
+          <label>56</label>
+          <item><label rend="idem">Palais de Justice</label> Coupe sur la ligne EF</item>
+          <label>57</label>
+          <item><label rend="idem">Palais de Justice</label> Coupe sur la ligne GH</item>
+          <label>58</label>
+          <item><label rend="idem">Palais de Justice</label> Coupe sur la ligne IK</item>
+          <label>59</label>
+          <item><label rend="idem">Palais de Justice</label> Coupe sur la ligne LR</item>
+          <label>60</label>
+          <item><label rend="capital">Prisons</label> Plan des souterrains</item>
+          <label>61</label>
+          <item><label rend="idem">Prisons</label> Plans du rez-de-chaussée et premier étage</item>
+          <label>62</label>
+          <item><label rend="idem">Prisons</label> plans du second et troisième étage</item>
+          <label>63</label>
+          <item><label rend="idem">Prisons</label> Élévation et coupe</item>
+          <label>64</label>
+          <item><label rend="idem">Prisons</label> Deux vues perspectives des prisons</item>
+        </list>
+        <list>
+          <head>Palais épiscopal de Sisteron</head>
+          <label>65</label>
+          <item>Plan des souterrains et rez-de-chaussée</item>
+          <label>66</label>
+          <item>Plan de l’entre-sol, de l’attique et des combles</item>
+          <label>67</label>
+          <item>Élévation et coupe</item>
+          <label>68</label>
+          <item>Vue perspective</item>
+        </list>
+        <list>
+          <head>Chapelle succursale de Monceaux</head>
+          <label>69</label>
+          <item>Plan du rez-de-chaussée</item>
+          <label>70</label>
+          <item>Élévation et coupe</item>
+        </list>
+        <list>
+          <head>Bourse</head>
+          <label>71</label>
+          <item>Plan du rez-de-chaussée, premier étage, élévation, coupe et vue perspective</item>
+        </list>
+          <pb/>
+        <list>
+          <head>Théâtre de Besançon</head>
+          <label>72</label>
+          <item>Coup-d’œil général sur le théâtre</item>
+          <label>73</label>
+          <item>Plan du rez-de-chaussée</item>
+          <label>74</label>
+          <item>Plans des premières et secondes loges</item>
+          <label>75</label>
+          <item>Plans des troisièmes et quatrièmes loges</item>
+          <label>76</label>
+          <item>Élévation perspective</item>
+          <label>77</label>
+          <item>Coupe sur la ligne AB</item>
+          <label>78</label>
+          <item>Coupe sur la largeur</item>
+          <label>79</label>
+          <item>Coupe du vestibule</item>
+          <label>80</label>
+          <item>Coupe en face du théâtre</item>
+          <label>81</label>
+          <item>Plafond</item>
+        </list>
+        <list>
+          <head>Théâtre de Marseille</head>
+          <label>82</label>
+          <item>Plans des fondations, caves et rez-de-chaussée</item>
+          <label>83</label>
+          <item>Plans du parterre et des premières loges</item>
+          <label>84</label>
+          <item>Plans des deuxièmes et troisièmes loges</item>
+          <label>85</label>
+          <item>Plans des quatrièmes et cinquièmes loges</item>
+          <label>86</label>
+          <item>Plans général et plan des sixièmes loges</item>
+          <label>87</label>
+          <item>Élévation principale et coupe sur la longueur</item>
+          <label>88</label>
+          <item>Vue perspective</item>
+        </list>
+        <list>
+          <head>Bibliothèque de Hesse-Cassel</head>
+          <label>89</label>
+          <item>Plan du rez-de-chaussée et figures allégoriques des Propylées de Paris</item>
+          <label>90</label>
+          <item>Plan du premier étage et figures allégoriques des Propylées de Paris</item>
+          <label>91</label>
+          <item>Élévation</item>
+          <label>92</label>
+          <item>Coupe</item>
+          <label>93</label>
+          <item>Vue perspective de la Bibliothèque et vue perspective du château de Bénouville</item>
+        </list>
+        <list>
+          <head>Hospice</head>
+          <label>94</label>
+          <item>Plan général, plan du rez-de-chaussée, premier étage, coupe, élévation et vue perspective</item>
+        </list>
+        <list>
+          <head>Hôtel des fermes</head>
+          <label>95</label>
+          <item>Plan du rez-de-chaussée</item>
+          <label>96</label>
+          <item>Plan de l’entre-sol</item>
+          <label>97</label>
+          <item>Plan du premier étage</item>
+          <label>98</label>
+          <item>Plan du deuxième étage et deux figures allégoriques</item>
+          <label>99</label>
+          <item>Plan de l’étage des combles et deux figures allégoriques</item>
+          <label>100</label>
+          <item>Élévation et coupe</item>
+        </list>
+        <list>
+          <head>Caisse d’Escompte</head>
+          <label>101</label>
+          <item>Plans des souterrains, rez-de-chaussée et premier étage (1<hi rend="superscript">er</hi> projet)</item>
+          <label>101</label>
+          <item>Coupe et vue perspective</item>
+          <label>101</label>
+          <item>Plan du rez-de-chaussée, élévation et coupe (2<hi rend="superscript">me</hi> projet)</item>
+          <label>101</label>
+          <item>Plan des souterrains et entresol</item>
+          <label>105</label>
+          <item>Vue perspective</item>
+        </list>
+        <cb/>
+        <list>
+          <head>Grenier à sel de Compiègne</head>
+          <label>106</label>
+          <item>Plan du rez-de-chaussée et premier étage</item>
+          <label>107</label>
+          <item>Élévation et coupe</item>
+        </list>
+        <list>
+          <head>Saline de Chaux bâtie entre les villages <sic>Darc</sic> en Senans, à la proximité de la forêt de Chaux et de la rivière de la Loue</head>
+          <label>108</label>
+          <item><label rend="capital">Pont de la Loue</label> Plans des fondations, parapets, coupe et élévation</item>
+          <label>109</label>
+          <item><label rend="idem">Pont de la Loue</label> Vue perspective</item>
+          <label>110</label>
+          <item><label rend="capital">Maison des directeurs de la Loue</label> Plans du rez-de-chaussée, premier, second, troisième étages, élévation, coupe et vue perspective</item>
+          <label>111</label>
+          <item>Plan des pompes du canal de graduation et des réservoirs</item>
+          <label>112</label>
+          <item>Vue perspective du bâtiment de graduation de la saline de Chaux</item>
+          <label>113</label>
+          <item><label rend="capital">Saline de Chaux (1<hi rend="superscript">er</hi> projet)</label> Plan général</item>
+          <label>114</label>
+          <item><label rend="idem">Saline de Chaux (1<hi rend="superscript">er</hi> projet)</label> Élévation et coupe</item>
+          <label>115</label>
+          <item><label rend="capital">Saline de Chaux (2<hi rend="superscript">me</hi> projet)</label> Carte générale des envrions</item>
+          <label>116</label>
+          <item><label rend="idem">Saline de Chaux (2<hi rend="superscript">me</hi> projet)</label> Vue perspective de la ville de Chaux</item>
+          <label>117</label>
+          <item><label rend="idem">Saline de Chaux (2<hi rend="superscript">me</hi> projet)</label> Plan général</item>
+          <label>118</label>
+          <item><label rend="capital">Porte d’entrée</label> Plans du rez-de-chaussée et premier étage</item>
+          <label>119</label>
+          <item><label rend="idem">Porte d’entrée</label> Coupe de la porte et coupe du bâtiment des ouvriers</item>
+          <label>120</label>
+          <item><label rend="idem">Porte d’entrée</label> Vue perspective de la porte</item>
+          <label>121</label>
+          <item><label rend="capital">Maison du directeur</label> Plans des souterrains et du rez-de-chaussée</item>
+          <label>122</label>
+          <item><label rend="idem">Maison du directeur</label> Plans du premier et du second étage</item>
+          <label>123</label>
+          <item><label rend="idem">Maison du directeur</label> Élévation principale</item>
+          <label>124</label>
+          <item><label rend="idem">Maison du directeur</label> Élévation latérale</item>
+          <label>125</label>
+          <item><label rend="idem">Maison du directeur</label> Coupe sur la longueur</item>
+          <label>126</label>
+          <item><label rend="idem">Maison du directeur</label> Coupe sur la largeur</item>
+          <label>127</label>
+          <item><label rend="idem">Maison du directeur</label> Vue perspective</item>
+          <label>128</label>
+          <item><label rend="capital">Remises du directeur</label> Plan et élévation</item>
+          <label>129</label>
+          <item><label rend="idem">Remises du directeur</label> Élévation et coupe des remises, plan et élévation de la fontaine</item>
+          <label>130</label>
+          <item><label rend="capital">Abreuvoir et lavoir</label> Plan, élévation et coupe</item>
+          <label>131</label>
+          <item><label rend="capital">Bâtiment destiné à la fabrication des sels</label> Plans du rez-de-chaussée et premier étage et plan du rez-de-chaussée du bâtiment des maréchaux</item>
+          <label>132</label>
+          <item><label rend="idem">Bâtiment destiné à la fabrication des sels</label> Élévation du bâtiment destiné à la fabrication des sels ; plan, élévation et coupe du logement du Taxeur des Bois</item>
+          <label>133</label>
+          <item><label rend="idem">Bâtiment destiné à la fabrication des sels</label> Élévation et coupe du magasin de sel, apelé communément Salle des Bosses</item>
+          <label>134</label>
+          <item><label rend="capital">Maison de deux commis</label> chargés de la surveillance ; plans du rez-de-chaussée et plan du premier étage</item>
+          <label>135</label>
+          <item><label rend="idem">Maison de deux commis</label> Élévation et coupe</item>
+          <label>136</label>
+          <item><label rend="capital">Bâtiment destiné aux ouvriers</label> Plans du premier étage et des combles (Voyez pour le plan du rez-de-chaussée, la planche 130)</item>
+          <label>137</label>
+          <item><label rend="idem">Bâtiment destiné aux ouvriers</label> Élévation (Voyez pour la coupe, la planche 119)</item>
+          <label>138</label>
+          <item><label rend="capital">Église de Chaux</label> Plans des souterrains et du rez-de-chaussée</item>
+          <label>139</label>
+          <item><label rend="idem">Église de Chaux</label> Coupe</item>
+          <label>140</label>
+          <item><label rend="idem">Église de Chaux</label> Vue perspective</item>
+          <label>141</label>
+          <item><label rend="capital">Cimetière de la ville de Chaux</label> Plan et coupe</item>
+          <label>142</label>
+          <item><label rend="idem">Cimetière de la ville de Chaux</label> Élévation</item>
+          <label>143</label>
+          <item><label rend="capital">Marché la ville de Chaux</label> Plan général</item>
+          <label>144</label>
+          <item><label rend="idem">Marché la ville de Chaux</label> Coupe du marché et bas-relief des Propylées de Paris</item>
+          <label>145</label>
+          <item><label rend="idem">Marché la ville de Chaux</label> Vue perspective du marché</item>
+          <label>146</label>
+          <item><label rend="capital">Bains publics de Chaux</label> Plan général et plan du rez-de-chaussée</item>
+          <label>147</label>
+          <item><label rend="idem">Bains publics de Chaux</label> Plan de l’entre-sol et coupe sur la ligne AB</item>
+          <label>148</label>
+          <item><label rend="idem">Bains publics de Chaux</label> Vue perspective</item>
+          <label>149</label>
+          <item><label rend="capital">Forge à canons</label> Plan général, élévation et coupe</item>
+          <label>150</label>
+          <item><label rend="idem">Forge à canons</label> Vue perspective</item>
+        </list>
+        <p>Fin de la table du premier volume.</p>
+      </div>
+      <pb/>
+      <div type="toc">
+        <head>Table des planches du deuxième volume</head>
+        <list>
+          <label>151</label>
+          <item>L’Abri du pauvre</item>
+        </list>
+        <list>
+          <head>Hôtel d’Uzès</head>
+          <label>152</label>
+          <item>Vue perspective de la porte d’entrée (Voyez pour les plans et coupe, la planche 202)</item>
+          <label>153</label>
+          <item>Plans du rez-de-chaussée, premier et second étage de l’hôtel</item>
+          <label>154</label>
+          <item>Élévation perspective</item>
+          <label>155</label>
+          <item>Élévation et coupe sur le jardin (Voyez pour la perspective, la planche 2014)</item>
+        </list>
+        <list>
+          <head>Hôtel d’Hawill</head>
+          <label>156</label>
+          <item>Plans des souterrains, rez-de-chaussée, premier et second étages</item>
+          <label>157</label>
+          <item>Coupe sur la ligne AB</item>
+          <label>158</label>
+          <item>Coupe sur la ligne CD et élévation</item>
+        </list>
+        <list>
+          <head>Hôtel du prince de montmorency</head>
+          <label>159</label>
+          <item>Plans du rez-de-chaussée, premier, second étages, élévation et coupe</item>
+        </list>
+        <list>
+          <head>Hôtel de M<hi rend="superscript">me</hi> Thélusson</head>
+          <label>160</label>
+          <item>Plan des fondations</item>
+          <label>161</label>
+          <item>Plan du rez-de-chaussée</item>
+          <label>162</label>
+          <item>Plan du premier second entre-sol</item>
+          <label>163</label>
+          <item>Plan du second étage (avec les plans des deux maisons projetées)</item>
+          <label>164</label>
+          <item>Plan de l’attique</item>
+          <label>165</label>
+          <item>Élévation perspective</item>
+          <label>166</label>
+          <item>Coupe sur la longueur</item>
+          <label>167</label>
+          <item>Petite maison attenant à l’hôtel de Thélusson, élévation et coupe</item>
+        </list>
+        <list>
+          <head>Hôtel M<hi rend="superscript">me</hi> la comtesse Dubarry</head>
+          <label>168</label>
+          <item>Plan des souterrains</item>
+          <label>169</label>
+          <item>Plan du rez-de-chaussée</item>
+          <label>170</label>
+          <item>Plan de l’entre-sol</item>
+          <label>171</label>
+          <item>Élévation du côté de l’entrée et coupe sur la ligne AB</item>
+          <label>172</label>
+          <item>Élévation latérale et coupe sur la longueur</item>
+          <label>173</label>
+          <item><label rend="capital">Écuries de M<hi rend="superscript">me</hi> Dubarry</label> Plan du rez-de-chaussée</item>
+          <label>174</label>
+          <item><label rend="idem">Écuries de M<hi rend="superscript">me</hi> Dubarry</label> Deux élévations, l’une sur la rue, l4autre sur la cour</item>
+        </list>
+        <list>
+          <head>Maison de M<hi rend="superscript">lle</hi> Guimard</head>
+          <label>175</label>
+          <item>Plans des souterrains, rez-de-chaussée, premier étage et coupe</item>
+          <label>176</label>
+          <item>Élévation perspective</item>
+          <label>177</label>
+          <item><label rend="capital">Théâtre de M<hi rend="superscript">lle</hi> Guimard</label> Plans du rez-de-chaussée, premier, second étages et coupe</item>
+        </list>
+        <list>
+          <head>Maison de M. Hosten</head>
+          <item>178</item>
+          <item>Plan général de quinze maisons</item>
+          <item>179</item>
+          <item>Habitation du propriétaire, marqué 13 sur le plan général ; plans du rez-de-chaussée, entre-sol et premier étage</item>
+          <item>180</item>
+          <item>Trois élévations du même bâtiment sur la rue, la cour et le jardin</item>
+          <item>181</item>
+          <item>Plan des caves, rez-de-chaussée, premier, deuxième étages, combles, couronnement et coupe sur la largeur du N<hi rend="superscript">os</hi> 9</item>
+          <item>182</item>
+          <item>Élévations des N<hi rend="superscript">os</hi> 8, 9, 10</item>
+          <item>183</item>
+          <item>Élévations des N<hi rend="superscript">os</hi> 11, 12, 13, 14</item>
+          <item>184</item>
+          <item>Plans du rez-de-chaussée, premier, second étages, comble et coupe des N<hi rend="superscript">os</hi> 4, 5</item>
+          <item>185</item>
+          <item>Plans du rez-de-chaussée, premier, second étages, comble et coupe du N<hi rend="superscript">os</hi> 6</item>
+          <item>186</item>
+          <item>Élévations des N<hi rend="superscript">os</hi> 4, 5, 6</item>
+          <item>187</item>
+          <item>Plans des souterrains, rez-de-chaussée, premier, deuxième étages, comble et coupe sur la ligne CD des N<hi rend="superscript">os</hi> 7, 8, 10, 11, 12, 13, 14,</item>
+          <item>188</item>
+          <item>Élévations du N<hi rend="superscript">os</hi> 14 et des  N<hi rend="superscript">os</hi> 1, 2, 3</item>
+        </list>
+        <list>
+          <head>Maison de M. Saiseval</head>
+          <label>189</label>
+          <item>Plan général de la maison, se composant de trois pavillons</item>
+          <label>190</label>
+          <item>Plans des souterrains, entre-sol, premier, second étages et coupe du pavillon du centre</item>
+          <cb/>
+          <label>191</label>
+          <item>Plans de l’entre-sol, premier, second étages, combles et coupes des deux autres pavillons</item>
+          <label>192</label>
+          <item>Vue perspective de la maison</item>
+        </list>
+        <list>
+          <head>Maison de M. Witt</head>
+          <label>193</label>
+          <item>Plans des fondations et du rez-de-chaussée</item>
+          <label>194</label>
+          <item>Plans de l’entre-sol, premier étage et attique</item>
+          <label>195</label>
+          <item>Élévation perspective</item>
+          <label>196</label>
+          <item>Coupe</item>
+        </list>
+        <list>
+          <head>Maison de M. le président Hoquart</head>
+          <label>197</label>
+          <item>Plans des souterrains, rez-de-chaussée, entre-sol et premier étage</item>
+          <label>198</label>
+          <item>Plan général, élévation et coupe</item>
+          <label>199</label>
+          <item>Vue perspective de la maison de M. Hoquart et vue perspective d’une maison rue Poissonnière</item>
+        </list>
+        <list>
+          <head>Maison de M. Tabary</head>
+          <label>200</label>
+          <item>Plans des souterrains, rez-de-chaussée, premier étage, comble et coupe</item>
+          <label>201</label>
+          <item>Élévation de la maison de M. Tabary et vue perspective de la maison de M<hi rend="superscript">lle</hi> de St-Germain</item>
+        </list>
+        <list>
+          <head>Maison de M. le comte d’Atilly</head>
+          <label>202</label>
+          <item>Plans des souterrains, premier, second étages, combles et coupe de la porte d’entrée de l’hôtel d’Uzès</item>
+          <label>203</label>
+          <item>Plan du rez-de-chaussée, élévation et coupe de la maison de M. le comte d’Atilly</item>
+          <label>204</label>
+          <item>Vue perspective de la maison de M. le comte d’Atilly et vue perspective de l’hôtel d’Uzès, côté du jardin</item>
+        </list>
+        <list>
+          <head>Maison de M. Le Doux, habitée par M. le comte d’Espinchal</head>
+          <label>205</label>
+          <item>Plans des souterrains, rez-de-chaussée, premier, second étages et des combles</item>
+          <label>206</label>
+          <item>Élévation et coupe</item>
+        </list>
+        <list>
+          <head>Maison de M. d’Evry</head>
+          <label>207</label>
+          <item>Plans du rez-de-chaussée et premier étage</item>
+          <label>208</label>
+          <item>Élévation et coupe</item>
+        </list>
+        <list>
+          <head>Maison de M<hi rend="superscript">lle</hi> de Saint-Germain</head>
+          <label>209</label>
+          <item>Plans des souterrains, rez-de-chaussée, entre-sol et deux figures allégoriques des Propylées de Paris</item>
+          <label>210</label>
+          <item>Élévation et coupe</item>
+        </list>
+        <list>
+          <head>Maison située rue Neuve-de-Berry</head>
+          <label>211</label>
+          <item>Plan général et plans du second et troisième étages</item>
+          <label>212</label>
+          <item>Plan du premier étage</item>
+          <label>213</label>
+          <item>Élévation et perspective</item>
+          <label>214</label>
+          <item>Coupe</item>
+        </list>
+        <list>
+          <head>Maison située rue Poissonnière</head>
+          <label>215</label>
+          <item>Plans des souterrains, rez-de-chaussée, attique et combles</item>
+          <label>216</label>
+          <item>Élévation et coupe</item>
+        </list>
+        <list>
+          <head>Autre maison située rue Poissonnière</head>
+          <label>217</label>
+          <item>Plans du rez-de-chaussée, premier, second étages, élévation et coupe (Voyez pour la vue perspective, la planche 199)</item>
+        </list>
+        <list>
+          <head>Maison d’éducation</head>
+          <label>218</label>
+          <item>Plans du rez-de-chaussée, entre-sol, premier et second étages</item>
+          <label>219</label>
+          <item>Élévation et coupe</item>
+          <label>220</label>
+          <item>Vue perspective</item>
+        </list>
+        <pb/>
+        <list>
+          <head>Maison de commerce rue St-Denis</head>
+          <label>221</label>
+          <item>Plan du rez-de-chaussée</item>
+          <label>222</label>
+          <item>Plan du premier étage</item>
+          <label>223</label>
+          <item>Élévation principale</item>
+          <label>224</label>
+          <item>Coupe</item>
+          <label>225</label>
+          <item>Vue perspective</item>
+        </list>
+        <list>
+          <head>Guinguettes des Propylées de Paris projetées pour être exécutées sur les chemins ci-après</head>
+          <label>226</label>
+          <item><label n="1">I<hi rend="superscript">er</hi> Projet</label> Faubourg Poissonnière, plan, élévation et coupe</item>
+          <label>227</label>
+          <item><label n="2">II<hi rend="superscript">e</hi> Projet</label> Faubourg du Temple, plan, élévation et coupe</item>
+          <label>228</label>
+          <item><label n="3">III<hi rend="superscript">e</hi> Projet</label> Rue Ménilmontant, plan, élévation et coupe</item>
+          <label>229</label>
+          <item><label n="4">IV<hi rend="superscript">e</hi> Projet</label> Faubourg Saint-Antoine, plan, élévation et coupe</item>
+          <label>230</label>
+          <item><label n="5">V<hi rend="superscript">e</hi> Projet</label> Quai de la Rapée, plan, élévation et coupe</item>
+          <label>231</label>
+          <item><label n="6">VI<hi rend="superscript">e</hi> Projet</label> Faubourg St-Marceau, plan, élévation et coupe</item>
+          <label>232</label>
+          <item><label n="7">VII<hi rend="superscript">e</hi> Projet</label> Vaugirard, plan, élévation et coupe</item>
+          <label>233</label>
+          <item><label n="8">VIII<hi rend="superscript">e</hi> Projet</label> Chaillot, plan, élévation et coupe</item>
+        </list>
+        <list>
+          <head>Monument de popularité</head>
+          <label>234</label>
+          <item>Plan général, plans du rez-de-chaussée, premier étage et attique</item>
+          <label>235</label>
+          <item>Plan des souterrains, élévation et coupe</item>
+        </list>
+        <list>
+          <head>Monument destiné aux récréations</head>
+          <label>236</label>
+          <item>Plan général, plans du rez-de-chaussée, premier étage, élévation et coupe</item>
+        </list>
+        <list>
+          <head>Maison de jeux</head>
+          <label>237</label>
+          <item>Plans des caves, rez-de-chaussée, entre-sol, premier étage, élévation et coupe</item>
+        </list>
+        <list>
+          <head>Maison de plaisir</head>
+          <label>238</label>
+          <item>Plan général</item>
+          <label>239</label>
+          <item>Élévation et trois coupes</item>
+        </list>
+        <list>
+          <head>Oikèma, fragment d‘un monument grec</head>
+          <label>240</label>
+          <item>Plan, élévation et coupe</item>
+          <label>241</label>
+          <item>Vue perspective</item>
+        </list>
+        <list>
+          <head>Panarétéon</head>
+          <label>242</label>
+          <item>Plan du rez-de-chaussée, premier étage, coupe et vue perspective</item>
+        </list>
+        <list>
+          <head>Cénobie</head>
+          <label>243</label>
+          <item>Plans du rez-de-chaussée et premier étage</item>
+          <label>244</label>
+          <item>Plan du second étage, élévation et coupe</item>
+          <label>245</label>
+          <item>Vue perspective</item>
+        </list>
+        <list>
+          <head>Château de Bénouville</head>
+          <label>246</label>
+          <item>Plan du rez-de-chaussée</item>
+          <label>247</label>
+          <item>Plan du premier étage</item>
+          <label>248</label>
+          <item>Plan du second étage</item>
+          <label>249</label>
+          <item>Élévation (Voyez pour la vue perspective, la planche 93 du 1<hi rend="superscript">er</hi> volume)</item>
+          <label>250</label>
+          <item>Coupes du château et de la chapelle</item>
+        </list>
+        <list>
+          <head>Château de Maupertuis</head>
+          <label>251</label>
+          <item>Plan général</item>
+          <label>252</label>
+          <item>Coupe et deux élévations sur al cour et sur le jardin</item>
+          <label>253</label>
+          <item><label rend="capital">Faisanderie de Maupertuis</label> Plan, élévation, coupe et vue perspective</item>
+          <label>254</label>
+          <item><label rend="capital">Maison des gardes agricoles</label> Plan, élévation, coupe et vue perspective</item>
+        </list>
+        <list>
+          <head>Château d’Eguière</head>
+          <label>255</label>
+          <item>Plans du rez-de-chaussée et de l’entre-sol</item>
+          <label>256</label>
+          <item>Plan du premier étage et coupe sur la longueur</item>
+          <label>257</label>
+          <item>Plan du second étage et des combles</item>
+          <label>258</label>
+          <item>Vue perspective</item>
+        </list>
+        <list>
+          <head>Château de St-Vrain</head>
+          <label>259</label>
+          <item>Plan du rez-de-chaussée</item>
+          <label>260</label>
+          <item>Plan du premier étage</item>
+          <label>261</label>
+          <item>Élévation du côté de la cour</item>
+          <label>262</label>
+          <item>Élévation du côté du parterre</item>
+          <label>263</label>
+          <item>Élévation du côté de la grande pièce d’eau et coupe sur la largeur</item>
+        </list>
+        <cb/>
+        <list>
+          <head>Château de M. le comte de Barail</head>
+          <label>264</label>
+          <item>Plans des souterrains, rez-de-chaussée et entre-sol</item>
+          <label>265</label>
+          <item>Plans du premier et second étages</item>
+          <label>266</label>
+          <item>Élévation princiapel et coupe</item>
+        </list>
+        <list>
+          <head>Château de Louveciennes</head>
+          <label>267</label>
+          <item><label rend="capital">Palais de Louveciennes</label> Plan des souterrains</item>
+          <label>268</label>
+          <item><label rend="idem">Palais de Louveciennes</label> Plan du rez-de-chaussée</item>
+          <label>269</label>
+          <item><label rend="idem">Palais de Louveciennes</label> Élévation sur la cour et sur le jardin (Voyez pour la coupe, la planche 271)</item>
+          <label>270</label>
+          <item><label rend="capital">Pavillon de Louveciennes</label> Plan du rez-de-chaussée et élévation du côté du jardin</item>
+          <label>271</label>
+          <item><label rend="idem">Pavillon de Louveciennes</label> Plan des souterrains et coupes du palais et du pavillon</item>
+          <label>272</label>
+          <item><label rend="idem">Pavillon de Louveciennes</label> Élévation du pavillon du côté de la rivière</item>
+        </list>
+        <list>
+          <head>Maison de campagne de M<hi rend="superscript">me</hi> la princesse de Conti, à Louveciennes</head>
+          <label>273</label>
+          <item>Plan du rez-de-chaussée</item>
+          <label>274</label>
+          <item>Plan du premier étage</item>
+          <label>275</label>
+          <item>Élévation latérale et coupe</item>
+          <label>276</label>
+          <item>Deux élévations</item>
+          <label>277</label>
+          <item>Vue perspective</item>
+        </list>
+        <list>
+          <head>Maison de campagne de M. de Saint-Lambert, à Eaubonne</head>
+          <label>278</label>
+          <item>Plans des caves, souterrains, rez-de-chaussée, premier étage et vue perspective</item>
+          <label>279</label>
+          <item>Élévation et coupe</item>
+        </list>
+        <list>
+          <head>Maison de M. le chevalier de Mannery, à Salins</head>
+          <label>280</label>
+          <item>Plans du rez-de-chaussée, entre-sol, premier et second étages</item>
+          <label>281</label>
+          <item>Élévation et coupe</item>
+        </list>
+        <list>
+          <head>Maison de campagne de M. Schemitt</head>
+          <label>282</label>
+          <item>Plans du rez-de-chaussée, premier étage et combles</item>
+          <label>283</label>
+          <item>Coupe et élévations sur la cour et sur jardin</item>
+        </list>
+        <list>
+          <head>Maison de M. Lauzon, à Chauvigny, en Poitou</head>
+          <label>284</label>
+          <item>Plan général, plans des souterrains, premier, second, troisième, quatrième étages, élévation et coupe</item>
+        </list>
+        <list>
+          <head>Maison de campagne située dans le parc de Bellevue</head>
+          <label>285</label>
+          <item>Plans du rez-de-chaussée, premier, second étages, couronnement, élévation, coupe et vue perspective</item>
+        </list>
+        <list>
+          <head>Retour de chasse</head>
+          <label>286</label>
+          <item>Plan général, plans du rez-de-chaussée, premier, second, troisième étages, combles, élévation et coupe</item>
+          <label>287</label>
+          <item>Vue perspective</item>
+        </list>
+        <list>
+          <head>Abreuvoir, Lavoir et École rurale de <unclear>Meilliand</unclear></head>
+          <label>288</label>
+          <item>Vue perspective</item>
+          <label>289</label>
+          <item>Élévation et coupe de l’abreuvoir, plan du rez-de-chaussée de l’école</item>
+          <label>290</label>
+          <item>Plan de l’entre-sol et coupe de l’école</item>
+          <label>291</label>
+          <item>Élévations principales du côté du lavoir et du jardin</item>
+        </list>
+        <list>
+          <head>Parc de Bourneville</head>
+          <label>292</label>
+          <item>Plan du rez-de-chaussée de la porte d’entrée</item>
+          <label>293</label>
+          <item>Plan du premier étage</item>
+          <label>294</label>
+          <item>Élévation</item>
+          <label>295</label>
+          <item>Deux coupes</item>
+          <label>296</label>
+          <item><label rend="capital">Chapelle de Bourneville</label> Plans du rez-de-chaussée, premier étage, élévation, coupe et vue perspective</item>
+        </list>
+        <list>
+          <head>Bergerie de la Roche-Bernard</head>
+          <label>297</label>
+          <item>Plan général et trois figures des Propylées de Paris</item>
+          <label>298</label>
+          <item>Plan sur la ligne IK, élévation de la porte d’entrée et trois coupes</item>
+          <label>299</label>
+          <item><label rend="capital">Maison des bergers</label> Plans des souterrains, rez-de-chaussée, premier étage, combles, élévation et coupe</item>
+          <label>300</label>
+          <item><label rend="capital">Ferme parée</label> Plan général, élévation et coupe</item>
+        </list>
+        <p>Fin de la table du deuxième et dernier volume.</p>
+      </div>
+    </front>
+    <body>
+      <p></p>
+      <gap/>
+    </body>
+  </text>
+</TEI>
