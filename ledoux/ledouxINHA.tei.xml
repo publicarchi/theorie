@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/theorieSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Édition numérique de Ledoux</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Publicarchitectura</publisher>
+        <date from="2017">2017</date>
+        <idno><!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers --></idno>
+        <availability status="restricted" xml:id="ledoux1804Licence">
+          <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
+            <p><!-- @todo renseigner le texte de la licence --></p> <graphic
+              url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/> </licence>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
+        <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
+        <idno type="URI"><!-- @todo --></idno>
+      </seriesStmt>
+      <!--<notesStmt>
+            <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+            <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+         </notesStmt>-->
+      <sourceDesc xml:id="ledoux1804">
+        <biblStruct>
+          <monogr>
+            <title>[L’architecture considérée sous le rapport de l’art, des mœurs et de la législation, Recueil factice]</title>
+            <author>Claude-Nicolas Ledoux</author>
+            <imprint>
+              <date>s.d., c. 18e siècle</date>
+            </imprint>
+          </monogr>
+          <idno>Fol Rés 169 (2)</idno>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>L’édition de ce texte s’inscrit dans un projet collaboratif d’édition numérique de textes fondamentaux sur l’architecture moderne.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction>
+          <p>La syntaxe originale des œuvres a été respectée et modernisée en suivant les indications de Bernard Barbiche, <ref
+            type="external"
+            target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
+            >Conseils pour l’édition des textes de l’époque moderne (XVI<hi rend="superscript">e</hi>-XVIII<hi rend="superscript">e</hi> siècle)</ref>.</p>
+        </correction>
+        <hyphenation>
+          <p>Pour les ouvrages imprimés, il n’a pas été tenu compte de l’hyphénation.</p>
+        </hyphenation>
+        <interpretation>
+          <p>Les interprétations sont traitées au moyen d’un élément supplied ou bien sont renvoyées en notes. Une mention de responsabilité est fournie grâce à l’attribut resp sur le passage concerné.</p>
+        </interpretation>
+        <normalization>
+          <p>La ponctuation ainsi que les majuscules ont été normalisées. Les abréviations ont été développées.</p>
+        </normalization>
+        <stdVals>
+          <p>On utilise...</p>
+        </stdVals>
+        <quotation>
+          <p>Les citations dans le texte sont encodées soit au moyen d’un élément quote, soit au moyen d’un élément...</p>
+        </quotation>
+      </editorialDecl>
+      <refsDecl>
+        <p>Description du système de référence canonique.</p>
+        <!-- @todo à renseigner avec une expression régulière -->
+      </refsDecl>
+      <samplingDecl>
+        <p>Échantillonnage</p>
+        <!-- @todo modifier à la fin du projet -->
+      </samplingDecl>
+      <variantEncoding method="location-referenced" location="external"/>
+    </encodingDesc>
+    <profileDesc>
+      <creation when="2017">2017</creation>
+      <langUsage>
+        <language ident="fre" usage="98">Français (langue principale du corpus)</language>
+        <language ident="lat" usage="2">Latin</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+          <term>Dix-huitième siècle</term>
+          <term>France</term>
+        </keywords>
+        <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+          <term>Dix-neuvième siècle</term>
+          <term>France</term>
+        </keywords>
+        <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+          <term>Eighteenth century</term>
+          <term>France</term>
+        </keywords>
+        <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+          <term>Nineteenth century</term>
+          <term>France</term>
+        </keywords>
+        <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+          <term>Text</term>
+        </classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2017-06">Création du fichier</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <pb n="48"/>
+        <figure>
+          <desc>Vue perspective du jardin de l’hôtel Thélusson depuis la grotte</desc>
+          <note>La gravure paraît inédite. Elle ne comporte aucune lettre</note>
+          <desc type="dim">44 x 35,5</desc>
+        </figure>
+        <pb n="49"/>
+        <figure>
+          <desc><label>Ferme parée</label> Plan général, élévation et coupe</desc>
+          <desc type="filigrane">pas de filigrane</desc>
+          <desc type="dim">42,8 x 26,5</desc>
+          <note>Gravure avant la lettre publiée dans Ramée, pl. 300</note>
+        </figure>
+        <pb n="50"/>
+        <figure>
+          <desc>Vue perspective du château d’Eyguières</desc>
+          <desc type="filigrane">pas de filigrane</desc>
+          <desc type="dim">44,2 x 26,3</desc>
+          <note>Gravure avant la lettre</note>
+          <note>Identique à l’exemplaire Ramée de la Bnf sauf le papier</note>
+        </figure>
+        <pb n="51"/>
+        <figure>
+          <head>Plan du Rez-de-Chaussée de la Maison de Madame Thelluson, rue de Provence</head>
+          <byline>
+            <docAuthor rend="inventit">Le Doux Architecte du Roi</docAuthor>
+            <docAuthor rend="sculpsit">Sellier Sculp.</docAuthor>
+          </byline>
+          <desc type="filigrane">pas de filigrane</desc>
+          <desc type="dim">51 x 37</desc>
+          <note>Identique à la planche 161 de l’exemplaire Ramée de la Bnf</note>
+          <note>Pas de n° de Planche</note>
+        </figure>
+        <pb n="52"/>
+        <figure>
+          <head>Vue perspective de l’entrée de la maison de Madame de Thelusson</head>
+          <byline>
+            <docAuthor rend="inventit">Le Doux architecte du roi delin.</docAuthor>
+          </byline>
+          <desc type="filigrane">pas de filigrane</desc>
+          <desc type="dim">54 x 38</desc>
+          <note>Identique à la planche 165 de l’exemplaire Ramée de la Bnf</note>
+          <note>Pas de marque de graveur. Pas de n° de Pl.</note>
+        </figure>
+        <pb n="53"/>
+        <figure>
+          <head>Propylées de Paris <sic>située</sic> entre la rue Dubuisson <abbr>St</abbr> Louis et le chemin de <abbr>St</abbr> Laurent à Belleville</head>
+          <desc type="dim">41,5 x 27,8</desc>
+          <desc type="filigrane">pas de filigrane</desc>
+          <note>Identique à la planche 6 de l’exemplaire Ramée de la Bnf</note>
+        </figure>
+        <pb n="54"/>
+        <figure>
+          <head>Propylées de Paris <sic>située</sic> entre la rue Dubuisson <abbr>St</abbr> Louis et le chemin de <abbr>St</abbr> Laurent à Belleville</head>
+          <desc type="dim">41,5 x 27,3</desc>
+          <desc type="fil">Tour surmontée d’une girouette en forme d’oiseau</desc>
+          <note>Identique à la planche 6 de l’exemplaire Ramée de la Bnf</note>
+        </figure>
+        <pb n="55"/>
+        <figure>
+          <head>Propylées de Paris situées sur le chemin de Reuilly</head>
+          <desc type="dim">37,6 x 26,2</desc>
+          <desc type="filigrane">Texte (voir photo)</desc>
+          <note>Identique à la planche 13 de l’exemplaire Ramée de la Bnf</note>
+        </figure>
+        <pb n="56"/>
+        <figure>
+          <head>Propylées de Paris situées sur le Chemin des trois Couronnes</head>
+          <desc type="dim">42,2 x 26,7</desc>
+          <desc type="filigrane">pas de filigrane</desc>
+          <note>Identique à la planche 8 de l’exemplaire Ramée de la Bnf</note>
+        </figure>
+        <pb n="57"/>
+        <figure>
+          <head>Propylées de Paris situées en face de la rue de Chartres</head>
+          <desc type="dim">42 x 27,3</desc>
+          <desc type="filigrane">Tour surmontée d’une girouette en forme d’oiseau</desc>
+          <note>Identique à la planche 1 de l’exemplaire Ramée de la Bnf</note>
+        </figure>
+        <pb n="58"/>
+        <figure>
+          <head>Propylées de Paris situées en face de la rue de Chartres</head>
+          <desc type="dim">42 x 37,2</desc>
+          <desc type="filigrane">Texte (voir photo)</desc>
+        </figure>
+        <pb n="59"/>
+        <figure>
+          <head>Propylées de la Ville de Paris situées sur le chemin d’Ivry</head>
+          <byline>
+            <docAuthor>Le Doux Architecte du Roi</docAuthor>
+          </byline>
+          <desc type="dim">42,8 x 27,3</desc><!-- @todo revoir toutes les dimensions mètre déficiant -->
+          <desc type="filigrane">Enclume ou girouette ? (voir photos)</desc>
+          <note>Identique à la planche 16 de l’exemplaire Ramée de la Bnf</note>
+        </figure>
+        <pb n="60"/>
+        <figure></figure>
+        <pb n="61"/>
+        <figure></figure>
+        <pb n="62"/>
+        <figure></figure>
+        <pb n="63"/>
+        <figure></figure>
+        <pb n="64"/>
+        <figure></figure>
+        <pb n="65"/>
+        <figure></figure>
+        <pb n="66"/>
+        <figure></figure>
+        <pb n="67"/>
+        <figure></figure>
+        <pb n="68"/>
+        <figure></figure>
+        <pb n="69"/>
+        <figure></figure>
+        <pb n="70"/>
+        <figure></figure>
+      </div>
+    </body>
+  </text>
+</TEI>
