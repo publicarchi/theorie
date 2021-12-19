@@ -2437,6 +2437,14 @@
                </person>
             </listPerson>
          </div>
+         <div>
+            <head>Notes de l’auteur</head>
+            <note xml:id="n001"></note>
+         </div>
+         <div>
+            <head>Notes de commentaire critique</head>
+            <note xml:id="n002"></note>
+         </div>
       </back>
    </text>
 </TEI>

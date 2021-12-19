@@ -111,6 +111,19 @@
     <body>
       <div>
         <pb n="48"/>
+        <div>
+          <head>Œuvres</head>
+          <work xml:id="w0001">
+            <workTitle>Pavillon de Louvenciennes</workTitle>
+          </work>
+        </div>
+        <div>
+          <head>Manifestations</head>
+          <manifestations>
+            <manifestationTitle>Teiii</manifestationTitle>
+            <ref target="#w0001"></ref>
+          </manifestations>
+        </div>
         <figure>
           <desc>Vue perspective du jardin de l’hôtel Thélusson depuis la grotte</desc>
           <note>La gravure paraît inédite. Elle ne comporte aucune lettre</note>

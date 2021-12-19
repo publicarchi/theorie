@@ -401,6 +401,65 @@
                     <monogr>
                         <author>
                             <persName>
+                                <forename>Jean-Nicolas-Louis</forename>
+                                <surname>Durand</surname>
+                            </persName>
+                        </author>
+                        <title>Précis des leçons d’architecture données à l’École Polytechnique, par J.-N.-L. Durand, architecte et professeur d’architecture</title>
+                        <imprint>
+                            <publisher>Chez l’Auteur</publisher>
+                            <publisher>À l’École royale polytechnique</publisher>
+                            <pubPlace>Paris</pubPlace>
+                            <date when="1809">1809</date>
+                        </imprint>
+                        <extent> 2 vol. : Vol. 1 : [4] f. (2 bl., faux-titre, avis au relieur, titre), [I]-VIII (préface) - 109 p., 32 pl. (doubles, numérotées de 1 à 10 puis de 1 à 22) ; Vol. 2 : [4] f. (2 bl., faux-titre, avis au relieur, titre), 104 p., 32 pl. (doubles).</extent>
+                    </monogr>
+                    <idno type="agorha">https://agorha.inha.fr/inhaprod/ark:/54721/00345118</idno>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName>
+                                <forename>Jean-Nicolas-Louis</forename>
+                                <surname>Durand</surname>
+                            </persName>
+                        </author>
+                        <title>Précis des leçons d’architecture données à l’École Polytechnique, par J.-N.-L. Durand, architecte et professeur d’architecture</title>
+                        <imprint>
+                            <publisher>Chez l’Auteur</publisher>
+                            <publisher>À l’École royale polytechnique</publisher>
+                            <pubPlace>Paris</pubPlace>
+                            <date when="1817">1817</date>
+                        </imprint>
+                        <extent> 2 vol. : Vol. 1 : [4] f. (2 bl., faux-titre, avis au relieur, titre), [I]-VIII (préface) - 109 p., 32 pl. (doubles, numérotées de 1 à 10 puis de 1 à 22) ; Vol. 2 : [4] f. (2 bl., faux-titre, avis au relieur, titre), 104 p., 32 pl. (doubles).</extent>
+                    </monogr>
+                    <idno type="inha" n="1">https://bibliotheque-numerique.inha.fr/idurl/1/7266</idno>
+                    <idno type="inha" n="2">https://bibliotheque-numerique.inha.fr/idurl/1/7269</idno>
+                </biblStruct>
+                <!-- reprendre erara et Hathy -->
+                <!--<biblStruct>
+                    <monogr>
+                        <author>
+                            <persName>
+                                <forename>Jean-Nicolas-Louis</forename>
+                                <surname>Durand</surname>
+                            </persName>
+                        </author>
+                        <title>Précis des leçons d’architecture données à l’École Polytechnique, par J.-N.-L. Durand, architecte et professeur d’architecture</title>
+                        <imprint>
+                            <publisher>Chez l’Auteur</publisher>
+                            <publisher>À l’École royale polytechnique</publisher>
+                            <pubPlace>Paris</pubPlace>
+                            <date from="1823">1823</date>
+                        </imprint>
+                        <extent> 2 vol. : Vol. 1 : [4] f. (2 bl., faux-titre, avis au relieur, titre), [I]-VIII (préface) - 109 p., 32 pl. (doubles, numérotées de 1 à 10 puis de 1 à 22) ; Vol. 2 : [4] f. (2 bl., faux-titre, avis au relieur, titre), 104 p., 32 pl. (doubles).</extent>
+                    </monogr>
+                    <idno type="hathyTrust" n="1">https://hdl.handle.net/2027/gri.ark:/13960/t1fj65p8s</idno>
+                </biblStruct>-->
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName>
                                 <forename>Louis-Pierre</forename>
                                 <surname>Baltard</surname>
                             </persName>
@@ -461,7 +520,7 @@
                         <imprint>
                             <pubPlace>Paris</pubPlace>
                             <publisher>A. Morel</publisher>
-                            <date from="1863-1872">1863-1872</date>
+                            <date from="1863" to="1872">1863-1872</date>
                         </imprint>
                         <extent> 2 vol. in-4°, fig., pl., fig. aux titres + 1 Atlas in-fol., 36 pl. en noir et en coul.</extent>
                     </monogr>
