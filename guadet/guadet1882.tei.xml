@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/theorieSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Édition numérique de L’enseignement de l’architecture par Julien Guadet 1882</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Publicarchi</publisher>
+                <date from="2017">2017</date>
+                <idno><!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers --></idno>
+                <availability status="restricted" xml:id="ledoux1804Licence">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
+                        <p><!-- @todo renseigner le texte de la licence --></p> <graphic
+                        url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png" /> </licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
+                <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
+                <idno type="URI"><!-- @todo --></idno>
+            </seriesStmt>
+            <!--<notesStmt>
+            <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+            <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+         </notesStmt>-->
+            <sourceDesc xml:id="guadet1882">
+                <bibl copyOf="#biblioGuadet1882" />
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>L’édition de ce texte s’inscrit dans un projet collaboratif d’édition numérique de textes fondamentaux sur l’architecture moderne.</p>
+            </projectDesc>
+            <editorialDecl>
+                <correction>
+                    <p>La syntaxe originale des œuvres a été respectée et modernisée en suivant les indications de Bernard Barbiche, <ref
+                        type="external"
+                        target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
+                        >Conseils pour l’édition des textes de l’époque moderne (XVI<hi
+                        rend="superscript">e</hi>-XVIII<hi rend="superscript"
+                        >e</hi> siècle)</ref>.</p>
+                </correction>
+                <hyphenation>
+                    <p>Pour les ouvrages imprimés, il n’a pas été tenu compte de l’hyphénation.</p>
+                </hyphenation>
+                <interpretation>
+                    <p>Les interprétations sont traitées au moyen d’un élément supplied ou bien sont renvoyées en notes. Une mention de responsabilité est fournie grâce à l’attribut resp sur le passage concerné.</p>
+                </interpretation>
+                <normalization>
+                    <p>La ponctuation ainsi que les majuscules ont été normalisées. Les abréviations ont été développées.</p>
+                </normalization>
+                <stdVals>
+                    <p>On utilise...</p>
+                </stdVals>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d’un élément quote, soit au moyen d’un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <refsDecl>
+                <p>Description du système de référence canonique.</p>
+                <!-- @todo à renseigner avec une expression régulière -->
+            </refsDecl>
+            <samplingDecl>
+                <p>Échantillonnage</p>
+                <!-- @todo modifier à la fin du projet -->
+            </samplingDecl>
+            <variantEncoding method="location-referenced" location="external" />
+        </encodingDesc>
+        <profileDesc>
+            <creation when="2022">2022</creation>
+            <langUsage>
+                <language ident="fre" usage="98">Français (langue principale du corpus)</language>
+                <language ident="lat" usage="2">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Dix-huitième siècle</term>
+                    <term>France</term>
+                </keywords>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Dix-neuvième siècle</term>
+                    <term>France</term>
+                </keywords>
+                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Eighteenth century</term>
+                    <term>France</term>
+                </keywords>
+                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Nineteenth century</term>
+                    <term>France</term>
+                </keywords>
+                <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term> </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2022-07">Création du fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <titlePart>L’enseignement 
+                <lb />de l’Architecture 
+                <lb />par 
+                <lb />Julien Guadet 
+                    <lb />Architecte du gouvernement, professeur à l’École des Beaux-arts</titlePart>
+                <titlePart>Conférence faite à la Société centrale des architectes 
+                    <lb />le 24 Mars 1882</titlePart>
+                <epigraph>
+                    <cit>
+                        <quote> <sp> <speaker>Le Marquis</speaker>
+                            <p>Elle est détestable, parce qu’elle est détestable.</p> </sp> <sp>
+                            <speaker>Dorante</speaker>
+                            <p>Après cela, il n’y a plus rien à dire ; voilà son procès fait. Mais enfin, instruis-nous et dis les défauts qui y sont.</p>
+                            </sp> <sp> <speaker>Le Marquis</speaker>
+                            <p>Que sais-je, moi ? je ne me suis pas seulement donné la peine de l’écouter...</p>
+                            </sp> </quote>
+                        <bibl>Molière, La critique de l’École des Femmes, sc. VI</bibl>
+                    </cit>
+                </epigraph>
+                <docImprint>
+                    <pubPlace>Paris</pubPlace>
+                    <publisher>Librairie de l’architecture et des travaux publics</publisher>
+                    <publisher>Ducher et C<hi rend="superscript">ie</hi> <lb/>Éditeur de la Société centrale des architectes <lb/>51, Rue des Écoles, 51</publisher>
+                    <docDate>1882</docDate>
+                </docImprint>
+            </titlePage>
+            <pb/>
+            <!-- faux-titre -->
+            <pb/>
+            <!-- adresse -->
+            <pb/>
+            <titlePage>
+                <titlePart>L’enseignement 
+                    <lb />de l’Architecture 
+                    <lb />par 
+                    <lb />Julien Guadet 
+                    <lb />Architecte du gouvernement, professeur à l’École des Beaux-arts</titlePart>
+                <titlePart>Conférence faite à la Société centrale des architectes 
+                    <lb />le 24 Mars 1882</titlePart>
+                <epigraph>
+                    <cit>
+                        <quote> <sp> <speaker>Le Marquis</speaker>
+                            <p>Elle est détestable, parce qu’elle est détestable.</p> </sp> <sp>
+                                <speaker>Dorante</speaker>
+                                <p>Après cela, il n’y a plus rien à dire ; voilà son procès fait. Mais enfin, instruis-nous et dis les défauts qui y sont.</p>
+                            </sp> <sp> <speaker>Le Marquis</speaker>
+                                <p>Que sais-je, moi ? je ne me suis pas seulement donné la peine de l’écouter...</p>
+                            </sp> </quote>
+                        <bibl>Molière, La critique de l’École des Femmes, sc. VI</bibl>
+                    </cit>
+                </epigraph>
+                <docImprint>
+                    <pubPlace>Paris</pubPlace>
+                    <publisher>Librairie de l’architecture et des travaux publics</publisher>
+                    <publisher>Ducher et C<hi rend="superscript">ie</hi> <lb/>Éditeur de la Société centrale des architectes <lb/>51, Rue des Écoles, 51</publisher>
+                    <docDate>1882</docDate>
+                </docImprint>
+            </titlePage>
+            <pb/>
+            <pb/>
+        </front>
+        <body>
+            <head>Conférence 
+            <lb/>faite 
+            <lb/>à la Société centrale des architectes 
+            <lb/>le 24 mars 1882</head>
+            <div>
+            <p>Messieurs,</p>
+            <p>En venant vous entretenir quelques instants de l’Enseignement de l’Architecture, je dois tout d’abord vous dire dans quelles intentions je prends la parole devant vous. Ce n’est pas de la polémique que j’entends faire : si <orgName>l’École des Beaux-Arts</orgName> avait besoin d’être défendue, elle trouverait parmi ses professeurs des avocats plus autorisés ; je veux rester fidèle au titre amicale de nos conférences, et vous offrir une simple causerie où je vous dirai ce qui est, ce qui a été fait, et aussi ce qui selon moi pourrait se faire encore. C’est encore moins de la critique, car il y a une chose au moins que je tiens à affirmer devant vous, c’est que tous ceux de vos confrères qui se sont dévoués à l’enseignement, et qu’on accuse — je ne sais pourquoi  — d’être des immobiles sinon des rétrogrades, sont au contraire des chercheurs ardents de progrès, et méritent d’être jugés avec plus de bienveillance qu’on ne le fait journellement sans assez connaître ni les ressources de l’enseignement ni ses immenses difficultés.</p>
+            <p>Mais d’autre part, je ne suis le porte-parole de personne, j’ai tenu à ne conférer avec aucun de mes collègues de <orgName>l’École des Beaux-Arts</orgName> avant de venir devant vous. Ce sont des idées absolument personnelles que je viens vous soumettre ; su elles me sont en tout ou partie communes avec tel ou tel, je l’ignore. Vous me jugerez donc après m’avoir entendu, mais vous ne jugerez que moi.</p>
+            <p>Il est d’ailleurs bien évident, que sur un pareil sujet, je ne saurais me rencontrer avec les idées de chacun de vous. L’enseignement de l’architecture est une des grandes préoccupations de tous les architectes<pb/><fw type="pageNum">6</fw> qui aiment leur profession, de vous tous, Messieurs. Vous y avez donc tous pensé souvent, tous vous avez votre idéal, tous vous avez pour notre postérité artistique des entrailles paternelles, je puis donc heurter des idées déjà arrêtées et des convictions déjà faites : en ce cas, je vous demanderai un peu d’indulgente patience. Je l'attends en toute confiance, de votre courtoisie, et de quelque considération que vous voudrez bien accorder à dix années déjà consacrées à l’enseignement.</p>
+            </div>
+            <div>
+                <head><num>I</num></head>
+                <p>Vous le savez, Messieurs, le sujet n’est pas sans actualité — il est, à vrai dire, toujours actuel, — mais surtout depuis qu’un récent discours ministériel et des discussions animées ont remis sur le tapis des questions qui paraissaient sommeiller. Il semble qu’une loi mystérieuse règle les périodes de calme et de crise de l’enseignement artistique : vers 1835, s’inaugurait la hardiesse des théories ; en 1863, nous avons vu la foudre des coups d’état, mise à la faveur impériale au service d’ambitions de courtisans et de querelles bien plus personnelles qu’artistiques, faire long feu et s’éteindre dans le rire ; enfin, en 1881 se sont manifestées des pensées de réforme que je ne me <sic>permettrai</sic> pas de juger puisqu’elles n’ont pas été définitivement formulées, me refusant seulement à croire, comme le donneraient à entendre certains champions compromettants, que leur objectif pût être une école sans maître et sans élèves. Espérons que lorsque cette dernière agitation sera calmée — et ce sera bientôt je pense, — nous aurons devant nous au moins un nouveau bail d’une vingtaine d’années</p>
+                <p>Mais ne récriminons pas contre ces luttes qui en somme sont vivifiantes. Un fait est certain, qui domine les rivalités et les systèmes : fait insaisissable peut-être pour l’observateur d’un jour, mais évident dans sa lente continuité pour qui est à même d’observer d’ensemble l’évolution de notre École. Ce fait heureux et encourageant, Messieurs, c’est que l’architecture est bien plus étudiée aujourd’hui que par le passé.</p>
+                <p>Que les chemins de fer et les facilités de communication, que les besoins économiques de la vie nationale actuelle soient les premiers facteurs de ce progrès, j’y contredis d’autant moins que je m’en réjouis.<pb/><fw type="pageNum">7</fw> Mais il est certain qu’il y a vingt ou trente ans, sans qu’il y eût plus de vie dans les écoles départementales, les élèves qui venaient à Paris étudier leur art étaient infiniment moins nombreux. <quote>De mon temps</quote>, permettez-moi cette locution vieillotte, il existait quatre ateliers d’architecture — un peu plus de cent élèves. Aujourd’hui, il y en a neuf ou dix, tous nombreux, tous suivis ; aujourd’hui, le jeune homme qui veut exercer dans sa ville natale la profession d’architecte avec quelque ambition de sortir du rang, est obligé de justifier d’études, et ce mouvement d’opinion qui commence, ira nécessairement en progressant. Les étrangers nous viennent nombreux et ardents, avides de notre enseignement, même après avoir parcouru déjà le cercle entier des études que peut leur offrir leur pays : pour plusieurs, le <emph>grand prix</emph> est le droit de venir étudier à Paris. J’ai pour ma part dans mon atelier, peut-être un étranger sur quatre ou cinq élèves, des Anglais, des Américains du Nord et du Sud, des Russes, des Grecs, des Roumains, des Belges, des Suisses en grand nombre. En résumé, le nombre des étudiants de l’architecture est en progression rapide et continue.</p>
+                <p>Un autre aspect de cette évolution, c’est qu’aujourd’hui tous ces élèves fréquentent <orgName>l’École des Beaux-Arts</orgName>, et visent en grand nombre à parcourir tous les degrés de son enseignement. Il n’y a pas si long-temps que certains ateliers boudaient l’École ; beaucoup d’élèves alors, et souvent des meilleurs, estimaient suffisant l’enseignement de l’atelier et ne se présentaient même pas aux examens d’admission, ou bien, reçus à l’École, n’y travaillaient qu’accidentellement, prenant et laissant dans ses programmes et ses séries de travaux. J’en puis parler en connaissance de cause, ayant commencé mes études dans l’un de ces ateliers, j’ai pendant trois ans été élève d’<persName>Henri Labrouste</persName>. Là, j’étais une exception presque unique, un quasi-phénomène, parce que je suivais entièrement l’École, encouragé, je dois le dire, par ce maître éminent — un vrai classique de l’art moderne — qui n’était nullement de la trempe de ces chefs dociles, résignés, suivant un mot fameux, à la nécessité de suivre leurs troupes.</p>
+                <p>Aujourd’hui l’émulation n’est pas moins vive, l’esprit de corps si précieux dans les ateliers reste aussi entier, mais le champ de bataille est l’École pour tous, ce n’est plus la lutte entre l’École d’un côté et de l’autre les <sic>abstentionistes</sic> ou intransigeants comme vous voudrez les appeler. Aussi les cours sont-ils très suivis, les concours très nombreux ; et tandis qu’à l’époque dont je vous parle, les concours de la première classe notamment étaient presque des rendez-vous de famille, aujourd’hui notre première classe compte plus de cent élèves : le mois passé nous avons eu à juger une exposition de soixante-deux concurrents.</p>
+                <p>C’est là un fait considérable, et si je me suis un peu étendu sur cet état présent des choses, c’est qu’il est impossible de n’en pas tenir<pb/><fw type="pageNum">8</fw> grand compte dans l’examen de toutes les questions qui se rattachent à notre enseignement. C’est donc aujourd’hui, plus que jamais, l’École des Beaux-Arts qui est le grand instrument national de l’enseignement de l’architecture, c’est là qu’il faut le perfectionner sans cesse, le tenir au niveau des besoins sans cesse nouveaux d’une société sans cesse en transformation, c’est là aussi qu’on le critique, là qu’on le juge.</p>
+            </div>
+            <div>
+                <head><num>II</num></head>
+                <p>Or, depuis deux ou trois mois il n’est guère personne qui n’ait dit son mot sur l’enseignement artistique, et presque toujours, sous une forme ou une autre on s’est rencontré dans un même vœu : élever encore le niveau des études, assurer à <orgName>l’École des Beaux-Arts</orgName> les conditions véritables d’un enseignement supérieur, et pour cela, en rendre l’accès plus difficile, restreindre le nombre des élèves, en un mot en faire une École mois ouverte. Je suis aussi de cet avis, mais à une condition que je dirai plus loin : il est certain que le fait seul d’avoir été admis à <orgName>l’École des Beaux-Arts</orgName> ne constitue pas assez un titre, et que si nous pouvons être fiers d’élèves comparables à ceux de n’importe quelle école, nous devons regretter par contre que des cancres parfait aient le droit de se réclamer de notre enseignement. Il est vrai que c’est un peu là le fait de toutes les écoles libres, et que ces conditions qui sont aussi celles de l’École de droit ou de l’École de médecine, ne peuvent pas motiver de critiques bien justes : c’est sur ses bons élèves qu’une école doit être jugée, car c’est par eux qu’elle donne sa mesure. Néanmoins, il y a là un fait regrettable, et qui nous met dans une situation d’infériorité apparente vis-à-vis d’autres écoles où l’admission est plus difficile.</p>
+                <p>Un inconvénient plus sérieux, parce qu’il a une réelle influence sur la qualité des études, c’est l’émiettement des conseils du professeur. Pour les cours oraux, cela est sans importance : la leçon sera toujours la même, cela va de soi, que les auditeurs soient dix ou cent. Mais ces cours, dont je ne veux d’ailleurs nullement diminuer le mérite, ne sont pas l’essence même de l’École ; c’est dans les ateliers que l’élève se forme, que sa vocation se décide, c’est dans les ateliers que l’art se révèle à lui, le prend et le passionne, c’est dans les ateliers que se<pb/><fw type="pageNum">9</fw> se joue sa carrière future. On pourrait presque dire : <orgName>l’École des Beaux-arts</orgName>, ou les Écoles des Beaux-Arts, ce sont les ateliers, — qu’ils soient d’ailleurs en deçà ou au delà d’une grille — et la preuve en est que, à part le cours de construction qui est au premier chef un enseignement d’architecte, ce serait un changement presque inaperçu si d’aujourd’hui à demain nos cours oraux se trouvaient supprimés : les occasions ne manqueraient pas dans Paris de suivre des cours de mathématiques, de géométrie descriptive, de perspective : combien d’entre nous n’ont-ils pas étudié ces sciences soit au <orgName>Conservatoire des Arts-et-Métiers</orgName>, soit autrefois chez <persName>le bon Adhémar</persName>, ailleurs encore, ou même tout simplement dans les livres ? Tandis qu’on ne peut supposer l’enseignement des ateliers disparaissant par hypothèse, sans que du coup ce ne soit l’effondrement entier de l’enseignement de l’architecture.</p>
+                <p>Et bien, dans ces ateliers dont le rôle est si capital, il faut que le professeur puisse donner à chaque élève un enseignement individuel. Voilà ce que le public ignore absolument de notre enseignement : on suppose le cours, et encore le cours. — Sans doute nous faisons dans nos ateliers une sorte de cours par les causeries que nous aimons à faire surgir en partant d’un exemple pour remonter aux principes et aux grandes considérations d’art, comme fait le professeur de clinique dans ses démonstrations médicales. Mais nos conseils doivent toujours être mis à la portée de qui les reçoit ; et tandis que dans un cours la leçon est impersonnelle et l’enseignement absolu, dans notre atelier il faut que le professeur, sur une étude qui lui sera présentée, puisse dire <quote>c’est très bien</quote> ou <quote>c’est très mal</quote> selon l’auteur, selon que ce qu’il voit témoigne d’un progrès ou d’une défaillance. Il faut que le tempérament de l’élève soit étudié par le professeur, car à l’un, trop défiant de lui-même il faudra des encouragements — voire des flatteries — à l’autre trop présomptueux il faudra des sévérités. Enfin et surtout, il faut que le professeur demande à chacun ce qui est dans sa nature, qu’il discerne et cultive les qualités de l’élève, qu’il développe les dons quand il en rencontre, qu’il arrive à produire des élèves très divers selon les qualités de force ou d’élégance, de sagesse ou d’imagination qui se trouvaient en germes latents dans leur tempérament de nature — ce qui, soit dit en passant, explique comment les artistes les plus personnels ne sont pas toujours les meilleurs maîtres, au moins pour leurs élèves directs, témoin l’exemple si instructif de <orgName>l’école de Michel-Ange</orgName>.</p>
+                <p>Pour obtenir ces résultats, il faut que le maître connaisse ses élèves, comme <persName>César</persName>, dit-on, connaissait tous les soldats de son armée — ce qui est beaucoup — et le jour où il rencontre dans son atelier des figures sur lesquelles il ne sait plus mettre un nom, ou de ces passants qui se laissent oublier par trop d’intermittence dans la fréquentation<pb/><fw type="pageNum">10</fw> de l’atelier, l’institution est faussée, l’enseignement perd en netteté et en décision. Il devient d’ailleurs bien autrement laborieux, et comme dans un nombre trop grand d’élèves il y aforcéemnt des non-valeurs que le professeur ne peut pas cependant abandonner à la stérilité de leur nature et tenir pour nulle et non avenues, il se dépense lui-même à distribuer pour ainsi dire la monnaie du p-grand enseignement. Certes, nous voudrions tous avoir des élèves moins nombreux et plus choisis, ne diriger que de belles études, ne parler qu’à des élèves d’élite capables de comprendre les beautés les plus hautes de notre art, récolter après avoir semé, et échapper au travail de <persName>Sisyphe</persName> que nous impose trop souvent la banqueroute de promesses auxquelles nous croyons toujours !</p>
+                <p>Alors, certainement, l’arbre pourrait porter des fruits plus savoureux, et malgré l’efficacité très réelle de l’enseignement mutuel dans un atelier nombreux et organisé, élèves et maîtres gagneraient à ce que l’École fût débarrassée de non-valeurs qui l’encombrent ; et notre art lui-même y gagnerait, car lorsqu’il s’agit d’un art national et  de la valeur artistique d’une époque, l’élite seule importe — n’en déplaise à cette étonnante réunion électorale qui, pour faire choix d’un Jury de peinture avait osé mettre sur son drapeau : <quote>Plus d’aristocratie du talent !</quote></p>
+            </div>
+            <div>
+                <head><num>III</num></head>
+                <p>Oui, mais la question a une autre face, et très digne de considération. Et ici je viens vous dire : qui sommes-nous, Messiers, sinon un groupe nombreux et nécessaire d’artistes et de praticiens qui tiennent dans leurs mains une des plus magnifiques branches de la fortune nationale ; sinon, dans notre collectivité, les mandataires tacites de notre pays, délégués à la création, à la conservation et à l’administration du patrimoine qui compte le plus, après la terre même, dans la richesse immobilière de la patrie ? Permettez-moi un peu de statistique, je n'en abuserai pas.</p>
+                <p>Le grand ouvrage de M. Block, <title>Statistique de la France</title>, évaluait pour l’année 1874 le mouvement général des affaires relatives à l’industrie du bâtiment et ses accessoires au chiffre de un milliard six<pb/><fw type="pageNum">11</fw> cent quatre-vingts millions. La plupart des économistes, dans des appréciations nécessairement hypothétiques, assignent à la propriété immobilière en France, sol et constructions, une valeur approximative de cent milliards. Pour Paris seulement nous savons qu’il existe environ soixante mille maisons, et si nous leurs attribuons seulement une moyenne de quarante mille francs, ce sont deux milliards et demi, que représenterait la valeur seule de nos maisons, sans parler de la valeur incalculable de nos monuments. — Ces considérations vous paraissent peut-être bien étrangères à mon sujet, j'y reviens.</p>
+                <p>Pour créer et entretenir un pareil patrimoine, qui, je le répète, est entre les mains des artistes, il faut bien que nous soyons nombreux, très nombreux, et capables. Cette magnifique branche de la fortune nationale aura des alternatives de progrès et de décadence selon ce que nous vaudrons nous-mêmes, et à notre tour, nous vaudrons selon notre instruction : cela me paraît aussi clair qu’un théorème. Or donc s’il y a les neuf dixièmes peut-être, peut-être plus, de ceux qui prennent la qualité d’architectes, qui n’aient jamais appris même les éléments de cette difficile profession, qui n’aient d’autres titres à l’exercer que la patente qu’ils paient ; et si, négligeant ceux qui ne sont ignorants de leur métier que par impudence et par choix, nous constatons nous-mêmes que beaucoup ignorent faute d’avoir pu apprendre, faute d’écoles, faute d’enseignement ; qui donc osera dire, Messieurs, qu’il n’y ait pas là un vrai malheur public et une nécessité impérieuse d’aviser ? Qui osera dire qu’il n’est pas bon, qu’il n’est pas nécessaire, que quiconque prétend prendre en main la fortune de ses concitoyens ait au moins passé par une école, ait au moins appris l’indispensable, ait au moins acquis ces notions premières seules capables de lui révéler tout d’abord ce que sa profession exige de compétence et de dignité ?</p>
+                <p>Or, faisons un calcul bien simple et bien concluant. J’ouvre l’<title>Annuaire du bâtiment</title>, et pour Paris seul, je trouve deux mille quatre cents noms d’architectes. Supposons un instant que tous aient passé par une école, nous pouvons bien admettre que le temps moyen de l’exercice de la profession après la sortie de l’école n’excédera pas quinze années ; cette moyenne serait plutôt longue avec tant de causes de réduction, la mort, la maladie, l’abandon de la carrière, quelquefois même — cela s’est vu paraît-il — la fortune faîte ; et dès lors, il faudrait, toujours pour Paris seul, que l’École eût admis chaque année 160 élèves. Si au contingent de Paris vous ajoutez celui des départements, celui de l’étranger, vous voyez à quelle foule véritable il faudrait que <orgName>notre École des Beaux-Arts</orgName> pût ouvrir ses portes, et combien, à ce point de vue, porte à faux le reproche qu’on lui fait d’admettre trop d’élèves. Seule, notre École enseigne l’architecture, et pour suffire au recrutement du personnel architectural de la France il faudrait pouvoir décupler nos admissions, voilà la situation.</p>
+                <pb/><fw type="pageNum">12</fw>
+                <p>Je sais bien qu’on peut s’instruire en architecture sans avoir fréquenté l’École, et je ne veux pas faire le procès de ceux d’entre nous qui ont su se former en dehors de l’enseignement scolaire, je les admire au contraire. Mais quelle énergie et quel bonheur ne leur a-t-il pas fallu pour sortir instruits de cet apprentissage sans méthode, qui sera quelquefois une exception heureuse, le plus souvent une pernicieuse illusion ! Aujourd’hui que pour toutes les facultés de l’intelligence les écoles sont réputées l’instrument par excellence du progrès national, même du salut public, l’architecture fera-t-elle exception, et laissera-t-elle neuf fois sur dix l’instruction de ses étudiants au hasard de l’échange de deux ignorances ? Non certes, et le prodigieux architecte de <persName>Jérôme Paturot</persName> ne doit plus être que le vestige d’une race disparue !</p>
+                <p>J’estime donc que si d’un côté il est désirable qu’à l’École des Beaux-Arts l’instruction gagne en profondeur ce qu’elle perdrait en surface — autrement dit en nombre d’élèves, — d’autre part, il est d’intérêt public que l’enseignement de l’architecture soit donné à des élèves dix fois plus nombreux. Cela est-il conciliable ? je le crois, et c’est même seulement parce que je le crois que je suis aujourd’hui devant vous.</p>
+            </div>
+            <div>
+                <head><num>IV</num></head>
+                <p>Éliminons d’abord un obstacle dont la persistance finit par devenir agaçante. Toutes les fois que notre art est en jeu, qu’il s’agisse des expositions ou d’une organisation d’école, le public, la critique et les autorités compétentes elles-mêmes voient la peinture, rien que la peinture ; on organise pour la peinture, on combine pour la peinture, on critique ou on applaudit pour la peinture — un peu pour la sculpture — puis l’architecture se tasse comme elle peut dans une symétrie admirablement pondérée, disons plutôt dans les bagages. Il en advient ce qu’il peut, ce sera toujours assez bon pour ce hors-d’œuvre, cet appoint par-dessus le marché.</p>
+                <p>Nous méritons mieux, n’est-ce pas ? Laissons donc là toute préoccupation d’analogie d’enseignement, et passons.</p>
+                <pb/>
+                <space/>
+                <fw type="pageNum">13</fw>
+                <p>Selon moi, ce qu’il faut au début de nos études, et ce qui suffira au plus grand nombre des aspirants à l’architecture, c’est la constitution d’écoles professionnelles. Que, à Paris, ce puisse être là une annexe et comme une troisième classe de l’École des Beaux-Arts, c’est possible, et ce n’est ici, après tout, qu’une question de local. Mais j'en voudrais ailleurs aussi, dans les grands centres des départements q, qui retiendraient les jeunes gens de la région pour les études élémentaires et ne rendraient nécessaire le séjour de Paris qu’à ceux qui se sentiraient l’ambition d’aborder les études plus hautes d’une école supérieure. Il existe bien <orgName>des écoles départementales, notamment à Lyon, à Dijon, à Toulouse et dans diverses villes du Nord</orgName>, où elles sont excellentes ; mais, en général, ce sont de petites écoles des beaux-arts qui embrassent trop pour bien étreindre. Pour moi, j'ai toujours été frappé de la solidité d’instruction acquise sur des programmes modestes, mais sérieux, par les bons élèves <orgName>des écoles d’arts et métiers d’Angers, d’Aix ou de Châlons</orgName>, et je serais heureux que l’enseignement supérieur de l’architecture pût recruter ses élèves dans des pépinières aussi précieuses. Aussi, n’était l’inconvénient d’un titre trop long, j’appellerais volontiers les éocles que je rêve : <soCalled>Écoles des arts et métiers de l’industrie du bâtiment</soCalled>.</p>
+                <p>Dans ces écoles, on apprendrait l’art, ou plus exactement la science de bâtir. On y devrait étudier à fond les sciences diverses qui sont indispensables à l’architecte, qui deviennent plus tard l’instrument de ses études ; et quand je dis <emph>à fond</emph>, je ne veux pas dire <emph>jusqu’au bout</emph> ; j’entends seulement qu’on devrait posséder pleinement les matières du programme. Là, on devrait apprendre les mathématiques élémentaires, la géométrie descriptive, les levés de plans et nivellements, la stéréotomie, la perspective ; je voudrais même qu’on y devint un peu appareilleur, charpentier, menuisier, non par le maniement de l’outil, mais par l’étude sérieuse et pratique des tracés, de <emph>l’art du trait</emph> de nos pères, et par l’exécution de modèles. On apprendrait les grandes règles du métré et de l’évaluation dans ce qu’elles ont d’applicable partout en dehors des usages locaux, et les principes des lois et coutumes du bâtiment, dont votre <title>Manuel</title> serait assurément le livre classique par excellence.</p>
+                <p>En même temps, ces écoles devraient donner à leurs élèves l’enseignement du dessin d’après la bosse et du dessin d’architecture, du lavis, et aussi du modelage en terre de la sculpture décorative. Enfin, on y étudierait l’architecture dans ses éléments et ses productions, l’architecture analytique, si je puis employer ce mot. J’entends par là que les élèves seraient instruits de ce qui est, mais pas encore invités à composer. On leur montrerait ce qu’est un mur, une porte, une croisée, une arcade, une colonne, un plafond, une voûte, un escal<pb/><fw type="pageNum">14</fw>ier, etc. ; comment ces éléments constants de la composition ont été traités de tant de façons diverses ; on chercherait à leur faire, aussi complète que possible, la connaissance du patrimoine acquis de notre art. On leur exposerait enfin le<supplied>s</supplied> plus remarquables solutions trouvées pour les besoins des divers genres d’édifices, publics ou privés. Tout cela serait, en quelque sorte, la constatation scientifique des réalités de l’architecture, l’initiation de l’élève au pourquoi et au comment de ce que notre art a su produire d’utile et de beau.</p>
+                <p>Tel pourrait être, dans ses grands traits, le programme de ces écoles, à la fois préparatoires pour ceux qui auraient l’ambition des hautes études artistiques, et suffisantes pour assurer à l’exercice quotidien de notre profession le recrutement d’un personnel honorable et instruit.</p>
+                <p>Dans ces écoles, d’ailleurs, l’enseignement, plus scientifique qu’esthétique, n’exigerait pas, comme à <orgName>l’École des Beaux-Arts</orgName>, des professeurs nombreux d’architecture, ayant chacun leur tendance et leur idéal. Mais ce que je considérerais comme essentiel, c’est que les élèves fussent partout et toujours conseillés dans leurs travaux, qu’il s’agit de dessin, d’architecture ou de sciences. Longtemps, l’enseignement s’est borné au rouage commode du cours oral, qui n’est guère que le livre parlé ; or, répétons-le sans cesse, le véritable enseignement, c’est l’enseignement direct, c’est le laboratoire ou l’atelier.</p>
+                <!-- @todo l’espace entre les § est irrégulier -->
+                <p>Si ces écoles existaient, n’est-il pas évident que la sélection des élèves dignes de l’École des Beaux-Arts se ferait toute seule, et que l’École des Beaux-Arts deviendrait bien réellement l’école supérieure des études d’architecture ? L’examen de sortie des écoles professionnelles serait la condition de l’entrée à la grande école, et il est bien évident qu’alors il n’y viendrait que des élèves persévérants, déjà instruits, décidés à aller plus avant dans la voie des études, et à joindre, aux qualités du praticien déjà acquises, les mérites nouveaux de l’artiste. Je ne crois pas, d’ailleurs, que le temps total des études dût ainsi devenir plus long.</p>
+                <p>Ce que je propose n’est, après tout, qu’un rangement, une mise en ordre de travaux en tous cas nécessaires. À l’École des Beaux-Arts, déblayée de non-valeurs, les progrès seraient plus rapides, car on aurait des élèves mieux préparés, et les programmes seraient allégés, car ce n’est vraiment pas à l’École des Beaux-Arts que devraient s’apprendre des sciences absolument préalables, comme la géométrie descriptive, par exemple.</p>
+                <p>Un rangement, ai-je dit ; j’aurais dû dire la logique. L’un de nos maîtres, qui aimait à condenser des idées larges dans la forme concise d’un sentence, <persName>Constant-Dufeux</persName>, présentait ainsi les phases de l’étude et de la composition : <quote>Sentir, connaître et choisir.</quote> Ne pen<pb/><fw type="pageNum">15</fw>sez-vous pas comme moi, Messieurs, que <quote>connaître</quote> doive venir en tête et frayer le chemin.</p>
+                <p>Cette marche des études, qui me parait en tous cas nécessaire, je l’ai supposée avec une largeur d’organisation qui est mon droit à l’utopie. Mais j’aime à voir la condition possible des choses, et lorsque de divers côtés on exprime ce vœu que l’École des Beaux-Arts devienne d’un accès plus difficile et, par conséquent, plus honorable, j’ai pensé qu’il ne suffisait pas de s’en tenir à cette formule générale et facile d’un <soCalled>desideratum</soCalled>  platonique, et qu’il fallait envisager en hommes pratiques les conséquences de ce vœu légitime. Vous cherchez un résultat, c’est bien ; mais ce résultat, vous ne l’obtiendrez pas sans moyens ; quels seront donc ces moyens ? C’était la question première à examiner. Moi aussi, j’ai donc cherché ces moyens, et je vous en offre un ; il est vrai qu’il soulève de grosses questions, qu’il n’est pas d’une exécution réalisable du jour au lendemain ; mais si pourtant c’était plus qu’un moyen, si c’était une condition ?</p>
+            </div>
+            <div>
+                <head><num>V</num></head>
+                <p>En attendant, Messieurs, <orgName>l’École des Beaux-Arts</orgName> est et restera le foyer unique des études d’architecture. Voyons donc, en l’état des choses, ce qu’il peut y avoir de fondé dans les critiques, en tous cas beaucoup trop passionnées, dont elle fait l’objet.</p>
+                <p>Peut-on sérieusement lui reprocher d’être trop large pour les admissions ? Je crois vous avoir montré que non, et d’ailleurs, pour maintenir le niveau des études dans une école, ce n’est pas sur la difficulté de l’admission que je compterais. L’aspirant qui se présente à nous peut être novice, mais bien doué, et nous avons intérêt à l’accepter ; ou un récidiviste de l’admission, un aspirant de cinquième année — il y en a — qui aura un peu plus d’acquis, mais qui ne fera jamais qu’une triste recrue. Il y a des débuts pénibles : j’ai entendu raconter par <persName>M. Jouffroy</persName> que l’un de ses meilleurs élèves, <persName>mon camarade Deschamps</persName>, montrait, au début, si peu de dispositions qu’à plusieurs reprises, il fut tenté de le dissuader de ses études. Or, un jour vint où Deschamps se révêla ; bientôt, il eut le grand prix avec un<pb/><fw type="pageNum">16</fw> très grand succès, et la première figure qu’il fit <placeName>à Rome</placeName>,  — œuvre malheureusement posthume lorsqu’elle fut exposée, — balançait la médaille d’honneur au Salon. Au besoin, nous pourrions tous citer des exemples analogues. Appelons donc à nous tous les jeunes gens de bonne volonté, et soyons plutôt sévères après.</p>
+                <p>Je regrette, pour ma part, que l’administration de l’École ait laissé tomber en désuétude la disposition du règlement qui entraîne la radiation de tout élève n’ayant pas satisfait, dans l’année, à un minimum d’épreuves. Mais je voudrais plus : <orgName>au Conservatoire de musique</orgName>, l’élève est admis dans une classe à un délai de trois ans, je crois, peu importe d’ailleurs la durée, pour obtenir le second prix, de même enfin pour le premier prix. À <orgName>l’École centrale</orgName>, il existe des examens de passage d’une classe à l’autre, et l’insuccès persistant dans ces examens est une cause d’élimination. Cette règle me paraît excellente ; pourvu que les délais fussent assez larges pour faire la part des natures lentes et aussi de la malchance qui sera toujours un élément à considérer, je crois qu’une disposition semblable pourrait très utilement s’appliquer chez nous, notamment pour le passage en première classe. Cette élimination des non-valeurs serait à mon avis plus logique et plus efficace que la sévérité pour l’admission, suivie du laissez-aller et de la somnolence tolérée.</p>
+                <p>Il y a aussi la fameuse question des ateliers ; je pourrais me récuser sur ce sujet, mais j’aurai le courage de mon opinion.</p>
+                <p>L’atelier, qu’il soit dans l’École ou au dehors, est, je l'ai dit, l’instrument par excellence de l’enseignement artistique. De tout temps, la vraie école a été l’atelier ; c’est l’atelier qui, à travers la langue de l’histoire, devient l’école générique d’une époque, lorsque à sa tête se trouve un <persName>David</persName>, par exemple. Et remarquez, Messieurs, que, tandis que l’atelier a été de tout temps la méthode unique de l’enseignement des arts, l’enseignement supérieur des autres facultés de l’esprit humain, comprenant l’insuffisance de l’antique cours oral, a fini par nous emprunter cette méthode.  Qu’est-ce, en effet, que le laboratoire, — j’entends le laboratoire d’enseignement, — pour les sciences, ou que la salle des conférences pour les lettres, ou que la clinique et l’école pratique pour la médecine, sinon l’analogue de nos ateliers, la mise en communication directe, intime, et bientôt l’affection du maître et de l’élève, du maître connaissant l’élève, de l’élève pouvant s’ouvrir au maître ?</p>
+                <p>Et bien, je voudrais dans notre école des ateliers plus nombreux, beaucoup plus nombreux. Je voudrais pour nos jeunes architectes un atelier de dessin et de modelage, où ils recevraient les conseils d’un peintre et d’un sculpteur ; et c’est ainsi que j’entends, — à charge de<pb/><fw type="pageNum">17</fw> réciprocité,  — l’étude simultanée des trois arts dont l’idée a été accueillie avec sympathie. Je voudrais aussi pour eux un atelier temporaire, ouvert à tous, où les exercices de géométrie descriptive, de stéréotomie, de perspective, de construction enfin se feraient avec les conseils des professeurs respectifs ou, s’il le fallait, de délégués spéciaux. Pour tout cela, ils ont des cours, tous excellents, mais le cours ne donne pas le conseil, l’encouragement, la démonstration patiente et dévouée, la familiarité bienveillante et persuasive de l’atelier.</p>
+                <p>Pour l’architecture, enfin, il nous faut des ateliers nombreux et variés, avec des personnalités tranchées entre les professeurs ; car, si l’École, dans son ensemble, doit être éclectique et n’avoir pas de religion d’État, le maître, dans son atelier, ne représente que lui-même et ses idées personnelles  il y sera ce que sa nature et ses études l’auront fait, il y sera <persName>Ingres</persName> ou <persName>Delacroix</persName> ; et c’est là un grand bien, pourvu que l’élève puisse choisir entre les tendances diverses que personnifieront les maîtres. Heureusement, les ateliers sont nombreux aujourd’hui, chacun avec ses traditions, ses principes et même ses préjugés.</p>
+                <p>Mais je voudrais qu’on fit cesser une inégalité que rien ne motive, et que ces ateliers fussent tous dans l’École.</p>
+                <p>Je dis <emph>dans l’École</emph>, et non, comme quelques-uns, <emph>hors de l’École</emph>. Je m’explique : en 1863, on pouvait ne pas créer d’ateliers dans l’École, et, à cette époque, on a craint — moi tout le premier — que les élèves le fussent bientôt forcés de quitter les maîtres qu’ils aimaient et de restreindre leur choix entre trois seuls professeurs : ç’eût été déplorable, et je crois encore que tel était bien le but secret des inspirateurs du décret de 1863. Heureusement, grâce à la résistance des élèves d’alors, qui réussit à empêcher cette confiscation préméditée de l’enseignement, et grâce à la vaillance, que je proclame hautement, de maître dévoués et éminents, il n’en a rien été ; si bien même qu’aujourd’hui les ateliers extérieurs, comme on dit, sont plus nombreux que ceux de l’École.</p>
+                <p>Mais une fois conjurées les menaces que pouvait contenir la pensée perfide qui avait présidé à la création d’ateliers dans l’École, il convient de les juger, non d’après les intentions suspectes de leurs créateurs, mais d’après les résultats d’une pratique de vingt ans, ramenée par la sagesse de tous au seul intérêt des études. Or, leur avantages sont réels : la gratuité, de l’enseignement, la proximité immédiate des cours et des collections de l’École évitant les pertes de temps, plus de garanties pour les familles, les relations de camaraderie rayonnant en dehors du cercle restreint de l’atelier et créant, à la longue, cet esprit de corps de notre École entière, que tous nous avons si vivement désiré ; mieux encore moyennant quelques dispositions<pb/><fw type="pageNum">18</fw> assez faciles, dont la recherche est à l’ordre du jour, la vie en commun et la fraternité d’études pouvant s’étendre jusqu’aux élèves des diverses sections, peinture, sculpture, architecture, et nous délivrer de la sécheresse des spécialités trop étroites, ce qui serait un résultat capital ; enfin, l’école vivante, animée, groupée en faisceau.</p>
+                <!-- @todo continuer -->
+                <gap reason="sampling"></gap>
+                <!--  voir aussi https://gallica.bnf.fr/ark:/12148/bpt6k6332229j# -->
+            </div>
+        </body>
+    </text>
+</TEI>

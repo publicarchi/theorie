@@ -128,7 +128,7 @@
     <text>
         <body>
             <listBibl type="biblio">
-                <biblStruct>
+                <biblStruct xml:id="biblioCordemoy1706">
                     <monogr>
                         <author>
                             <persName ref="#cordmoyJL">
@@ -147,7 +147,7 @@
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb302694456</idno>
                     <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k856710</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioBoffrand1745">
                     <monogr>
                         <author>
                             <persName>
@@ -175,7 +175,7 @@
                         >http://atrium.umontreal.ca/UM:Tout_sauf_articles:UM-ALEPH001722009</idno>
                     <idno type="udemCote">NA 2520 B64</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioLaugier1753">
                     <monogr>
                         <author>
                             <persName>
@@ -195,7 +195,7 @@
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb307495270</idno>
                     <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k856908</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioLaugier1755">
                     <monogr>
                         <author>
                             <persName ref="#laugierMarcAntoine">
@@ -217,7 +217,7 @@
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb33995915x</idno>
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30749528b</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioLaugier1765">
                     <monogr>
                         <author>
                             <persName ref="#laugierMarAntoine">
@@ -238,7 +238,7 @@
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb307495348</idno>
                     <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k85694n</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioBlondel1747">
                     <monogr>
                         <author>
                             <persName ref="#blondelJacquesFrançois">
@@ -257,7 +257,7 @@
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb301151576</idno>
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30115158j</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioBlondel1771">
                     <monogr>
                         <author>
                             <persName ref="#blondelJacquesFrançois">
@@ -275,7 +275,7 @@
                     </monogr>
                     <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k6558006r</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioPatte1767">
                     <monogr>
                         <author>
                             <persName ref="#pattePierre">
@@ -296,7 +296,7 @@
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb39316887w</idno>
                     <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k1041169x</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioPatte1769">
                     <monogr>
                         <author>
                             <persName ref="#pattePierre">
@@ -316,7 +316,7 @@
                     <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k85699c</idno>
                     <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k5701519t</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioBlondel1771-1777">
                     <monogr>
                         <author>
                             <persName ref="#blondelJacquesFrançois">
@@ -349,7 +349,7 @@
                     <idno type="gallica" n="plt6">http://gallica.bnf.fr/ark:/12148/bpt6k6560257j</idno>
                     <idno type="gallica" n="pl1-2">http://gallica.bnf.fr/ark:/12148/bpt6k6574362q</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioLeCamusDeMezieres1780">
                     <monogr>
                         <author>
                             <persName>
@@ -368,7 +368,7 @@
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30763829g</idno>
                     <idno type="gallica">https://gallica.bnf.fr/ark:/12148/bpt6k857133</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioLeCamusDeMezieres1786">
                     <monogr>
                         <author>
                             <persName>
@@ -397,7 +397,8 @@
                 <!-- Charles-Nicolas Cochin -->
                 <!-- Charles-François Viel -->
                 <!-- Antoine-Chrysostome Quatremère de Quincy -->
-                <biblStruct>
+                <!-- Cousin -->
+                <biblStruct xml:id="biblioDurand1809">
                     <monogr>
                         <author>
                             <persName>
@@ -416,7 +417,7 @@
                     </monogr>
                     <idno type="agorha">https://agorha.inha.fr/inhaprod/ark:/54721/00345118</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioDurand1817">
                     <monogr>
                         <author>
                             <persName>
@@ -456,7 +457,7 @@
                     </monogr>
                     <idno type="hathyTrust" n="1">https://hdl.handle.net/2027/gri.ark:/13960/t1fj65p8s</idno>
                 </biblStruct>-->
-                <biblStruct>
+                <biblStruct xml:id="biblioBaltard1840">
                     <monogr>
                         <author>
                             <persName>
@@ -473,7 +474,7 @@
                         <extent>28 p., 8°</extent>
                     </monogr>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioBlouet1847-1855">
                     <monogr>
                         <author>
                             <persName>
@@ -508,7 +509,7 @@
                     </note>
                     <!-- https://lib.ugent.be/en/catalog/rug01:001709095 édition de Liège de 1848, https://lib.ugent.be/en/catalog?q=Blouet+traité, pl. http://bvpb.mcu.es/es/catalogo_imagenes/grupo.cmd?path=44004 https://books.google.be/books?vid=GENT900000134456 -->
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioViolletLeDuc1863-1872">
                     <monogr>
                         <author>
                             <persName>
@@ -529,7 +530,30 @@
                     <idno type="gallica" n="vol2">http://gallica.bnf.fr/ark:/12148/btv1b86266446</idno>
                     <idno type="gallica" n="atlas">http://gallica.bnf.fr/ark:/12148/btv1b8626665c</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioReynaud1850">
+                    <monogr>
+                        <author>
+                            <persName ref="#raynaudLeonce">
+                                <forename>Léonce</forename>
+                                <surname>Reynaud</surname>
+                            </persName>
+                        </author>
+                        <title>Traité d’architecture</title>
+                        <title>contenant des notions générales sur les principes de la construction et sur l’histoire de l’art</title>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Librairie pour l’architecture</publisher>
+                            <publisher>Carilian-Gœury et Vve Dalmont, Éditeurs</publisher>
+                            <date from="1850" to="1858">1850-1858</date>
+                        </imprint>
+                        <extent>2 vol.</extent>
+                    </monogr>
+                    <idno type="erara" n="vol1">https://doi.org/10.3931/e-rara-52726</idno>
+                    <idno type="erara" n="vol2">https://doi.org/10.3931/e-rara-52727</idno>
+                    <idno type="erara-iiif" n="vol1">https://www.e-rara.ch/i3f/v20/14467706/manifest</idno>
+                    <idno type="erara-iiif" n="vol2">https://www.e-rara.ch/i3f/v20/14468442/manifest</idno>
+                </biblStruct>
+                <biblStruct xml:id="biblioReynaud1860-1863">
                     <monogr>
                         <author>
                             <persName ref="#reynaudLeonce">
@@ -554,7 +578,28 @@
                     <idno type="mdz">http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10871478-7</idno>
                     <idno type="mdz">http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10871479-7</idno>
                 </biblStruct>
-                <biblStruct>
+                <biblStruct xml:id="biblioGuadet1882">
+                    <monogr>
+                        <author>
+                            <persName ref="#guadetJulien">
+                                <forename>Julien</forename>
+                                <surname>Guadet</surname>
+                            </persName>
+                        </author>
+                        <title type="main">L’enseignement de l’architecture</title>
+                        <title type="sub">conférence faite à la Société centrale des architectes, le 24 mars 1882</title>
+                        <imprint>
+                            <publisher>Paris</publisher>
+                            <publisher>Librairie générale de l’architecture et des travaux publics</publisher>
+                            <publisher>Ducher et Cie</publisher>
+                            <date when="1882">1882</date>
+                        </imprint>
+                        <extent>30 p. ; gr. in-8</extent>
+                    </monogr>
+                    <idno type="catBnf">https://catalogue.bnf.fr/ark:/12148/cb305484394</idno>
+                    <idno type="gallica">https://gallica.bnf.fr/ark:/12148/bpt6k86620b</idno>
+                </biblStruct>
+                <biblStruct xml:id="biblioGuadet1901-1904">
                     <monogr>
                         <author>
                             <persName ref="#guadetJulien">
@@ -563,10 +608,10 @@
                             </persName>
                         </author>
                         <title type="main">Éléments et théorie de l’architecture</title>
-                        <title type="sub">cours professé à l'École nationale et spéciale des beaux-arts</title>
+                        <title type="sub">cours professé à l’École nationale et spéciale des beaux-arts</title>
                         <imprint>
                             <pubPlace>Paris</pubPlace>
-                            <publisher>Aulanier</publisher>
+                            <publisher>Aulanier et Cie Éditeurs</publisher>
                             <date from="1901" to="1904">1901-1904</date>
                         </imprint>
                         <extent>4 vol. : ill. ; gr. in-8°</extent>
@@ -576,6 +621,30 @@
                     <idno type="gallica" n="vol2">http://gallica.bnf.fr/ark:/12148/bpt6k86617f</idno>
                     <idno type="gallica" n="vol3">http://gallica.bnf.fr/ark:/12148/bpt6k86618s</idno>
                     <idno type="gallica" n="vol4">http://gallica.bnf.fr/ark:/12148/bpt6k866194</idno>
+                </biblStruct>
+                <biblStruct xml:id="biblioGuadet1915">
+                    <monogr>
+                        <author>
+                            <persName ref="#guadetJulien">
+                                <forename>Julien</forename>
+                                <surname>Guadet</surname>
+                            </persName>
+                        </author>
+                        <title type="main">Éléments et théorie de l’architecture</title>
+                        <title type="sub">cours professé à l’École nationale et spéciale des beaux-arts</title>
+                        <edition>4<hi rend="superscript">e</hi> édition augmentée d’une notice sur la vie et les œuvres de Julien Guadet / par J.-L. Pascal,...</edition>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Librairie de la Construction moderne</publisher>
+                            <date when="1915">1915</date>
+                        </imprint>
+                        <extent>4 vol. : fig. et pl. ; gr. in-8</extent>
+                    </monogr>
+                    <idno type="catBnf">https://catalogue.bnf.fr/ark:/12148/cb30548438s</idno>
+                    <idno type="gallica" n="vol1">https://gallica.bnf.fr/ark:/12148/bpt6k30768783</idno>
+                    <idno type="gallica" n="vol2">https://gallica.bnf.fr/ark:/12148/bpt6k3040254x</idno>
+                    <idno type="gallica" n="vol3">https://gallica.bnf.fr/ark:/12148/bpt6k30403600</idno>
+                    <idno type="gallica" n="vol4">https://gallica.bnf.fr/ark:/12148/bpt6k3040590t</idno>
                 </biblStruct>
             </listBibl>
         </body>
