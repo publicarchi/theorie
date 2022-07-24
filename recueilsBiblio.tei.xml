@@ -36,16 +36,13 @@
                 <date from="2017">2017</date>
                 <idno><!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers --></idno>
                 <availability status="restricted" xml:id="theorieBiblioLicence">
-                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
-                        <p><!-- @todo renseigner le texte de la licence --></p>
-                        <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/>
-                    </licence>
+                    <licence target="http://creativecommons.org/licenses/by-nc/4.0/fr/"/>
                 </availability>
             </publicationStmt>
             <seriesStmt>
                 <title xml:lang="fre" type="main">Recueils d’architecture français de l’époque moderne, 1750-18450</title>
                 <title xml:lang="fre" type="sub">Corpus électroniques</title>
-                <idno type="URI"><!-- @todo --></idno>
+                <idno type="URI">text.archi/recueilsBiblio</idno>
             </seriesStmt>
             <!--
             <notesStmt>

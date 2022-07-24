@@ -32,19 +32,17 @@
             </editionStmt>
             <extent><!-- @todo : taille du fichier en octet --></extent>
             <publicationStmt>
-                <publisher>Publicarchitectura</publisher>
+                <publisher>Publicarchi</publisher>
                 <date from="2017">2017</date>
                 <idno><!-- @todo attribuer un DOI ou un identifiant ARK aux fichiers --></idno>
                 <availability status="restricted" xml:id="theorieBiblioLicence">
-                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
-                        <p><!-- @todo renseigner le texte de la licence --></p> <graphic
-                        url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/> </licence>
+                    <licence target="http://creativecommons.org/licenses/by-nc/4.0/fr/"/>
                 </availability>
             </publicationStmt>
             <seriesStmt>
                 <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
                 <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
-                <idno type="URI"><!-- @todo --></idno>
+                <idno type="URI">text.archi/theorieBiblio</idno>
             </seriesStmt>
             <!--
             <notesStmt>
@@ -88,10 +86,6 @@
                 <p>Description du système de référence canonique.</p>
                 <!-- @todo à renseigner avec une expression régulière -->
             </refsDecl>
-            <samplingDecl>
-                <p>Échantillonnage</p>
-                <!-- @todo modifier à la fin du projet -->
-            </samplingDecl>
             <variantEncoding method="location-referenced" location="external"/>
         </encodingDesc>
         <profileDesc>
