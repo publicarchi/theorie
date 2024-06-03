@@ -6,24 +6,37 @@
             <titleStmt>
                 <title xml:lang="fre"
                     >Bibliographie des ouvrages de théorie de l’architecture moderne, 1750-1850</title>
-                <principal> <persName ref="#EC"> <forename>Emmanuel</forename>
-                    <surname>Château-Dutier</surname> </persName> <affiliation>
-                    <orgName>Université de Montréal</orgName> <orgName type="alt">UdeM</orgName>
-                    <roleName>professeur adjoint</roleName> </affiliation> </principal>
+                <principal>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château-Dutier</surname>
+                    </persName>
+                    <affiliation>
+                        <orgName>Université de Montréal</orgName>
+                        <orgName type="alt">UdeM</orgName>
+                        <roleName>professeur adjoint</roleName>
+                    </affiliation>
+                </principal>
                 <respStmt>
                     <resp key="prg">modélisation XML-TEI</resp>
-                    <persName ref="#EC"> <forename>Emmanuel</forename>
-                        <surname>Château-Dutier</surname> </persName>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château-Dutier</surname>
+                    </persName>
                 </respStmt>
                 <respStmt>
                     <resp key="mrk">encodage</resp>
-                    <persName ref="#EC"> <forename>Emmanuel</forename>
-                        <surname>Château-Dutier</surname> </persName>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château-Dutier</surname>
+                    </persName>
                 </respStmt>
                 <respStmt>
                     <resp key="edt">édition</resp>
-                    <persName ref="#EC"> <forename>Emmanuel</forename>
-                        <surname>Château-Dutier</surname> </persName>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château-Dutier</surname>
+                    </persName>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -64,7 +77,9 @@
                     <p>La syntaxe originale des œuvres a été respectée et modernisée en suivant les indications de Bernard Barbiche, <ref
                         type="external"
                         target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
-                        >Conseils pour l’édition des textes de l’époque moderne (XVI<hi rend="superscript">e</hi>-XVIII<hi rend="superscript">e</hi> siècle)</ref>.</p>
+                        >Conseils pour l’édition des textes de l’époque moderne (XVI<hi
+                        rend="superscript">e</hi>-XVIII<hi rend="superscript"
+                        >e</hi> siècle)</ref>.</p>
                 </correction>
                 <hyphenation>
                     <p>Pour les ouvrages imprimés, il n’a pas été tenu compte de l’hyphénation.</p>
@@ -112,7 +127,8 @@
                     <term>France</term>
                 </keywords>
                 <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
-                    <term>Text</term> </classCode>
+                    <term>Text</term>
+                </classCode>
             </textClass>
         </profileDesc>
         <revisionDesc>
@@ -125,7 +141,7 @@
                 <biblStruct xml:id="biblioCordemoy1706">
                     <monogr>
                         <author>
-                            <persName ref="#cordmoyJL">
+                            <persName ref="#cordemoyJeanLouis">
                                 <forename>J.-L. de</forename>
                                 <surname>Cordemoy</surname>
                             </persName>
@@ -144,7 +160,7 @@
                 <biblStruct xml:id="biblioBoffrand1745">
                     <monogr>
                         <author>
-                            <persName>
+                            <persName ref="#boffrandGermain">
                                 <forename>Germain</forename>
                                 <surname>Boffrand</surname>
                             </persName>
@@ -160,19 +176,24 @@
                         <extent>99 p., 70 feuillets de planches (certains pliés)</extent>
                         <extent>43 cm</extent>
                     </monogr>
-                    <note type="subject"> <p>Architecture -- Détails -- Ouvrages avant 1800</p>
+                    <note type="subject">
+                        <p>Architecture -- Détails -- Ouvrages avant 1800</p>
                         <p>Architecture -- Dessins et plans -- Ouvrages avant 1800</p>
-                        <p>Architecture -- Ouvrages avant 1800</p> </note>
+                        <p>Architecture -- Ouvrages avant 1800</p>
+                    </note>
                     <note>
-                        <p>Page de titre additionnelle en latin. Texte français et latin sur deux colonnes. Restauration et boîtier de conservation : Terry Rutherford. Accompagné d’un dossier de restauration. Édité avec Description de ce qui a été pratiqué pour fondre en bronze d’un seul jet la figure équestre de Louis XIV… de l’auteur. Paris. 1743.</p> </note>
+                        <p>Page de titre additionnelle en latin. Texte français et latin sur deux colonnes. Restauration et boîtier de conservation : Terry Rutherford. Accompagné d’un dossier de restauration. Édité avec Description de ce qui a été pratiqué pour fondre en bronze d’un seul jet la figure équestre de Louis XIV… de l’auteur. Paris. 1743.</p>
+                    </note>
                     <idno type="udem"
                         >http://atrium.umontreal.ca/UM:Tout_sauf_articles:UM-ALEPH001722009</idno>
                     <idno type="udemCote">NA 2520 B64</idno>
+                    <idno type="inha">https://bibliotheque-numerique.inha.fr/collection/item/5052-livre-d-architecture-contenant-les-principes-generaux-de-cet-art</idno>
+                    <idno type="internetArchive">http://archive.org/details/gri_33125010919435</idno>
                 </biblStruct>
                 <biblStruct xml:id="biblioLaugier1753">
                     <monogr>
                         <author>
-                            <persName>
+                            <persName ref="#laugierMarcAntoine">
                                 <forename>Marc-Antoine</forename>
                                 <surname>Laugier</surname>
                             </persName>
@@ -185,9 +206,9 @@
                         </imprint>
                         <extent>293 p.</extent>
                     </monogr>
-                    <idno type="google">https://books.google.fr/books?id=-K05AAAAcAAJ</idno>
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb307495270</idno>
                     <idno type="gallica">http://gallica.bnf.fr/ark:/12148/bpt6k856908</idno>
+                    <idno type="google">https://books.google.fr/books?id=-K05AAAAcAAJ</idno>
                 </biblStruct>
                 <biblStruct xml:id="biblioLaugier1755">
                     <monogr>
@@ -207,9 +228,9 @@
                         </imprint>
                         <extent>318 p.</extent>
                     </monogr>
+                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30749528b</idno>
                     <idno type="google">https://books.google.fr/books?id=IfNbAAAAcAAJ</idno>
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb33995915x</idno>
-                    <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30749528b</idno>
                 </biblStruct>
                 <biblStruct xml:id="biblioLaugier1765">
                     <monogr>
@@ -236,8 +257,8 @@
                     <monogr>
                         <author>
                             <persName ref="#blondelJacquesFrançois">
-                               <forename>Jacques-François</forename>
-                               <surname>Blondel</surname>
+                                <forename>Jacques-François</forename>
+                                <surname>Blondel</surname>
                             </persName>
                         </author>
                         <title>Discours sur la manière d’étudier l’architecture et les arts qui sont relatifs à celui de bastir, prononcé par M. Blondel,… à l’ouverture de son deuxième cours public sur l’architecture, le 16 juin 1747</title>
@@ -255,7 +276,7 @@
                     <monogr>
                         <author>
                             <persName ref="#blondelJacquesFrançois">
-                            <forename>Jacques-François</forename>
+                                <forename>Jacques-François</forename>
                                 <surname>Blondel</surname>
                                 <idno/>
                             </persName>
@@ -328,25 +349,39 @@
                         <extent>6 vol. ; in-8°</extent>
                     </monogr>
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30115156v</idno>
-                    <idno type="gallica" n="vol1">http://gallica.bnf.fr/ark:/12148/bpt6k65578971</idno>
-                    <idno type="gallica" n="vol2">http://gallica.bnf.fr/ark:/12148/bpt6k6558006r</idno>
-                    <idno type="gallica" n="vol3">http://gallica.bnf.fr/ark:/12148/bpt6k6557942d</idno>
-                    <idno type="gallica" n="vol4">http://gallica.bnf.fr/ark:/12148/bpt6k6557915h</idno>
-                    <idno type="gallica" n="vol5">http://gallica.bnf.fr/ark:/12148/bpt6k6558090p</idno>
-                    <idno type="gallica" n="vol6">http://gallica.bnf.fr/ark:/12148/bpt6k6557566f</idno>
-                    <idno type="gallica" n="plt1">http://gallica.bnf.fr/ark:/12148/bpt6k6566294p</idno>
-                    <idno type="gallica" n="plt2">http://gallica.bnf.fr/ark:/12148/bpt6k65662953</idno>
-                    <idno type="gallica" n="plt3">http://gallica.bnf.fr/ark:/12148/bpt6k6566338d</idno>
-                    <idno type="gallica" n="plt4">http://gallica.bnf.fr/ark:/12148/bpt6k6566339t</idno>
-                    <idno type="gallica" n="plt3-4">http://gallica.bnf.fr/ark:/12148/bpt6k65687852</idno>
-                    <idno type="gallica" n="plt5">http://gallica.bnf.fr/ark:/12148/bpt6k65602564</idno>
-                    <idno type="gallica" n="plt6">http://gallica.bnf.fr/ark:/12148/bpt6k6560257j</idno>
-                    <idno type="gallica" n="pl1-2">http://gallica.bnf.fr/ark:/12148/bpt6k6574362q</idno>
+                    <idno type="gallica" n="vol1"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k65578971</idno>
+                    <idno type="gallica" n="vol2"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k6558006r</idno>
+                    <idno type="gallica" n="vol3"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k6557942d</idno>
+                    <idno type="gallica" n="vol4"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k6557915h</idno>
+                    <idno type="gallica" n="vol5"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k6558090p</idno>
+                    <idno type="gallica" n="vol6"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k6557566f</idno>
+                    <idno type="gallica" n="plt1"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k6566294p</idno>
+                    <idno type="gallica" n="plt2"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k65662953</idno>
+                    <idno type="gallica" n="plt3"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k6566338d</idno>
+                    <idno type="gallica" n="plt4"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k6566339t</idno>
+                    <idno type="gallica" n="plt3-4"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k65687852</idno>
+                    <idno type="gallica" n="plt5"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k65602564</idno>
+                    <idno type="gallica" n="plt6"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k6560257j</idno>
+                    <idno type="gallica" n="pl1-2"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k6574362q</idno>
                 </biblStruct>
                 <biblStruct xml:id="biblioLeCamusDeMezieres1780">
                     <monogr>
                         <author>
-                            <persName>
+                            <persName ref="#leCamusDeMezieresNicolas">
                                 <forename>Le Camus de Mézières</forename>
                                 <surname>Nicolas</surname>
                             </persName>
@@ -365,7 +400,7 @@
                 <biblStruct xml:id="biblioLeCamusDeMezieres1786">
                     <monogr>
                         <author>
-                            <persName>
+                            <persName ref="leCamusDeMezieresNicolas">
                                 <forename>Le Camus de Mézières</forename>
                                 <surname>Nicolas</surname>
                             </persName>
@@ -381,8 +416,10 @@
                         <extent>2 vol. (XXII-336, 358 p.) ; in-8°</extent>
                     </monogr>
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb307638311</idno>
-                    <idno type="gallica" n="vol1">https://gallica.bnf.fr/ark:/12148/bpt6k6557721j</idno>
-                    <idno type="gallica" n="vol1">https://gallica.bnf.fr/ark:/12148/bpt6k6557721j</idno>
+                    <idno type="gallica" n="vol1"
+                        >https://gallica.bnf.fr/ark:/12148/bpt6k6557721j</idno>
+                    <idno type="gallica" n="vol1"
+                        >https://gallica.bnf.fr/ark:/12148/bpt6k6557721j</idno>
                 </biblStruct>
                 <!-- Memmo, A., Elementi dell’architettura Lodoliana o sia l’arte del fabbricare con solidità scientifica e con eleganza non capricciosa. Libri due. Rome, 1786. -->
                 <!-- Viel de St Maux, J.-L., Lettres sur l’architecture des anciens et celle des modernes. Paris, 1779-87. -->
@@ -395,7 +432,7 @@
                 <biblStruct xml:id="biblioDurand1809">
                     <monogr>
                         <author>
-                            <persName>
+                            <persName ref="#durandJeanNicolasLouis">
                                 <forename>Jean-Nicolas-Louis</forename>
                                 <surname>Durand</surname>
                             </persName>
@@ -414,7 +451,7 @@
                 <biblStruct xml:id="biblioDurand1817">
                     <monogr>
                         <author>
-                            <persName>
+                            <persName ref="#durandJeanNicolasLouis">
                                 <forename>Jean-Nicolas-Louis</forename>
                                 <surname>Durand</surname>
                             </persName>
@@ -428,8 +465,10 @@
                         </imprint>
                         <extent> 2 vol. : Vol. 1 : [4] f. (2 bl., faux-titre, avis au relieur, titre), [I]-VIII (préface) - 109 p., 32 pl. (doubles, numérotées de 1 à 10 puis de 1 à 22) ; Vol. 2 : [4] f. (2 bl., faux-titre, avis au relieur, titre), 104 p., 32 pl. (doubles).</extent>
                     </monogr>
-                    <idno type="inha" n="1">https://bibliotheque-numerique.inha.fr/idurl/1/7266</idno>
-                    <idno type="inha" n="2">https://bibliotheque-numerique.inha.fr/idurl/1/7269</idno>
+                    <idno type="inha" n="1"
+                        >https://bibliotheque-numerique.inha.fr/idurl/1/7266</idno>
+                    <idno type="inha" n="2"
+                        >https://bibliotheque-numerique.inha.fr/idurl/1/7269</idno>
                 </biblStruct>
                 <!-- reprendre erara et Hathy -->
                 <!--<biblStruct>
@@ -454,7 +493,7 @@
                 <biblStruct xml:id="biblioBaltard1840">
                     <monogr>
                         <author>
-                            <persName>
+                            <persName ref="#baltardLouisPierre">
                                 <forename>Louis-Pierre</forename>
                                 <surname>Baltard</surname>
                             </persName>
@@ -471,7 +510,7 @@
                 <biblStruct xml:id="biblioBlouet1847-1855">
                     <monogr>
                         <author>
-                            <persName>
+                            <persName ref="#blouetGuillaumeAbel">
                                 <forename>Guillaume Abel</forename>
                                 <surname>Blouet</surname>
                             </persName>
@@ -480,7 +519,7 @@
                             <persName>
                                 <forename>Jean</forename>
                                 <surname>Rondelet</surname>
-                                </persName>
+                            </persName>
                         </author>
                         <title>Traité théorique et pratique de l’art de bâtir de Jean Rondelet</title>
                         <title>Supplément</title>
@@ -493,7 +532,8 @@
                         <extent>52 cm</extent>
                         <extent>105 fol. de planches</extent>
                     </monogr>
-                    <idno type="udem">http://atrium.umontreal.ca/UM:Tout_sauf_articles:UM-ALEPH000337331</idno>
+                    <idno type="udem"
+                        >http://atrium.umontreal.ca/UM:Tout_sauf_articles:UM-ALEPH000337331</idno>
                     <idno type="udemCote">NA 2520 R65 1847 suppl.</idno>
                     <idno type="erara">http://doi.org/10.3931/e-rara-45143</idno>
                     <note type="subject">
@@ -506,7 +546,7 @@
                 <biblStruct xml:id="biblioViolletLeDuc1863-1872">
                     <monogr>
                         <author>
-                            <persName>
+                            <persName ref="#violletLeDucEugeneEmmanuel">
                                 <forename>Eugène-Emmanuel</forename>
                                 <surname>Viollet-le-Duc</surname>
                             </persName>
@@ -520,9 +560,12 @@
                         <extent> 2 vol. in-4°, fig., pl., fig. aux titres + 1 Atlas in-fol., 36 pl. en noir et en coul.</extent>
                     </monogr>
                     <idno type="catBnf">https://catalogue.bnf.fr/ark:/12148/cb31590251p</idno>
-                    <idno type="gallica" n="vol1">http://gallica.bnf.fr/ark:/12148/btv1b8626642c</idno>
-                    <idno type="gallica" n="vol2">http://gallica.bnf.fr/ark:/12148/btv1b86266446</idno>
-                    <idno type="gallica" n="atlas">http://gallica.bnf.fr/ark:/12148/btv1b8626665c</idno>
+                    <idno type="gallica" n="vol1"
+                        >http://gallica.bnf.fr/ark:/12148/btv1b8626642c</idno>
+                    <idno type="gallica" n="vol2"
+                        >http://gallica.bnf.fr/ark:/12148/btv1b86266446</idno>
+                    <idno type="gallica" n="atlas"
+                        >http://gallica.bnf.fr/ark:/12148/btv1b8626665c</idno>
                 </biblStruct>
                 <biblStruct xml:id="biblioReynaud1850">
                     <monogr>
@@ -544,8 +587,10 @@
                     </monogr>
                     <idno type="erara" n="vol1">https://doi.org/10.3931/e-rara-52726</idno>
                     <idno type="erara" n="vol2">https://doi.org/10.3931/e-rara-52727</idno>
-                    <idno type="erara-iiif" n="vol1">https://www.e-rara.ch/i3f/v20/14467706/manifest</idno>
-                    <idno type="erara-iiif" n="vol2">https://www.e-rara.ch/i3f/v20/14468442/manifest</idno>
+                    <idno type="erara-iiif" n="vol1"
+                        >https://www.e-rara.ch/i3f/v20/14467706/manifest</idno>
+                    <idno type="erara-iiif" n="vol2"
+                        >https://www.e-rara.ch/i3f/v20/14468442/manifest</idno>
                 </biblStruct>
                 <biblStruct xml:id="biblioReynaud1860-1863">
                     <monogr>
@@ -564,13 +609,17 @@
                         </imprint>
                         <extent>2 vol. + 2 vol. de pl. ; in-4 + in-fol.</extent>
                     </monogr>
-                    <idno type="catBnf"></idno>
-                    <idno type="gallica" n="vol1">http://gallica.bnf.fr/ark:/12148/bpt6k866310</idno>
+                    <idno type="catBnf"/>
+                    <idno type="gallica" n="vol1"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k866310</idno>
                     <idno type="gallica" n="pl1">http://gallica.bnf.fr/ark:/12148/bpt6k86633p</idno>
-                    <idno type="gallica" n="vol2">http://gallica.bnf.fr/ark:/12148/bpt6k86632b</idno>
+                    <idno type="gallica" n="vol2"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k86632b</idno>
                     <idno type="gallica" n="pl2">http://gallica.bnf.fr/ark:/12148/bpt6k866341</idno>
-                    <idno type="mdz">http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10871478-7</idno>
-                    <idno type="mdz">http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10871479-7</idno>
+                    <idno type="mdz"
+                        >http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10871478-7</idno>
+                    <idno type="mdz"
+                        >http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10871479-7</idno>
                 </biblStruct>
                 <biblStruct xml:id="biblioGuadet1882">
                     <monogr>
@@ -581,7 +630,8 @@
                             </persName>
                         </author>
                         <title type="main">L’enseignement de l’architecture</title>
-                        <title type="sub">conférence faite à la Société centrale des architectes, le 24 mars 1882</title>
+                        <title type="sub"
+                            >conférence faite à la Société centrale des architectes, le 24 mars 1882</title>
                         <imprint>
                             <publisher>Paris</publisher>
                             <publisher>Librairie générale de l’architecture et des travaux publics</publisher>
@@ -602,7 +652,8 @@
                             </persName>
                         </author>
                         <title type="main">Éléments et théorie de l’architecture</title>
-                        <title type="sub">cours professé à l’École nationale et spéciale des beaux-arts</title>
+                        <title type="sub"
+                            >cours professé à l’École nationale et spéciale des beaux-arts</title>
                         <imprint>
                             <pubPlace>Paris</pubPlace>
                             <publisher>Aulanier et Cie Éditeurs</publisher>
@@ -611,11 +662,18 @@
                         <extent>4 vol. : ill. ; gr. in-8°</extent>
                     </monogr>
                     <idno type="catBnf">http://catalogue.bnf.fr/ark:/12148/cb30548435r</idno>
-                    <idno type="gallica" n="vol1">http://gallica.bnf.fr/ark:/12148/bpt6k866163</idno>
-                    <idno type="gallica" n="vol2">http://gallica.bnf.fr/ark:/12148/bpt6k86617f</idno>
-                    <idno type="gallica" n="vol3">http://gallica.bnf.fr/ark:/12148/bpt6k86618s</idno>
-                    <idno type="gallica" n="vol4">http://gallica.bnf.fr/ark:/12148/bpt6k866194</idno>
+                    <idno type="gallica" n="vol1"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k866163</idno>
+                    <idno type="gallica" n="vol2"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k86617f</idno>
+                    <idno type="gallica" n="vol3"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k86618s</idno>
+                    <idno type="gallica" n="vol4"
+                        >http://gallica.bnf.fr/ark:/12148/bpt6k866194</idno>
                 </biblStruct>
+                <!-- Robarts Guadet 1910 https://archive.org/details/lmentsetth02guaduoft -->
+                <!-- Robarts Guadet 1900 https://archive.org/details/elmntsetth00gaud
+                    https://archive.org/details/elmntsetth04gaud https://archive.org/details/elmntsetth03gaud -->
                 <biblStruct xml:id="biblioGuadet1915">
                     <monogr>
                         <author>
@@ -625,8 +683,10 @@
                             </persName>
                         </author>
                         <title type="main">Éléments et théorie de l’architecture</title>
-                        <title type="sub">cours professé à l’École nationale et spéciale des beaux-arts</title>
-                        <edition>4<hi rend="superscript">e</hi> édition augmentée d’une notice sur la vie et les œuvres de Julien Guadet / par J.-L. Pascal,...</edition>
+                        <title type="sub"
+                            >cours professé à l’École nationale et spéciale des beaux-arts</title>
+                        <edition>4<hi rend="superscript"
+                            >e</hi> édition augmentée d’une notice sur la vie et les œuvres de Julien Guadet / par J.-L. Pascal,...</edition>
                         <imprint>
                             <pubPlace>Paris</pubPlace>
                             <publisher>Librairie de la Construction moderne</publisher>
@@ -635,10 +695,14 @@
                         <extent>4 vol. : fig. et pl. ; gr. in-8</extent>
                     </monogr>
                     <idno type="catBnf">https://catalogue.bnf.fr/ark:/12148/cb30548438s</idno>
-                    <idno type="gallica" n="vol1">https://gallica.bnf.fr/ark:/12148/bpt6k30768783</idno>
-                    <idno type="gallica" n="vol2">https://gallica.bnf.fr/ark:/12148/bpt6k3040254x</idno>
-                    <idno type="gallica" n="vol3">https://gallica.bnf.fr/ark:/12148/bpt6k30403600</idno>
-                    <idno type="gallica" n="vol4">https://gallica.bnf.fr/ark:/12148/bpt6k3040590t</idno>
+                    <idno type="gallica" n="vol1"
+                        >https://gallica.bnf.fr/ark:/12148/bpt6k30768783</idno>
+                    <idno type="gallica" n="vol2"
+                        >https://gallica.bnf.fr/ark:/12148/bpt6k3040254x</idno>
+                    <idno type="gallica" n="vol3"
+                        >https://gallica.bnf.fr/ark:/12148/bpt6k30403600</idno>
+                    <idno type="gallica" n="vol4"
+                        >https://gallica.bnf.fr/ark:/12148/bpt6k3040590t</idno>
                 </biblStruct>
             </listBibl>
         </body>
