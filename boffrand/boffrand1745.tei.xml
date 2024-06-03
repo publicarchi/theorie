@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/theorieSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Édition numérique du Livre d’Architecture de Boffrand</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Publicarchi</publisher>
+                <date from="2024">2024</date>
+                <idno>boffrand1745</idno>
+                <availability status="restricted" xml:id="durand1802-1805Licence">
+                    <licence target="http://creativecommons.org/licenses/by-nc/4.0/fr/"/>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
+                <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
+                <idno type="URI">text.archi</idno>
+            </seriesStmt>
+            <!--<notesStmt>
+            <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+            <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+         </notesStmt>-->
+            <sourceDesc xml:id="boffrand1745">
+                <bibl copyOf="#biblioBoffrand1745" />
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>L’édition de ce texte s’inscrit dans un projet collaboratif d’édition numérique de textes fondamentaux sur l’architecture moderne.</p>
+            </projectDesc>
+            <editorialDecl>
+                <correction>
+                    <p>La syntaxe originale des œuvres a été respectée.</p>
+                </correction>
+                <hyphenation>
+                    <p>Pour les ouvrages imprimés, il n’a pas été tenu compte de l’hyphénation.</p>
+                </hyphenation>
+                <interpretation>
+                    <p>Les interprétations sont traitées au moyen d’un élément supplied ou bien sont renvoyées en notes. Une mention de responsabilité est fournie grâce à l’attribut resp sur le passage concerné.</p>
+                </interpretation>
+                <normalization>
+                    <p>La ponctuation a été respectée de même que l’usage des majuscules et les abréviations.</p>
+                </normalization>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d’un élément quote, soit au moyen d’un élément q...</p>
+                </quotation>
+            </editorialDecl>
+            <refsDecl>
+                <p>Description du système de référence canonique.</p>
+                <!-- @todo à renseigner avec une expression régulière -->
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation when="2024">2024</creation>
+            <langUsage>
+                <language ident="fre" usage="50">Français (langue principale du corpus)</language>
+                <language ident="lat" usage="50">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Dix-huitième siècle</term>
+                    <term>France</term>
+                </keywords>
+                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Eighteenth century</term>
+                    <term>France</term>
+                </keywords>
+                <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2024-06">Création du fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <pb/>
+            <pb/>
+            <pb/>
+            <gap/><!-- titlepage en latin -->
+            <pb/>
+            <pb/>
+            <titlePage>
+                        <titlePart>Livre 
+                        <lb/>d’architecture 
+                        <lb/>contenant 
+                        <lb/>les principes généraux de cet art, 
+                        <lb/>et 
+                        <lb/>les plans, élévations et profils 
+                        <lb/>de quelques-uns des bâtiments faits en France 
+                        <lb/>&amp; dans les Pays Étrangers.</titlePart>
+                <byline>
+                    <docAuthor>Par le Sieur Boffrand, Architecte du Roy, &amp; de son Académie Royale d’Architecture, Premier Architecte &amp; Inspecteur Général des Ponts &amp; Chaussées du Royaume 
+                <lb/>architecte et professeur d’architecture</docAuthor>
+                </byline>
+                <argument><p>Ouvrage françois et latin, 
+                    <lb/>Enrichi de Planches en Taille-Douce</p></argument>
+                <docImprint>
+                    <pubPlace>À Paris,</pubPlace>
+                    <publisher>Chez Guillaume Cavelier père, rue Saint Jacques, au Lys d’Or</publisher>
+                    <docDate>M DCCXLV</docDate>
+                </docImprint>
+                <imprimatur>Avec approbation, et privilège du Roy</imprimatur>
+            </titlePage>
+            <pb/>
+            <div type="epistre">
+                <head>Au Roy.</head>
+                <p>Sire,</p>
+                <p>Je présente à <emph>Votre Majesté</emph> un Livre d’Architecture, qui contient les Principes généraux de cet Art, avec les Plans, Éleva<pb/><!-- aiij -->tions &amp; Profils de quelques-uns des Édifices que j’ai fait construire en France &amp; dans les Pays Étrangers. J’ose me flatter qu’ils attireront les regards de <emph>Votre Majesté</emph>, puisque dans un temps où Elle est occupée de soins plus importans, Elle daigne toujours proteger les Arts, &amp; les animer par ses bontés à se perfectionner pour l’utilité &amp; l’ornement de son Royaume.</p>
+                <p>Je suis avec le plus profond respect,</p>
+                <p><emph>Sire</emph>,</p>
+                <p><emph>De Votre Majesté</emph></p>
+                <p>Le très-humble, très-obéissant, &amp; très-fidele serviteur &amp; sujet 
+                    <lb/><emph>Boffrand</emph>.</p>
+            </div>
+            <pb/>
+            <fw type="pageNum">1</fw>
+            <div>
+                <head>Livre d’architecture</head>
+                <head>Contenant des Principes généraux de cet Art, &amp; des Plans, Élévations &amp; Profils des Bâtimens faits en France, &amp; dans les Pays Étrangers</head>
+                <head type="main">Avant-propos</head>
+                <p>Le Livre que je donne au Public, continet la Description de ces différens Édifices : j’y joins des réfléxions sur les principes généraux de l’Architecture, &amp; sur ce qu’on appelle le bon goût dans cet Art ; sans entrer dans le détail de plusieurs sciences nécessaires à un Architecte, ni dans celui des Arts qui servent à la construction des Bâtimens, dont <persName>Vitruve</persName>, <persName>Palladio</persName>, <persName>Scammozi</persName> &amp; autres <persName>Architectes modernes, Italiens &amp; François</persName> ont écrit, &amp; qu’ils ont retirés des ruines des <objectName>Édifices Grecs &amp; Romains</objectName>, dont quelques-uns existoient de leur tems, &amp; dont nous avons encore quelques précieux restes. Ils ont donné au Public les proportions des ordres d’Architecture, suivant ces anciens monumens, &amp; suivant ce qu’ils ont eux mêmes pratiqué dans la construction de plusieurs beaux Ouvrages, &amp; dont <persName>M. de Chambray</persName> a fait un excellent parallele. C’est dans les proportions de l’Ordre Dorique qui est le plus materiel, de l’Ordre Corithien qui est le plus leger à la vûë, &amp; le plus suscepti<pb/><fw type="pageNum">2</fw>ble d’ornemens, &amp; de l’Ordre Ionique qui tient le milieu entre ces deux extrémités, qu’on peut trouver le caractere qui convient à chaque espece d’Édifice ; &amp; comme les porportions de ces Ordres ne sont pas entierement semblables dans les Livres de ces Auteurs, ni dans leurs Ouvrages, par des raisons qu’ils ont senties, il est de la prudence de l’Architecte habile de faire le choix de celles qui conviennent le mieux à la destination de son Édifice, suivant son étendue, sa hauteur &amp; la distance d’où il peut être vû.</p>
+                <p>On n’employe pas toujours les Ordres d’Architecture dans les Bâtimens ; mais les regles qui en établissent les belles proportions en général, peuvent être appliquées à chaque partie d’un Ouvrage, &amp; l’Architecte habile y peut trouver les modulations qui leur conviennent.</p>
+                <p>Quelques-uns de ces Auteurs ont traité de la Coupe des Pierre &amp; de leur appareil, pour tracer les traits &amp; de leur appareil, pour tracer les traits &amp; les courbes de toutes sortes de Voutes : Ils ont donné les principes des differentes constructions, ils ont traité des differentes qualités des materiaux &amp; de la maniere de les mettre en œuvre. Ces materiaux sont differens dans tous les Pays, de même que la solidité du terrein qui en doit être le fondement.</p>
+                <p>Quelques Auteurs ont écrit des influences &amp; des expositions du ciel, vers lesquelles chaque partie d’un Bâtiment doit être tournée. Elles sont differentes en divers climats, par rapport aux rivieres, aux marais, aux montagnes, aux forêts qui les avoisinent &amp; aux vents qui y regnent. Je ne ferois que répéter ce que l’on a déja dit : les Livres de ces Auteurs en ouvrent la connoissance ; l’expérience &amp; la réflexion l’achevent.</p>
+                <pb/>
+            </div>
+        </front>
+        <body>
+            <div>
+                <head>Livre d’architecture</head>
+                <head type="main"
+                    >Dissertation <lb/>sur ce qu’on appelle <lb/>le bon goust <lb/>en Architecture</head>
+                <p>On parle souvent du bon goût dans les Arts : Tous les hommes coyent l’avoir, &amp; être en droit de décider sur les défauts &amp; la perfection d’un ouvrage ; &amp; chacun content de la maniere dont il pense, a l’indulgence de permettre aux autres de penser comme il leur plaît, persuadé que chacun a son goût, &amp; qu’il n’en faut point disputer. Cependant si quelque opinion est sujette à la dispute, c’est celle sur laquelle les sentimens ne sont pas réunis, &amp; ce n’est que sur une opinion généralement reçûë qu’on ne dispute point.</p>
+                <p>On dit en général du goût, que c’est un certain je ne-sçais-quoi qui plaît ; cette idée est bien vague, n’éclaircit rien, &amp; ne vient que de la difficulté qu’il y a de dire les raisons pourquoi une chose<pb/><fw
+                    type="pageNum"
+                    >4</fw> plaît, ou ne plaît pas : ce n’est que dans les principes de chacun des Arts qu’on peut en trouver les raisons démonstratives.</p>
+                <p>On peut dire pour définir le goût, que c’est une faculté qui distingue l’excellent d’avec le bon.</p>
+                <p>Il y a peu d’hommes, si grossiers qu’ils soient, qui ne distinguent le mauvais d’avec le médiocre, &amp; le médiocre d’avec le bon ; mais il y a plusieurs degrés entre le médiocre, le bon &amp; l’excellent : un homme a plus ou moins de goût suivant la quantité de degrés qu’il monte du bon vers l’excellent.</p>
+                <p>Chaque Art a ses principes : <persName>Les Grecs</persName> ont commencé à développer ceux de l’Architecture : C’est une grande opération de l’esprit humain, que de réduire un art en principes : Ils sont l’ouvrage de plusieurs siecles, le fruit d’une profonde réfléxion sur ce qui a plû ou déplû aux hommes les plus éclairés, &amp; l’effet d’une expérience souvent redressée. C’est le grand nombre d’Édifices publics en usage chez <persName>les Grecs</persName>, qui a donné lieu à leur perfection.</p>
+                <p>Outre ces principes qui ont établi les belles proportions, il y en a d’autres aussi nécessaires fondés sur les raisons de convenance, de commodité, de sûreté, de santé &amp; de bon sens. Ces raisons ont servi à établir les premiers principes, &amp; sans elles un édifice ne peut être réputé de bon goût. On ne peut pas toujours profiter de tous ces avantages ; mais il faut les connoître pour s’en servir autant qu’il est possible, de même qu’îl faut connoître les défauts opposés à ces mêmes raisons, pour les éviter.</p>
+                <p>La Nature a formé le germe des arts ; mais la réfléxion &amp; l’expérience les ont développés &amp; nourris : Les hommes les plus éclairés ont dépouillé la Nature de ce qu’elle a de trop agreste, pour n’en <pb/><fw
+                    type="pageNum"
+                    >5</fw> réserver que ce qui leur a paru propre à être cultivé &amp; orné par l’art.</p>
+                <p>Le génie, qui tire du sein de la nature les choses nouvelles, naît avec les hommes que le ciel favorise, &amp; ne s’acquiert point : Mais il faut que ces nouveautés pour être admises, paroissent des conséquences naturelles tirées des principes déja établis sur ce qui a plû ou déplû aux hommes les plus éclairés des nations les plus policées : auquel cas elles deviennent elles-mêmes aggregées aux principes qui sont la regle du bon &amp; de l’excellent.</p>
+                <p>Aux premiers siecles, on n’avoit point eu d’autre objet dans les habitations, que de se défendre des injures de l’air, &amp; des animaux qui pouvoient nuire aux hommes ; &amp; lorsqu’ils ont été réunis par les loix de la société civile, les habitations rustiques ont reçu une nouvelle forme, toujours fondée sur le besoin &amp; sur l’utilité.</p>
+                <p>Les temples des Dieux ont été faits plus vastes pour contenir les hommes rassemblés ; &amp; l’art leur a donné une proportion convenable à la dignité du culte des Dieux &amp; des mysteres de la Religion. À mesure que le luxe s’est introduit, on a aussi enrichi les temples des ornemens les plus précieux, soit que l’on crût en effet honorer la divinité en lui consacrant ce que l’on estimoit le plus ; soit que l’on voulût par-là augmenter le respect du peuple, sur lequel les objets sensibles ont tant de pouvoir. Tous ces ornemens ont ensuite passé aux Palais des Souverains pour leur donner la dignité qu’on remarquoit aux temples des Dieux.</p>
+                <p>Les troncs d’arbres qui dans les premiers siecles soutenoient le couvert des cabanes, ont donné lieu aux colomnes qui ont soutenu les portiques des édifices. L’art leur a donné un contour plus élegant que celui que la nature donne aux arbres. On y a ajouté une base qui y donne plus d’empatement, &amp; un cha<pb/><fw
+                    type="pageNum"
+                    >6</fw>piteau, qui s’élargissant par le haut, semble porter plus solidement les entablemens. La nature &amp; le hazard ont donné lieu au chapiteau Corinthien.</p>
+                <p><persName>Callimachus</persName>, au rapport de <persName>Vitruve</persName>, vit sur le tombeau d’une jeune fille un panier, dans lequel on avoit mis des vases qu’elle avoit aimés pendant sa vie, &amp; qui étoit couvert d’une brique. Du bas de ce panier il sortoit une plante d’acanthe, dont les feuilles montoient tout au long, &amp; dont la tige &amp; la graine se recourboient sous la brique. Voila le germe que la nature &amp; le hazard ont produit : l’art &amp; les graces l’ont perfectionné. Les sablieres qui lioient le tronc des arbres par le haut, ont donné lieu aux entablemens que l’art a proportionnés à la hauteur des colomnes, &amp; qu’il a enrichis d’ornemens, dont la source s’est trouvée dans les simples cabanes des premiers hommes.</p>
+                <p>On trouvera dans toutes les parties des édifices, la même source tirée de la nature &amp; perfectionnée par l’art. L’expérience a confirmé la beauté reconnuë : les hommes les plus éclairés en sont convenus dans les siecles suivans : les proportions établies pour principes, ont été approuvées, en sorte qu’un édifices paroît excellent, bon, médiocre ou mauvais, à mesure qu’on s’y conforme, ou qu’on s’en écarte.</p>
+                <p><persName>Rome</persName> admit les principes établis par <persName>les Grecs</persName>. Mais ils se sont perdus pendant plusieurs siecles, comme un fleuve qui après avoir arrosé plusieurs campagnes, les abandonne, &amp; se perd dans un abîme, d’où il sort pour favoriser une autre contrée, &amp; y répandre l’abondance.</p>
+                <p><persName>Les Gaulois</persName>, soit que les exemples du bon goût des Grecs leur fussent inconnus, soit qu’ils voulussent essayer de rencherir sur ce que <persName>les Grecs</persName> avoient imaginé, se sont ouvert une autre route, &amp; se sont fait d’autres principes puisés également dans le sein de la nature : Leurs Druïdes, ministres de la Religion, dont le culte s’exerçoit dans les forêts, au lieu de prendre les arbres pour modeles, ont choisi leurs branches, les rameaux, &amp; les feuilles.</p>
+                <pb/>
+                <fw type="pageNum">7</fw>
+                <p>Ils ont en consequence fait des colomnes menuës &amp; hautes, qui se divisant par le haut en plusieurs branches d’origines dans les voutes, imitent les rameaux des arbres. Les arcs de ces voutes, au lieu d’être en plein ceintre, qui est la figure la plus parfaite, ont été faits en triangles curvilignes, imitant les branches des arbres qui se croisent par le haut en formant un angle.</p>
+                <p>Au lieu de suivre l’idée d’une solidité raisonnable, ils s’en sont écartés, en faisant des choses hardies &amp; étonnantes ; comme s’il y avoit plus de mérite à faire des ouvrages, qui paroissent prêts à tomber à tous momens, quoi qu’également solides, que d’en faire qui paroissent devoir durer éternellement.</p>
+                <p>Il semble cependant que quelques Architectes de ces tems-là avoient connoissance des proportions qui se trouvent dans les ouvrages antiques ; ou que l’expérience leur avoit fait connoître que certaines proportions valoient mieux que d’autres. Quelques Églises gothiques, quoique toujours gâtées par quantité de sculptures, sans correction, sans goût, mal imaginées &amp; mal placées, par des ornemens de mauvais choix, &amp; par des moinstres inconnus, ne laissent pas d’avoir leur beauté. D’où peut-elle provenir ? si ce n’est d’une juste proportion de la hauteur à la largeur, &amp; du rapport de toutes les parties avec le tout.</p>
+                <p>Il faut aussi rendre justice à ces Architectes sur le grand soin qu’ils ont pris de la construction de leurs bâtimens, dont les regles sont bien observées pour la solidité ; en sorte ue malgré la hardiesse &amp; la légereté apparente de leurs édifices, il s’en trouve qui subsistent depuis long-tems.</p>
+                <p>Ce goût gothique a duré pendant plusieurs siecles ; mais enfin la fréquentation des <persName>Gaulois</persName> avec <placeName>l’Italie</placeName>, leur ouvrir les yeux : ils retirerent des ruines des édifices antiques les principes de l’Architecture que <persName>les Grecs</persName> &amp; <persName>les Romains</persName> avoient établis, &amp; les Princes<note
+                    n="a">
+                    <p><persName>François Premier</persName>.</p>
+                    </note> qui favorisoient les Arts, donnerent les moyens de les perfectionner.</p>
+                <pb/>
+                <fw type="pageNum">8</fw>
+                <p>On vit alors ces arts ressusciter : de grands Architectes en <placeName>Italie</placeName> éleverent sur ces anciens modeles des Églises &amp; des Palais d’une beauté élégante, &amp; les livres qu’ils composerent ont fait part au Public des découvertes qu’ils avoient faites dans les restes de l’antiquité. Les nations voisines en ont profité, &amp; dans les maisons Royales, dans les édifices publics &amp; particuliers, on a employé ces mêmes principes, qui font connoître dequoi nos Architectes auroient été capables, s’ils avoient eu plus souvent occasion de déployer leurs talens, &amp; si les particuliers qui font bâtir partageoient avec eux les idées qu’ils ont du bon goût, &amp; vouloient s’y prêter.</p>
+                <p>La mode le tyran du goût, met un grand obstacle à la perfection des arts : elle est accompagnée de la folle nouveauté qui plaît ; le vulgaire la suit : toutes les nations y sont plus ou moins assujetties. Les véritables principes se cachent retirés chez le petit nombre. La dépravation de la mode est si grande, qu’on a mis<note
+                    n="a">
+                    <p>On a mis en <placeName>Italie</placeName> des colomnes, dont le chapiteau étoit en bas, &amp; la base en haut.</p>
+                    </note> quelquefois en haut ce qui doit être en bas. La bizarrerie est admise sous le nom de génie, comme si la production d’un monstre étoit une marque de fécondité.</p>
+                <p>Il semble que la mode en differens tems ait pris plaisir à donner la torture à toutes les parties d’un<note
+                    n="b">
+                    <p>L’<objectName>Église des Théatins à Paris</objectName> &amp; <objectName>les ouvrages de Baromini en Italie</objectName>.</p>
+                    </note> édifice : elle a souvent essayé de détruire tous les principes de l’Architecture, dont on doit toujours conserver la noble simplicité. Les ornemens de sculpture qui doivent y être employés sagement, y ont été quelquefois prodigués à un tel excès, &amp; avec des saillies si exorbitantes, qu’elles en sont la principale partie, au-lieu qu’ils n’en doivent être que l’accessoire. On a vu avec surprise dans un même siècle ces ornemens varier plusieurs fois de maniere à ne les plus reconnoître.</p>
+                <p>Dans le temps de l’Architecture naissance en France<note n="c">
+                    <p><objectName>À Fontainebleau</objectName> sous le Règne de <persName>François I</persName>.</p>
+                    </note>, les ornemens pré<pb/><fw type="pageNum"
+                    >9</fw> cieux employés en quelques endroits, &amp; qui étoient imités des ornemens antiques, ont été remplacés par des ornemens pesants, tels que des festons<note
+                    n="a">
+                    <p>Sous le Regne de <persName>Henri IV</persName> &amp; de <persName>Louis XIII</persName>.</p>
+                    </note>, de gros fruits, des Cartouches d’une grandeur énorme, &amp; des Figures grossierement travaillées, souvent détachées des plafonds, &amp; qui semblent prêtes à tomber sur la tête.</p>
+                <p>On a vu succeder à ceux-ci d’autres ornemens formant des rinceaux répétés, confus, sans choix &amp; sans ce repos si desirables dans l’Architecture : d’autres<note
+                    n="b">
+                    <p>Ornemens de ce temps-là.</p>
+                    </note> ornemens ont pris leur place, qui n’ont d’autre mérite qu’un travail délicat à la verité, mais sec &amp; sans liaison au reste de la décoration : ils peuvent convenir dans de petites pieces ; mais on en a mis par tout, le crayon les trace en courant. En quelque maison que l’on aille, on les trouve toujours les mêmes.</p>
+                <p>Ces ornemens ont passé des décorations intérieures des maisons &amp; des ouvrages en bois, auxquels un travail plus délicat peut convenir, aux ouvrages extérieurs &amp; en pierre qui exigent un travail plus moëleux &amp; plus mâle. La mode les a poussés si avant dans le monde, qu’on pourroit conjecturer sur sa variation, qu’ils ne dureront pas long-tems.</p>
+                <p>La mode a varié les formes &amp; les contours de toutes les parties des édifices, &amp; y a employé un mêlange confus de lignes courbes &amp; de lignes droites, sans distinction des endroits où elles doivent être employées à propos, sans sentir que ces differentes lignes sont dans l’Architecture, ce que dans la Musique sont les tons, qui sur differentes cordes expriment la joie &amp; la douleur, l’amour &amp; la haine, les graces &amp; la terreur.</p>
+                <p>En effet on a employé aux Mausolées &amp; aux Églises les formes &amp; les contours qui ne conviennnent qu’aux Theatres &amp; aux Sales de Bal. Ce désordre vient du défaut de connoissance des propriétés de ces differentes lignes, du peu d’atten<pb/><!-- C --><fw
+                    type="pageNum"
+                    >10</fw>tion aux effets qu’elles produisent à la vûë, &amp; d’une mauvaise application des principes qui éloignent également de la perfection &amp; du bon goût.</p>
+                <!-- @perso important -->
+                <p>Mais comment, dira-t-on, employer les grands principes d’Architecture aux différentes parties qui sont en usage dans une maison ? On répondra que chaque partie relativement au tout doit avoir une proportion &amp; une forme convenable à son usage ; qu’entre plusieurs manieres de faire une chose, il y en a toujours quelques-unes qui valent mieux que d’autres ; qu’il faut les trouver, &amp; que c’est le goût inséparable du bon sens, de la convenance &amp; de la juste proportion nécessaire à cette partie pour son usage, qui en fait le merite &amp; la perfection.</p>
+                <p>Pour conserver la justesse des belles proportions, on est quelquefois obligé de s’écarter des règles générales : telle regle qui conviendroit à un endroit ne convient pas toujours à un autre. L’élévation d’un édifice, la distance d’où on peut le regarder, obligent quelquefois d’augmenter ou de diminuer les mesures par les principes de l’optique ; afin que les parties d’un édifice paroissent dans la justesse des proportions établies.<!-- @rmq référence Perrault --></p>
+                <p>Les principes d’Architecture ne s’étendent pas seulement à la décoration extérieure &amp; intérieure des temples &amp; des palais, le bon goût a beaucoup de part à la position, à l’exposition &amp; à la distribution d’une maison de ville, ou de campagne.</p>
+                <p>Pour la position, on doit être attentif à la pente naturelle du terrein où elle doit être ; afin d’en écarter les eaux qui pourroient y causer de l’humidité . au ménagement de la vûë d’une campagne, soit qu’elle soit ornée par la simple nature, soit qu’elle le soit par la culture, à l’agrément d’une riviere qui parcourt des prairies, &amp; qui fournit cent commodites, à la magnificence d’une forêt, à l’utilité d’une source d’eau pure &amp; saine, &amp; à profiter autant qu’il est possible ; de tous les avantages que la nature peut offrir pour les délices &amp; l’utilité d’une maison, &amp; pour l’ornement des jardins.</p>
+                <pb/>
+                <fw type="pageNum">11</fw>
+                <p>L’exposition aux différentes parties du ciel, ne mérite pas moins d’attention, pour qu’un logement soit sain, gai, chaud, tempéré &amp; frais dans les différentes saisons, &amp; pour que toutes les parties d’une maison soient tournées vers l’aspect du ciel qui convient à leur usage.</p>
+                <p>La distribution regle l’étendue d’une maison : elle doit être proportionnée au nombre des personnes qui doivent s’y rendre, ou l’habiter. La grandeur des cours &amp; des chambres doit être proportionnées à leur usage, &amp; l’arrangement de toutes les parties doit avoir un enchaînement, pour que toutes les parties soient relatives au tout.</p>
+                <p>Cette partie d’Architecture a pour objet la commodité du maître de la maison : il n’y peut être commodément, si tout ce qui l’environne n’est pas placé convenablement à son service, qui doit être fait avec aisance. On doit faire une grande attention à sa dignité, à ses emplois, à sa profession, à la manière de vivre du siècle. Les chambres doivent être ornées &amp; meublées par rapport à leur usage &amp; à la gradation qui doit se trouver des chambres occupées par les domestiques à celles du maître.</p>
+                <p>Une chose qui contribue beaucoup à la perfection d’une maison, est la justesse de l’esprit du Maître qui l’a fait construire : c’est lui qui, pour ainsi dire, donne le ton à l’Architecte qui doit en faire le plan, suivant ce qui convient à la dignité &amp; à l’état du Proprietaire : il en dispose toutes les parties, suivant ses besoins : il en regle les proportions &amp; la liaison, pour qu’elles s’unissent au tout.</p>
+                <p>Mais si le maître pense d’une maniere petite, il voudra que sa maison soit faite suivant son idée : elle sera composée &amp; ornée de colifichets. Si le maître est d’un caractère modeste &amp; sublime, sa maison sera plus distinguée par l’élegance des proportions, que par les ornemens &amp; par la richesse de sa matiere. Si le maitre est d’un caractere inégal &amp; bizarre, sa maison sera composée de disparates &amp;<pb/><fw
+                    type="pageNum"
+                    >12</fw> de parties sans accord ; en sorte que l’on peut juger du caractère du maître de la maison, qui l’a fait construire pour lui, par la maniere dont elle est disposée, ornée et meublée.</p>
+                <p>L’Architecte y met du sien, &amp; s’il est sage, il peut redresser des idées qui ne conviennent pas ; mais il faut pour cela qu’il soit à portée de sçavoir comment vivent les honnêtes gens de son siecle dans toutes sortes de conditions ; ce qu’il doit avoir soin de bien étudier.</p>
+                <p>L’excellent pour l’un n’est pas toujours l’excellent pour l’autre. La maison d’un Prince ne doit pas être faite comme la maison d’un particulier, ni celle d’un particulier comme la maison d’un homme constitué en dignité. L’enthousiasme n’est pas moins dangeureux que l’insipidité. l’excellence du goût consiste dans une juste convenance.</p>
+                <p>Ce qui convient chez une nation ne convient pas toujours chez une autre : toutes ont une idée differente de la beauté : elle n’est pas dans les pays chauds la même que dans le Nord. On reconnoît dans tous les pays du monde un caractere dominant qui en décide ; mais comme on y trouve des hommes plus éclairés que d’autres, c’est à leur sentiment qu’il faut s’en rapporter ; parce qu’il est fondé sur des principes bien établis sur ce qui a plû ou déplû dans tous les siecles, &amp; sur des proportions reçûes par les nations les plus policées &amp; les plus éclairées qui ont approché le plus de l’excellent.</p>
+                <p>Mais pourquoi, dira-t-on, adopter plutôt les principes établis dans les ouvrages des <persName>Grecs</persName> &amp; des <persName>Romains</persName>, que ceux qui le sont dans les édifices des autres nations ? Toutes n’ont-elles pas la raison en partage, le discernement, des besoins, l’experience ? Pour répondre à cette objection, on peut avancer que la Grece &amp; Rome ont eu des moyens de cultiver &amp; de perfectionner les arts, que toutes les autres nations n’ont point eu, &amp; qu’il est presque impossible qu’elles eussent.</p>
+                <pb/>
+                <fw type="pageNum">13</fw><!-- D -->
+                <p>Pour ce qui regarde l’Architecture, il n’y a point de nation chez qui l’on ait fait tant de grands édifices que dans la Grece &amp; dans l’Empire Romain. Les Souverains &amp; ceux qui gouvernoient les Républiques avoient un soin particulier de donner des spectacles au peuple : les cérémonies de la Religion se faisoient avec pompe : les peuples étoient attirés par des jeux magnifiques &amp; par les exercices du corps, les Théatres, les Amphithéatres, les Cirques, les Naumachies, les Bains, les Portiques où s’assembloient les Philosophes, les Basiliques, les Temples &amp; les Arcs de Triomphe, tous ces Édifices capables de contenir un grand concours de peuple, d’une construction magnifique, &amp; qui étonnent jusque dans leurs ruines, donnoient aux Architectes de ces temps-là, de grandes &amp; de frequentes occasions de déployer leurs talens, de cultiver &amp; de perfectionner tous les jours leur Art, &amp; d’en établir des principes qui devenoient plus certains parmi un peuple libre, accoutumé à voir de superbes et beaux bâtimens, &amp; qui ne pouvoit souffrir le médiocre, que chez les autres nations, où ces jeux, ces exercices &amp; ces spectacles n’étoient pas en usage, ou l’art de l’Architecture n’étoit employé qu’à la construction des maisons de particuliers, &amp; pour les seuls besoins de la vie.</p>
+                <p>La Sculpture dans la Grece a été poussée à un haut degré de perfection. Pour en juger, il n’y a qu’à jetter la vûë sur <objectName>le Galidateur</objectName> et sur quelques belles statuës de l’antiquité : elles representent avec élegance le caractere des différentes Divinités, &amp; les actions les plus vives des hommes. C’étoit par de grandes récompenses du côté de la fortune &amp; par des dignités, que les Souverains &amp; les Républiques honoroient les hommes célébres, &amp; les Spectacles fréquents leur donnoient de grands moyens pour la perfection de la Sculpture.</p>
+                <p>Cette perfection vient de la parfaite imitation de la belle Nature ; &amp; pour y parvenir, les Sculpteurs ont été réduits à placer pour modele un homme des mieux faits, à la vérité, dans l’atti<pb/><fw
+                    type="pageNum"
+                    >14</fw>tude qu’ils veulent imiter. Mais quel modele ! un homme d’une vile condition, souvent sans esprit &amp; sans mouvement, qui ne ressent rien de la passion qu’œn veut representer ; en sorte que le marbre travaillé sur un tel modele paroît sans vie.</p>
+                <p>Quelle différence entre le modele d’une statute de Gladiateur &amp; un vrai Gladiateur, qui dans l’arêne fait ses efforts pour conserver sa vie, &amp; pour vaincre son adversaire ! quelle ardeur pour attaquer ! son ame paroît sur son visage : le feu sort de ses yeux. Quelle adresse, quelle vigilance, pour parer les coups de son ennemi ! Quelle activité pour se couvrir à propos de son bouclier ! Tous les mouvemens de son cœur passent dans toutes les parties de son corps. Quelle tension dans ses nerfs ! quelle agitation dans les muscles ! Le Sculpteur n’a qu’un instant pour représenter tous ces divers mouvemens : il saisit les plus intéressants, &amp; les transmet au marbre qu’il anime.</p>
+                <p>Quoiqu’il y ait peu d’anciens ouvrages de Peinture qui soient parvenus entiers jusqu’à nous, on doit juger que cet art a profité des mêmes avantages. Les Sculpteurs &amp; les Peintres de notre temps, ont rarement puisé ces moyens dans le sein de la Nature. Les plus habiles y suppléent par l’effort d’une imagination vive &amp; juste, &amp; par une soigneuse étude de la belle Nature quoique sans passion. Ils arrivent à la perfection ; mais on reconnoît facilement que les belles statues antiques &amp; quelques-unes de notre temps sont les enfants de la Nature, &amp; que celles qui sont copiées sur d’autres ouvrages, n’ont ni la même vie, ni la même beauté.</p>
+                <p>Les autres Arts &amp; les Sciences ont acquis dans <placeName>la Grece</placeName> la même perfection. Elle a été la source des principes établis depuis, &amp; qui ont passé jusqu’à nous, pour être la regle du bon goût.</p>
+                <p>Les grands sujets &amp; les grands ouvrages en toute espece, élevent l’esprit des hommes : les frequentes occasions qui se sont rencontrées dans la <placeName>Grece</placeName> &amp; dans l’<placeName>Italie</placeName>, l’expérience souvent redressée sur ce qui a plû oyu déplû aux hommes<!-- D -->
+                    <pb/><fw type="pageNum"
+                    >15</fw> les plus intelligens, &amp; qui ont puisé la beauté dans le sein de la Nature, qui l’ont développée, cultivée &amp; fait meurir par un travail assidu, ont donné lieu à la perfection de l’Architecture. D’où il s’ensuit que les principes qui en son émanés, &amp; qui ont passé jusqu’à ces derniers temps, malgré la barbarie &amp; l’ignorance de plusieurs siecles, doivent avoir plus d’autorité que ceux des autres nations, où ces grands exemples n’ont pas été si frequents ; &amp; qu’on ne peut s’écarter de ces mêmes principes, sans se livrer à des égaremns aussi dangereux pour les Architectes, que pour ceux qui jugent de leurs ouvrages.</p>
+                <p>Ainsi donc l’<orgName>Academie d’Architecture</orgName> dépositaire de ces principes, sur lesquels sont fondées la pureté &amp; la noble simplicité de l’Architecture, doit être attentive à les conserver, &amp; à s’opposer aux folles nouveautés qui s’introduisent, afin qu’on puisse avancer, autant qu’il est possible, du bon vers l’excellent ; c’est en quoi consiste le bon goût.</p>
+                <metamark rend="tailpiece"/>
+            </div>
+            <pb/>
+            <fw type="pageNum">16</fw>
+            <div>
+                <head>Principes 
+                <lb/>tirés 
+                <lb/>de l’art poétique 
+                <lb/>d’<persName>Horace</persName></head>
+                <p>Les Sciences &amp; les Arts ont un si grand rapport, que les principes des uns sont les principes des autres ; toutes les parties des Mathematiques sont étroitement unies • la Géométrie en est la base : elle s’applique à toutes les sciences, &amp; l’étude d’une matiere ajoûte de nouvelles connoissances à l’autre. La Peinture, la Sculpture &amp; la Poësie sont sœurs : les premières parlent aux yeux, &amp; la troisiéme aux oreilles. La Musique peint les divers incidents de la Nature ; elle exprime &amp; excite les passions les plus tendres &amp; les plus violentes. L’Architecture, quoiqu’il semble que son objet ne soit que l’emploi de ce qui est materiel, est susceptible de differens genres qui rendent ses parties, pour ainsi dire, animées par les différents caracteres qu’elle fait sentir. Un Édifice par sa composition exprime comme sur un Théatre, que la scene est Pastorale ou Tragique, que c’est un Temple ou un Palais, un Édifice public destiné à certain usage, ou une maison particuliere. Ces différents Édifices par leur disposition, par leur structure, par la maniere dont ils sont décorés, doivent annoncer au spectateur leur destination ; &amp; s’ils ne le font pas, ils pechent contre l’expression, &amp; ne sont pas ce qu’ils doivent être.</p>
+                <p>Il en est de même de la Poësie : il y en a de différents genre, &amp; le stile de l’un ne convient pas à l’autre : <persName>Horace</persName>
+                    <pb/><fw type="pageNum"
+                    >17</fw> en a donné d’excellents principes dans son <title>Art Poëtique</title> ; &amp; quoi qu’il n’ai jamais pensé à l’Architecture, il m’a paru qu’ils y avoient tant de rapport, que j’ai crû qu’on pouvoit les y joindre, &amp; en faire une très-juste application à ceux qui nous ont été donnés pour l’Architecture par les Anciens &amp; par les Modernes, &amp; qu’ils pourroient encore les enrichir d’un caractere plus sublime. Tous les hommes rapportent leur lecture, leur étude &amp; leurs réfléxions à leur caractere, à leur humeur, &amp; aux talens qu’ils cultivent, &amp; en toutes les recherches que l’on fait pour la perfection des Sciences &amp; des Arts, il faut à l’exemple des abeilles, tirer le suc de toutes sortes de fleurs, autrement on risque de tomber dans le défaut dont parle Horace dans les premiers vers de son <title>Art Poëtique</title> :</p>
+                <quote>
+                    <lg xml:lang="lat">
+                        <l>Humano capiti cervicem pictor equinam</l>
+                        <l>Jungere si velit, &amp; varias inducere plumas,</l>
+                        <l>Unidque collatis membris, ut turpiter arrum</l>
+                        <l>Definat in piscem mulier formosa supernè,</l>
+                        <l>Spectarum admissi risum teneatis amici ?</l>
+                        <l>Credite Pisones, isti tabulæ fore librum</l>
+                        <l>Persimilem.....</l>
+                    </lg>
+                    <p xml:lang="fre">Pourrait-on ne pas trouver ridicule un tableau qui représenteroit une tête humaine posée sur le col d’un cheval, où seroient entremêlées des plumes de différentes especes, &amp; auquel on auroit ajpûté des membres de divers animaux ; en sorte qu’une belle femme fût terminée par la queue d’un horrible poisson.</p>
+                </quote>
+                <p>Rien ne ressembleroit plus cependant à ce tableau, qu’un édifices composé de plusieurs parties différentes, sans aucun rapport des unes aux autres, &amp; de plusieurs corps de logis &amp; pavillons disposés sans symétrie, &amp; plantés sur des alignemens irréguliers. La Nature sage dans ses opérations, a placé la bouche &amp; le nez au milieu du visage : les yeux &amp; les oreilles en sont également distants ; &amp; ils choquent la vûë, lorsque l’un est plus grand ou plus haut que<pb/><fw
+                    type="pageNum"
+                    >18</fw> l’autre : les bras sont régulierement placés &amp; sont de même longueur. L’œil accoutumé à une juste symetrie, est blessé lorsqu’elle est dérangée. Si un corps de logis &amp; un pavillon qui est relatif à un autre, n’est pas de même hauteur, il déplaît à la vûë par le défaut de rapport : si sur une partie foible on met une partie trop pesante, on peche contre la solidité ; d’où est émané le principe, que le fort doit porter le foible ; &amp; un édifice paroît monstrueux lorsque toutes ses parties ne font pas un accord parfait &amp; ne s’unissent pas au tout.</p>
+                <quote>
+                    <lg xml:lang="lat">
+                        <l>..... Pictoribus atque Poetis</l>
+                        <l>Quidlibet audendi semper fuit æqua potestats</l>
+                        <l>Scimus.....</l>
+                        <l>Sed non ut placidis coëant immitia.</l>
+                    </lg>
+                    <p xml:lang="fr"
+                        >Les Poëtes &amp; les Peintres peuvent tout hazarder dans leurs imaginations, excepté qu’il ne faut pas que les choses opposées aillent ensemble.</p>
+                </quote>
+                <p>Il n’y a point de situation de terrain, où il n’y ait quelque sujetion, qui casueroit des défauts qu’il faut sauver, &amp; qui obligent à prendre quelque licence ; mais on ne doit pas se servir pour cela de moyens opposés, il ne faut pas que les aîles d’un bâtiment soient liées au corps de logis par des angles différents. Dans un terrain irrégulier, on peut faire une maison réguliere, en jettant les biais sur les parties hors de la vûë.</p>
+                <p>À un bâtiment commencé, il ne faut pas joindre une partie d’une construction &amp; d’une décoration différente : on ne doit pas dans une même façade mettre un ordre Corinthien à côté d’un ordre Dorique, ni dans une même continuité de bâtiment, placer à même hauteur des croisées carrées : il ne faut pas que la moitié d’un corps de logis soit couvert d’un comble, &amp; que l’autre le soit en terrasse. Ce salon est orné de pilastres avec de grandes figures, &amp; l’on y fait un plafond de grotesques. Dans cette galerie ornée de tableaux, une partie est de l’histoire sacrée, &amp; l’autre de l’histoire profane : toutes ces choses sont opposées, &amp; ne peuvent s’unir ensemble.</p>
+                <pb/>
+<fw type="pageNum">19</fw>
+                <quote>
+                    <lg xml:lang="lat">
+                        <l>Incœptis gravibus, plerumque &amp; magna professis,</l>
+                        <l>Purpureus, latè qui splendeat, unus &amp; alter</l>
+                        <l>Assuitur pannus.....</l>
+                    </lg>
+                    <p xml:lang="fre"
+                        >Après avoir commencé avec beaucoup de magnificence, &amp; avoir annoncé de grandes choses, on coud ça &amp; là quelques lambeaux de pourpre  qui jettent au loin de l’élat.</p>
+                </quote>
+                <p>On fait pour l’entrée d’un Palais une porte d’une construction grave &amp; solide, &amp; on met à côté des festons de fleurs, ou des colomnes Corinthiennes avec des entablemens fort ornés. Ces parties sont trop legeres &amp; trop riches au près de ce rustique. Cet ordre est bien proportionné en toutes ses parties ; ces festons de fleurs sont travaillés avec beaucoup de soin.</p>
+                <quote>
+                    <lg xml:lang="lat">
+                        <l>..... Sed nunc non erat his locus.....</l>
+                        <l>Denique fit, quod vis simplex duntaxat &amp; unum.</l>
+                    </lg>
+                    <p xml:lang="fre"
+                        >Mais cet ordre &amp; ces festons ne sont pas là en leur place. Enfin il faut que toutes les parties ne fassent qu’un tout.</p>
+                </quote>
+                <p>Cela ne peut être, quand un ouvrage est composé de parties de different genre, mal placées, &amp; qui ne peuvent s’unir. Il est plus difficile qu’on ne pense, de joindre en Architecture une partie à l’autre ; en-sorte qu’elles s’accordent par la forme &amp; par la proportion ; qu’elle ne se détruisent point, &amp; qu’au contraire l’une fasse valoir l’autre. Regardez l’entrée de ce Palais : cet ordre Dorique est beau, &amp; présente au Public une belle face. On met au dessus de cet ordre un attique étroit, bas &amp; mesquin ; il est d’un genre différent. Entrez dans la cour, elle est entourée d’un peristyle de petites colomnes qui n’ont aucun rapport à celles de la porte.</p>
+                <p>Le premier ordre de ce portail d’Église est magnifique : il est d’ordre Dorique : il est bien proportionné : l’Architecte est mort, cet ordre étant à l’entablement. Un autre Architecte a continué cet ouvrage ; il a mis au-dessus un<pb/><fw
+                    type="pageNum"
+                    >20</fw> ordre Composite, qui n’a aucune liaison avec l’ordre qui est au-dessous : ces deux parties ne font point un seul &amp; même tout.</p>
+                
+                <quote><lg xml:lang="lat">
+                    <l>Decipimur specie recti : brevis esse laboro,</l>
+                    <l>Obscurus fio. Sectantem lævia, nervi</l>
+                    <l>Deficiunt, animique : Professus grandia, turget :</l>
+                    <l>Serpit humi tutus nimium, timidusque procellæ</l>
+                    <l>Qui variare tupit rem prodigaliter unam,</l>
+                    <l>Delphinum sylvis appingit, fluctibus aprum.</l>
+                    </lg><p xml:lang="fre"
+                    >Nous sommes trompés par l’apparence du bien ; je veux être court, je deviens obscur : on veut oplir un ouvrage, on lui ôte toute sa force : on veut le rendre sublime, on le fait enflé : celui qui a peur de s’élever, rampe à terre s’il veut varier les objets, il met des dauphins sur les arbres, &amp; des sangliers sur les flots.</p></quote>
+                <p>On veut faire un ouvrage d’un caractere grave, on le fait materiel &amp; pesant. On veut faire un ouvrage leger, on le fait sec &amp; mesquin. On veut faire une Église qui imprime du respect, on la fait sombre à n’y pouvoir lire : on veut éviter ce défaut, on en fait un salon brillant de lumiere, une lanterne, ou une salle de festins.</p>
+                <quote>
+                    <lg xml:lang="lat">
+                        <l>Dum vitant stulti vitia in contraria currunt.</l>
+                    </lg>
+                </quote>
+                <p>On veut faire un ouvrage sublime, on le fait orné avec excès, c’est une décoration empoulée qui dégénere en confusion. On veut faire un édifices simple, on fait un bâtiment trivial qui n’a aucune dignité. On veut y donner de l’agrément, on met de la varieté dans toutes ses parties, on l’orne de fleurs ; enfin on fait une maison composée de parties sans accord, &amp; qui ne sont point en leur place.</p>
+                <quote><lg xml:lang="lat">
+                    <l>In vitium ducit culpæ fuga, si carer arte.</l>
+                    </lg>
+                    <p xml:lang="fre">On tombe dans un défaut, voulant en éviter un autre, si un ouvrage n’est pas conduit par les principes de l’art.</p>
+                </quote>
+                <pb/>
+                <fw type="pageNum">21</fw>
+                <p>
+                    <gap reason="sampling"/>
+                </p>
+                <quote>
+                    <lg xml:lang="lat">
+                        <l></l>
+                    </lg>
+                    <p xml:lang="fre"></p>
+                </quote>
+            </div>
+        </body>
+    </text>
+</TEI>
