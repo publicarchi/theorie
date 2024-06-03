@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/theorieSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Édition numérique du Livre d’Architecture de Laugier 1753</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Publicarchi</publisher>
+                <date from="2024">2024</date>
+                <idno>laugier1753</idno>
+                <availability status="restricted" xml:id="durand1802-1805Licence">
+                    <licence target="http://creativecommons.org/licenses/by-nc/4.0/fr/"/>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Théorie de l’architecture moderne</title>
+                <title xml:lang="fre" type="sub">Corpus de textes numérisés, 1750-1850</title>
+                <idno type="URI">text.archi</idno>
+            </seriesStmt>
+            <!--<notesStmt>
+            <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+            <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+         </notesStmt>-->
+            <sourceDesc xml:id="laugier1753">
+                <bibl copyOf="#biblioLaugier1753" />
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>L’édition de ce texte s’inscrit dans un projet collaboratif d’édition numérique de textes fondamentaux sur l’architecture moderne.</p>
+            </projectDesc>
+            <editorialDecl>
+                <correction>
+                    <p>La syntaxe originale des œuvres a été respectée.</p>
+                </correction>
+                <hyphenation>
+                    <p>Pour les ouvrages imprimés, il n’a pas été tenu compte de l’hyphénation.</p>
+                </hyphenation>
+                <interpretation>
+                    <p>Les interprétations sont traitées au moyen d’un élément supplied ou bien sont renvoyées en notes. Une mention de responsabilité est fournie grâce à l’attribut resp sur le passage concerné.</p>
+                </interpretation>
+                <normalization>
+                    <p>La ponctuation a été respectée de même que l’usage des majuscules et les abréviations.</p>
+                </normalization>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d’un élément quote, soit au moyen d’un élément q...</p>
+                </quotation>
+            </editorialDecl>
+            <refsDecl>
+                <p>Description du système de référence canonique.</p>
+                <!-- @todo à renseigner avec une expression régulière -->
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation when="2024">2024</creation>
+            <langUsage>
+                <language ident="fre" usage="50">Français (langue principale du corpus)</language>
+                <language ident="lat" usage="50">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Dix-huitième siècle</term>
+                    <term>France</term>
+                </keywords>
+                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Eighteenth century</term>
+                    <term>France</term>
+                </keywords>
+                <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2024-06">Création du fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <pb/>
+            <pb/>
+            <pb/>
+            <pb/>
+            <pb/>
+            <titlePage>
+                <titlePart>Essai 
+                  <lb/>sur 
+                  <lb/>l’Architecture</titlePart>
+                <docImprint>
+                    <pubPlace>À Paris,</pubPlace>
+                    <publisher>Chez Duchesne, rue S. Jacques, au Temple du goût</publisher>
+                    <docDate>M. DCC. LIII</docDate>
+                </docImprint>
+                <imprimatur>Avec approbation &amp; privilège du Roy</imprimatur>
+            </titlePage>
+            <pb/>
+            <pb/>
+            <div type="preface">
+                <head>Préface</head>
+                <p>Nous avons divers Traités d’Architecture qui développent avec assez d’exactitude les mesures &amp; les proportions ; qui entrent dans le détail des différens ordres, qui fournissent des modéles pour toutes les manieres de bâtir. Nous n’avons point encore d’ouvrage qui en établisse solidement les principes, qui en manifeste le véritable esprit, qui propose des regles propres à diriger le talent &amp; à fixer le goût. Il me semble que dans les arts qui ne sont pas purement méchaniques, il ne suffit pas que l’on sache travailler, il importe sur-tout que l’on appren<!-- aij --><pb/><fw
+                    type="pageNum"
+                    >iv</fw>ne à penser. Il faut qu’un Artiste puisse se rendre raison à lui-même de tout ce qu’il fait. Pour cela il a besoin de principes fixes qui déterminent ses jugemens, &amp; qui justifient ses choix ; de telle sorte qu’il puisse dire qu’une chose est bien ou mal, non point simplement par instinct, mais par raisonnement &amp; en homme instruit des routes du beau.</p>
+                <p>Les connoissances ont été poussées bien loin dans presque tous les Arts Libéraux. Une foule de gens à talent, se sont appliqués à nous en faire sentir toutes les finesses. On a écrit très-savamment de la Poësie, de la Peinture, de la Musique. Les mysteres de ces arts ingénieux ont été si bien approfondis, qu’il reste à leur égard peu de découvertes à faire. Nous avons des préceptes réfléchis &amp; des critiques judicieu<pb/><fw
+                    type="pageNum"
+                    >v</fw>ses, qui en déterminent les vraies beautés. L’imagination a des guides qui la mettent sur la voie, &amp; des freins qui la retiennent dans les bornes. On apprécie au juste, &amp; le mérite de ses saillies, &amp; le desordre de ses écarts. Si nous manquions de bons Poëtes, de bons Peintres, ou de bons Musiciens, ce ne seroit point faute de théorie, ce seroit défaut de talent.</p>
+                <!-- @perso rôle du théoricien (distinct artiste). Principes abstraction faite des édifices antiques. Fondés en raison -->
+                <p>La seule Architecture a été abandonnée jusqu’à présent au caprice des Artistes, qui en ont donné les préceptes sans discernement. Ils ont fixé les regles au hasard, sur la seule inspection des édifices anciens. Ils en ont copié les défauts, avec autant de scrupule que les beautés : manquant de principes pour en faire la différence, ils se sont imposés l’obligation de les confondre : ser<!-- aiij --><pb/><fw
+                    type="pageNum"
+                    >vi</fw>viles imitateurs, tout ce qui s’est trouvé autorisé par des exemples, a été déclaré légitime : bornant toutes leurs recherches à consulter le fait, mal-à-propos ils en ont conclu le droit, &amp; leurs leçons n’ont été qu’une source d’erreurs.</p>
+                <p><persName>Vitruve</persName> ne nous a proprement appris que ce qui se pratiquoit de son tems ; &amp; quoiqu’il lui échappe des lueurs qui annoncent un génie capable de pénétrer dans les vrais mysteres de son art, il ne s’attache point à décirer le voile qui les couvre, &amp; s’éloigannt toûjours des abusmes de la théorie, il nous mene par des chemins de pratique, qui plus d’une fois nous égarent du but. Tous les modernes, à l’exception de <persName>M. de Cordemoi</persName>, ne font que comenter <persName>Vitruve</persName>, &amp; le suivent avec confiance dans tous ses égare<pb/><fw
+                    type="pageNum"
+                    >vii</fw>mens. Je dis à l’exception de <persName>M. de Cordemoi</persName> ; cet auteur plus profond que la plûpart des autres, a apperçu la vérité qui leur étoit cachée; Son <title>Traité d’Architecture</title> est extrèmement court : mais il renferme des principes excellens, &amp; des vûes extrèmement réfléchies. Il pouvoit, en les développant un peu davantage, en tirer des conséqeunces qui auroient répandu un grand jour sur les obscurités de son art, &amp; banni la fâcheuse incertitude qui en rend les regles comme arbitraires.</p>
+                <p>Il est donc à souhaiter que quelque grand Architecte entreprenne de sauver l’Architecture de la bisarrerie des opinions, en nous en découvrant les loix fixes &amp; immuables. Tout art, toute science  a un objet déterminé. Pour parvenir à cette ob<pb/><fw
+                    type="pageNum"
+                    >viii</fw>jet, toutes les routes ne sauroient être également bonnes ; il n’y en a qu’une qui mene directement au but ; &amp; c’est cette route unique qu’il faut connoître. En toutes choses, il n’y a qu’une maniere de bien faire. Qu’est-ce que l’art ? Sinon cette maniere établie sur des principes évidens, &amp; appliquée à l’objet par des préceptes invariables.</p>
+                <p>En attendant que quelqu’un, beaucoup plus habile que moi, se charge de débrouiller le cahos des regles de l’Architecture, pour qu’il n’en subsiste désormais aucune dont on ne puisse rendre une solide raison ; je vais tâcher d’y porter un léger rayon de lumiere. En considérant avec attention nos plus grands &amp; nos plus beaux édifices, mon ame a toûjours éprouvé diverses impressions. Quelque<pb/><fw
+                    type="pageNum"
+                    >ix</fw>fois le charme étoit si fort qu’il produisoit en moi un plaisir mêlé de transport &amp; d’enthousiasme. D’autres fois, sans être si vivment entraîné, je me sentois occupé d’une maniere satisfaisante, c’étoit un plaisir moindre, mais pourtant un vrai plaisir. Souvent je demeurois tout-à-fait insensible ; souvent aussi j’étois dégoûté, choqué, révolté. J’ai réfléchi long-tems sur tous ces différens effets. J’ai répété mes observations jusqu’à ce que je me sois assûré que les mêmes objets faisoient toûjours sur mois les mêmes impressions. J’ai consulté le goût des autres, &amp; en les mettant à une pareille épreuve, j'ai reconnu dans eux toutes mes sensibilités plus ou moins vives, selon que leur ame avoit reçû de la nature, un degré de chacleur plus ou moins forts. De-là<pb/><fw
+                    type="pageNum"
+                    >x</fw> j'ai conclu, <num>I°.</num> qu’il y avoit dans l’Architecture des beautés essentielles, indépendantes de l’habitude des sens, ou de la convention des hommes. <num>2°.</num> Que la composition d’un morceau d’Architecture étoit comme tous les ouvrages d’esprit, susceptible de froideur &amp; de vivacité, de justesse &amp; de desordre. <num>3°.</num> Qu’il devoit y avoir pour cet art comme pour tous les autres, un talent qui ne s’acquiert point, une mesure de génie que la nature donne, &amp; que ce talent, ce génie avoient besoin cependant d’être assujettis &amp; captivés par des loix.</p>
+                <p>En méditant toûjours davantage sur les diverses impressions que faisoient sur moi les différentes compositions d’Architecture, j’ai voulu pénétrer la cause de leur effet. Je me suis demandé compte de mes<pb/><fw
+                    type="pageNum"
+                    >xi</fw> sentimens à moi-même. J’ai voulu savoir pourquoi telle chose me ravissoit, telle autre ne faisoit que me plaire ; celle-ci étoit pour moi sans agrémens ; celle-là m’étoit insupportable. Cette recherche ne m’a présenté d’abord que des ténebres &amp; des incertitudes. Je ne me suis point rebuté : j’ai sondé l’abysme jusqu’à ce que j’aye cru en découvrir le fond ; je n’ai cessé d’interroger mon ame jusqu’à ce qu’elle m’ait rendu une réponse satisfaisante. Tout à coup il s’est fait à mes yeux un grand jour. J’ai vu des objets distincts où je n’apercevois auparavant que des brouillards &amp; des nuages : je les ai saisis ces objets avec ardeur, &amp; en faisant usage de leur lumiere, j'ai vû peu à peu mes incertitudes disparoître, mes difficultés s’évanoüir ; &amp; j’en<pb/><fw>xii</fw>  suis venu jusqu’à pouvoir me démontrer à moi-même par principes &amp; conséquences, la nécessité de tous les effets dont j’ignorois les causes.</p>
+                <p>Telles est la route que j’ai suivie pour me satisfaire. Il m’a paru qu’il ne seroit pas inutile de faire part au Public, du succès qu’ont eû mes efforts. Quand je ne ferois qu’engager mes Lecteurs à examiner si je n’ai point prix le change, à critique séverement mes décisions, à essayer par eux-mêmes de pénétrer plus avant dans le même abysme, l’Architecture y gagneroit infiniment. Je puis dire avec vérité, que ma principale intention est de mettre le Public, &amp; sur-tout les Artistes, en voie de douter, de conjecturer, de se contenter difficilement : trop heur<pb/><fw
+                    type="pageNum"
+                    >xiii</fw>reux, si je les porte à faire des recherches qui leur donnent lieu de me trouver en défaut, de corriger mes inexactitudes, d’enchérir sur mes raisonnemens.</p>
+                <p>Ce n’est ici qu’un essai, où je ne fais proprement qu’indiquer les choses &amp; frayer la route, laissant à d’autres le soin de donner à mes principes, toute leur étendue &amp; toute leur application, avec une intelligence &amp; une sagacité dont je ne serois pas capable. J’en dis assez pour fournir aux Architectes, des regles infaillibles de perfection. J’ai tâché de me rendre intelligible le plus qu’il m’a été possible. Je n’ai pû éviter d’employer souvent des termes d’art. Ils sont presque tous assez connus. On trouve d’ailleurs des Dictionnaires qui ex<pb/><fw
+                    type="pageNum"
+                    >xiv</fw>pliquent le sens veritable. Comme mon principal dessein est de former le goût des Architectes, j’évite tous les détails que l’on trouve ailleurs, &amp; je n’ai pas besoin de charger ce petit ouvrage de figures, qui pourroient peiner &amp; dégoûter le Lecteur.</p>
+                <metamark rend="tailpiece"/>
+            </div>
+            <pb/>
+            <div>
+                <head>Table des chapitres</head>
+                <gap reason="sampling"/>
+                <pb/>
+            </div>
+            <pb/>
+            <div>
+                <head>Essai sur l’Architecture</head>
+                <head type="main">Introduction</head>
+                <p>L’Architecture est de tous les Arts utiles ; celui qui demande les talens les plus distingués, &amp; les connoissances les plus étendues. Il faut peut-être autant de génie, d’esprit, &amp; de goût pour faire un grand Architecte, que pour former un Peintre, &amp; un Poëte du premier ordre. Ce seroit une grande erreur de croire qu’il n’y a ici que du<pb/><fw
+                    type="pageNum"
+                    >2</fw> méchanique ; que tout se borne à creuser des fondemens, à élever des murs ; le tout, selon des régles, dont la routine ne suppose que des yeux habitués à juger d’un à plomb, &amp; des mains faites à manier la truelle.</p>
+                <p>Quand on parle de l’art de bâtir ; des amas confus de décombres incommodes, des tas immenses de matériaux informes, un bruit effroyable de marteaux, des échaffauds périlleux, un jeu effrayant de machines, une armée d’Ouvriers sales &amp; crotés ; c’est tout ce qui se présente à l’imagination du vulgaire, c’est là l’écorce peu agréable d’un Art, dont les ingénieurs misteres apperçus de peu de gens, excitent l’admiration de tous ceux qui les pénétrent. Ils y découvrent des inventions dont la hardiesse suppose un génie vaste et fécond, des proportions dont la servitude annonce une précision sévére &amp;<pb/><fw
+                    type="pageNum"
+                    >3</fw> sistématique ; des ornemens dont l’élégance décéle un sentiment délicat &amp; exquis. Quiconque est capable de saisir tant de vraies beautés ; bien loin de confondre l’Architecture avec les moindres Arts, sera plutôt tenté de la mettre au rang des Sciences les plus profondes. La vûe d’un édifice construit dans toute la perfection de l’art, cause un plaisir &amp; un enchantement dont on n’est pa maître de se défendre. Ce spectacle réveille dans l’ame de idées nobles &amp; touchantes. Il nous fait éprouver cette douce émotion, &amp; cet agréable transport qu’excitent les ouvrages qui portent l’empreinte d’une vraie supériorité d’esprit. Un bel édifice parle éloquemment pour son Architecte.<!-- @perso architecture parlante ? -->
+                    <persName>M. Perrault</persName> dans ses écrits n’est tout au plus qu’un Sçavant : <objectName>la colonade du Louvre</objectName> le décide grand Homme.</p>
+                <p>L’Architecture doit ce qu’elle a de<pb/><fw type="pageNum"
+                    >4</fw> plus parfait <persName>aux Grecs</persName>, Nation privilégiée, à qui il étoit réservé de ne rien ignorer dans les Sciences, &amp; de tout inventer dans les Arts. <persName>Les Romains</persName> dignes d’admirer ; capable de copier les modéles excellens que la Gréce leur fournissoit, voulurent y ajoûter du leur, &amp; ne firent qu’apprendre à tout l’Univers, que quand le degré de perfection est atteint, il n’y a plus qu’à imiter ou à déchoir.<!-- @perso imitation --> La barbarie des siécles postérieurs après avoir enseveli tous les beaux Arts, sous les ruines du seul empire qui en conservoit le goût &amp; les principes, fit naître un nouveau systême d’Architecture, où les proportions ignorées, les ornemens bisarrement configurés &amp; puerillement entassés, n’offroient que des pierres en découpure, de l’informe, du grotesque, de l’excessif. Cette Architecture moderne a fait trop long-temps les délices de toute<pb/><fw
+                    type="pageNum">5</fw>
+                    <placeName>l’Europe</placeName>. La plûpart de nos grandes Églises sont malheureusement destinées à en conserver des traces à la postérité la plus reculée. Disons la vérité ; avec des tâches sans nombre, cette Architecture a eu des beautés. Quoiqu’il régne dans ses plus magnifiques productions une pesanteur d’esprit &amp; une grossiereté de sentiment tout-à-fait choquante : peut-on ne pas admirer la hardiesse des traits, la délicatesse du ciseau, l’air de majesté &amp; de dégagement que l’on remarque dans certains morceaux, qui par tous ces endroits ont quelque chose de désespérant &amp; d’inimitable. Mais enfin de plus heureux génies sçurent apercevoir dans les monumens antique des preuves de l’égarement universel, &amp; des ressources pour en revenir. Faits pour goûter des merveilles vainement exposées à tous les yeux depuis tant de siécles, ils en médi<pb/><fw
+                    type="pageNum"
+                    >6</fw>tèrent les rapports, ils en imiterent l’artifice. À force de recherches, d’examens &amp; d’essais, ils firent renaître l’étude des bonne régles, &amp; rétablirent l’Architetcure dans tous ses anciens droits. On abandonna les ridicules colifichets du gothique &amp; de l’arabesque, pour y substituer les parures mâles &amp; élégantes du Dorique, de l’Ionique, du Corinthien. <persName>Les François</persName> lents à imaginer, mais prompts à suivre les imaginations heureuses, envierent à l’<placeName>Italie</placeName> la gloire de ressusciter ces magnifiques créations de <placeName>la Grece</placeName>. Tout est plein parmi nous de monumens qui attestent l’ardeur, qui constatent le succès de cette émulation de nos Peres. Nous avons eu <persName>nos Bramantes</persName>, <persName>nos Michel-Anges</persName>, <persName>nos Vignoles</persName>. Le siécle passé, siécle où, en genre de talens, la nature au milieu de nous a étalé, &amp; peut-être épuisé toute sa fécondité ; le siécle passé a produit en fait d’Ar<pb/><fw
+                    type="pageNum"
+                    >7</fw>chitecture des chefs-d’œuvres dignes des meilleurs temps. Mais au moment que nous touchions à la perfection, comme si la barbarie n’avoit pas perdu sur nous tous ses droits, nous sommes retombés dans le bas &amp; le défectueux. Tout semble nous menacer enfin d’une décadence entiere.</p>
+                <p>Ce danger qui devient de jour en jour plus prochain, qu’on peut cependant prévenir encore, m’engage à proposer ici modestement mes réflexions sur un Art pour lequel j'ai toujours eu beaucoup d’amour. Dans le dessein que je me propose, je ne suis animé ni par la passion de censurer, passion que je déteste, ni par le désir de dire des choses nouvelles : désir que je crois au moins frivole. Plein d’estime pour nos Artistes, dont plusieurs ont une habileté reconnue ; je me borne à leur communiquer mes idées &amp; mes doutes, dont je les prie de faire un examen<pb/><fw
+                    type="pageNum"
+                    >8</fw> réfléchi. Si je releve comme de vrais abus certains usages universellement reçus parmi eux, je ne prétends point qu’ils s’en rapportent à ma seule opinion que je soûmets de grand cœur à leur judicieuse critique. Je demande seulement qu’ils veillent bien se dépouiller de certaines préventions trop ordinaires, &amp; toujours nuisibles aux progrès des Arts.</p>
+                <p>Qu’ils ne disent point que n’étant pas du métier, je ne sçaurois en parler avec assez de connoissance ; c’est assurément la plus vaine des difficultés. Tous les jours on juge d’une Tragédie sans avoir jamais fait des vers. La connoissance des régles n’est interdite à personne, quoique l’exécution ne soit donnée qu’à quelques-uns. Qu’ils ne m’opposent point des autorités respectables sans être infaillibles. Ce seroit tout gâter que de juger de ce qui doit être par ce qui est. Les plus<pb/><fw
+                    type="pageNum"
+                    >9</fw> grands Hommes se sont égarés quelquefois : ce n’est donc point un moyen sûr d’éviter l’erreur, que de prendre toujours leur exemple pour régle. Qu’on ne m’arrête point par des impossibilités prétendues. La paresse en trouve beaucoup, où la raison n’en voit aucune. Je me persuade que ceux de nos Architectes qui ont un véritable zéle pour la perfection de leur art, me sçauront gré de ma bonne volonté. Ils trouveront peut-être dans cet écrit des réflexions qui leur étoient échappées : Et s’ils les jugent solides, ils ne dédaigneront pas d’en faire usage ; c’est tout ce que je leur demande.</p>
+                <metamark
+                    rend="tailpiece"/>
+            </div>
+        </front>
+        <pb/>
+        <fw type="pageNum">10</fw>
+        <body>
+            <div>
+                <head>
+                    <label>Chapitre Premier</label> <lb/>Principes généraux de l’Architecture</head>
+                <p>Il en est de l’Architecture comme de tous les autres Arts : ses principes sont fondés sur la simple nature, &amp; dans les procédés de celle-ci se trouvent clairement marquées les régles de celle-là. Considérons l’homme dans sa premiere origine sans autre secours, sans autre guide que l’instinct naturel de ses besoins. Il lui faut un lieu de repos. Au bord d’un tranquille ruisseau, il apperçoit un gason ; sa verdure naissante plaît à ses yeux, son tendre duvet l’invite, il vient, &amp; mollement étendu sur ce tapis émaillé, il ne songe qu’à jouir en paix des dons de la nature : rien ne lui manque, il ne désire rien.<pb/><fw
+                    type="pageNum"
+                    >11</fw><!-- @rmq nouveau § ? --> Mais bientôt l’ardeur du Soleil qui le brule, l’oblige à chercher un abri. Il apperçoit une forêt qui lui offre la fraîcheur de ses ombres ; il court se cacher dans son épaisseur, &amp; le voilà content. Cependant mille vapeurs élevées au hazard se rencontrent &amp; se rassemblent, d’épais nuages couvrent les airs, une pluie effroyable se précipite comme un torrent sur cette forêt délicieuse. L’homme mal couverte à l’abri de ses feuilles, ne sçait plus comment se défendre d’une humidité incommode qui le pénétre de toute part. Une caverne se présente, il s’y glisse, &amp; se trouvant à sec, il s’applaudit de sa découverte. Mais de nouveaux désagréments le dégoûtent encore de ce séjour. Il s’y voit dans les ténébres, il y respire un air mal sain, il en sort résolu de suppléer, par son industrie, aux intattentions &amp; aux <sic>négligence</sic> de la nature.<pb/><fw
+                    type="pageNum"
+                    >12</fw><!-- @rmq nouveau § ? --> L’homme veut se faire un logement qui le couvre sans l’ensevelir. Quelques branches abbattues dans la forêt sont les matériaux propres à son dessein. Il en choisit quatre des plus fortes qu’il éleve perpendiculairement, &amp; qu’il dispose en quarré. Au-dessus il en met quatre autres en travers ; &amp; qui se réunissent en pointe de deux côtés. Cette espece de toit est couvert de feuilles assez serrées pour que ni le soleil, ni la pluie ne puissent y pénetrer ; &amp; voilà l’homme logé. Il est vrai que le froid &amp; le chaud lui feront sentir leur incommodité dans sa maison ouverte de toute part ; mais alors il remplira l’entre-deux des piliers, &amp; se trouvera garanti.</p>
+                <p>Telle est la marche de la simple nature ; c’est à l’imitation de ses procédés que l’art doit sa naissance. La petite cabane<pb/><fw
+                    type="pageNum"
+                    >13</fw> rustique que je viens de décrire, est le modele sur lequel on a imaginé toutes les magnificences de l’Architecture, c’est en se raprochant dans l’exécution de la simplicité de ce premier modele, que l’on évite les défauts essentiels, que l’on saisit les perfections véritables. Les pieces de bois élevées perpendiculairement nous ont donné l’idée des colomnes. Les pieces horisontales qui les surmontent, nous ont donné l’idée des entablemens. Enfin les pieces inclinées qui forment le toit, nous ont donné l’idée des frontons : voilà ce que tous les Maîtres de l’Art ont reconnu. Mais qu’on y prenne bien garde. Jamais principe ne fut plus fécond en conséquences. Il est facile désormais de distinguer les parties qui entrent essentiellement dans la composition d’un ordre d’Architecture, d’avec celles qui ne s’y sont introduites que par<pb/><fw
+                    type="pageNum"
+                    >14</fw> besoin, ou qui n’y ont été ajoûtées que par caprice. C’est dans les parties essentielles que consistent toutes les beautés. Dans les parties introduites par besoin consistent toutes les licences. Dans les parties ajoûtées par caprice consistent tous les défauts : ceci demande des éclaircissemens. Je vais tâcher d’y répandre tout le jour possible.</p>
+                <p>Ne perdons point de vûe notre petite cabane rustique. Je n’y vois que des colomnes, un plancher ou entablement, un toit pointu dont les deux extrêmités forment chacune ce que nous nommons un fronton. Jusqu’ici point de voûte, encore moins d’arcade, point de piédestaux, point d’attique, point de porte même, point de fenêtre. Je conclus donc &amp; je dis : Dans tout ordre d’Architecture, il n’y a que la colomne, l’entablement &amp; le fronton qui puissent entrer<pb/><fw
+                    type="pageNum"
+                    >15</fw> essentiellement dans sa composition. Si chacune de ces trois parties se trouve placée dans la situation &amp; avec la forme qui lui convient, il n’y aura rien à ajoûter pour que l’ouvrage soit parfait. Il nous reste en France un très-beau monument des Anciens, c’est ce qu’on appelle <objectName>à Nismes la Maison Quarrée</objectName>. Connoisseurs ou non Connoisseurs, tout le monde admire la beauté de cet édifice. Pourquoi ? parce que tout y est selon les vrais principes de l’Architecture. Un quarré long où trente colomnes supportent un entablement &amp; un toit terminé aux deux extrêmités par un fronton, voilà tout ce dont il s’agit : cet assemblage a une simplicité &amp; une noblesse qui frappe tous les yeux. Entrons dans le détail des parties essentielles à un ordre d’Architecture.</p>
+                <metamark rend="tailpiece"/>
+            </div>
+            <pb/>
+            <fw type="pageNum">16</fw>
+            <metamark rend="simpleLine"/>
+            <div>
+                <head><label>Article I</label> 
+                <lb/>De la Colomne</head>
+                <p><num>1°.</num> La colomne doit être exactement perpendiculaire : parce qu’étant destinée à supporter tout le fardeau, c’est son parfait à plomb qui fait sa plus grande force. <num>2°.</num> La Colomne doit être isolée, pour exprimer plus naturellement son origine &amp; sa destination. <num>3°.</num> La Colomne doit être ronde, parce que la nature ne fait rien de quarré. <num>4°.</num> La Colomne doit avoir sa diminution de bas en haut, pour imiter la nature qui donne cette diminution à toutes les plantes. <num>5°.</num> La Colomne doit porter immédiatement sur le pavé, comme les piliers de la cabane rustique portent immédiatement sur le terrein. Toutes ces régles se trou<fw
+                    type="catchword">vent</fw><pb/><fw type="pageNum"
+                    >17</fw>vent justifiées dans notre modele. Il faut donc regarder comme des défauts tout ce qui s’en écarte sans une vraie nécessité.</p>
+                <p><num>1.</num> Défaut. C’est lorsqu’au lieu d’isoler les colonnes, ont les tient engagées dans un mur. Il est certain que la colonne perd infiniment de sa grace, si le moindre obstacle en gêne, en efface le contour. J’avoue que très-souvent les circonstances mettent, ce semble, hors d’état d’isoler les colomnes. On veut habiter des lieux à couverts, &amp; non des halles toutes ouvertes. Alors c’est une nécessité de remplir les entre-colonnemens, &amp; par conséquent d’engager les colonnes. Dans ce cas l’engagement de la colonne ne sera point regardé comme un défaut ; ce sera une licence autorisée par le besoin. Mais qu’on se souvienne toûjours que toute licence annonce une imperfection, qu’il en faut user sobrement, &amp;<!-- B --><pb/><fw
+                    type="pageNum"
+                    >18</fw> dans la seule impossibilité de faire mieux. Quand donc on est obligé d’engager les colonnes, il faut les engager le moins qu’il est possible, d’un quart tout-au-plus &amp; de moins encore ; afin que dans leur servitude même elles conservent toûjours quelque chose de cet air de liberté &amp; de dégagement qui leur donne tant de grace. On doit éviter de se mettre dans la nécessité fâcheuse d’employer des colonnes engagées. Le mieux seroit de réserver les colomnes pour les portiques où elles peuvent être parfaitement isolées, &amp; de les supprimer par-tout où la nécessité contraint de les adosser contre un mur. Enfin lors même qu’on se trouve assujetti à cette bienséance, qui empêche de dégager la colonne pour la laisser voir toute entiere ? Croit-on que <objectName>le portail de saint Gervais</objectName> ne seroit pas plus parfiat, si les colonnes de l’ordre<pb/><fw
+                    type="pageNum"
+                    >19</fw> dorique étoient isolées, comme celles des ordres superieurs ? Y avoit-il à cela quelque chose d’impossible ? C’est avoir bien peu de respect humain que d’oser censurer un ouvrage, que tout le Public est accoûtumé à regarder comme un chef-d’œuvre sans défaut. En relevant les imperfections de cet édifice, j’acquiers le droit de n’en épargner aucun autre, sans blesser l’amour propre de qui que ce soit. Voilà pourquoi j’en parlerai sans menagement. Après ce que je viens de dire, on ne sera plus si surpris que les connoisseurs fassent si peu de cas du <objectName>portail de l’Église des Jesuites, rue saint Antoine</objectName>. Sans compter les autres défauts qui y sont en grand nombre, ces trois ordres de colonnes engagées sont un effet des plus désagréables. Ce n’est-là, comme dit ingénieusement <persName>M. de Cordemoi</persName>, qu’une Architecture en bas relief, dont des yeux<!-- B ij --><pb/><fw
+                    type="pageNum"
+                    >20</fw> éclairés ne s’accomoderont jamais. J’ai souvent gémi de la fureur des Architectes pour les colonnes engagées : mais je n’aurois jamais cru qu’il pût venir dans l’esprit d’un homme qui pense, d’engager les colonnes les unes dans les autres. Il n’est pas de défaut plus insupportable &amp; plus monstrueux. Les Novices mêmes dans l’Art en conviendront, &amp; cependant ce défaut se trouve répété sur toutes les façades de <objectName>la cour intérieure du Louvre</objectName>. Une bévûe si grossiere dans un si grand ouvrage peut être mise au rang des humiliations de l’esprit humain.</p>
+                <p><num>2.</num> Défaut. C’est au lieu de colonnes rondes d’employer des pilastres quarrés. Les pilastres ne sont qu’une mauvaise représentation des colonnes. Leurs angles annoncent la contrainte de l’Art, &amp; s’écartent sensiblement de la simplicité de la nature. Ils ont des arêtes vives &amp; in<pb/><fw
+                    type="pageNum"
+                    >21</fw>commodes qui gênent le coup d’œil. Leurs surfaces sans arrondissement donnent à tout l’ordre un air plat. Ils ne sont point susceptibles de cette diminution qui fait un des grands agrémens des colonnes. Les pilastres ne sont jamais nécessaires. Par-tout où on les employe, les colonnes y seroient employées avec autant d’avantage. On doit donc les regarder comme une innovation bisarre, qui n’étant fondée en nature d’aucune façon, &amp; n’étant autorisée par aucun besoin, n’a pu être adoptée que par ignorance, &amp; n’est encore tolérée que par habitude. Le goût des pilastres a gagné par tout : hélas, où n’en trouve-t-on point ? Cependant pour s’en dégoûter, il ne faudroit que réfléchir sur le grand effet que font toujours les colonnes, effet qui se trouve infailliblement détruit par les pilastres. Convertissez en pilastres<!-- B iij --><pb/><fw
+                    type="pageNum"
+                    >22</fw> les colonnes accouplées du <objectName>portique du Louvre</objectName>, &amp; vous lui ôterez toute sa beauté. Comparez les deux côtés de ce superbe portique avec les pavillons en avant corps qui le terminent : quelle différence ! il n’est pas jusqu’aux valets &amp; aux servantes qui ne demandent pourquoi on n’a pas fait les pavillons comme le reste. Ce regret est inspiré par le goût du vrai beau, goût naturel à tout le monde. C’est le même ordre d’Architecture qui regne sur toute la façade : mais le portique offre des colonnes, les pavillons présentent des pilastres ; cette seule diversité suffit pour troubler tout le plaisir qu’auroit causé un ensemble plus uniforme. En entrant dans les travées de la <objectName>Chapelle de Versailles</objectName>, tout le monde est frappé de la beauté des colonnes, de l’apreté des entre-colonnemens : mais aussi-tot qu’on est arrivé à la nais<pb/><fw
+                    type="pageNum"
+                    >23</fw>sance du rond-point, il n’est personne qui ne voye avec chagrin cette belle suite de colonnes sottement interrompue par un maussade pilastre. On doit donc tenir pour certain que l’usage des pilastres est un des grands abus qui se soient introduits dans l’Architecture ; &amp; comme un abus ne vient jamais seul, on nous a donné des pilastres pliés dans les angles, des pilastres cintrés dans les plans circulaires, des pilastres perdus, confondus les uns dans les autres. Le pilastre est un colifichet qu’on met à toutes sorte d’usages. On le marie avec la colonne, &amp; il semble que c’est là pour elle un correspondant inséparable : y eut-il jamais un assortiment plus ridicule ? Que signifie ce pilastre engagé derriere une colonne isolée ? De bonne foi je n’en sçait rien ; &amp; je défie qu’on en rende raison. Y a-t-il du sens à unir deux choses si in<!-- B iv --><pb/><fw>24</fw>compatibles ? La colonne a sa diminution, le pilastre n’en sçauroit avoir aucune, d’où il arrive que celui-ci paroîtra toûjours, ou trop étroit par le bas, ou trop large par le haut. Y a-t-il quelque vuide à remplir ? On le remplit par un pilastre. Y a-t-il quelque défaut à masquer, quelque endroit à enrichir ? On y taille une moitié, un quart de pilastre. Les Anciens n’ont pas été plus scupuleux sur l’article que les Modernes. Ceux-là même on été quelquefois moins délicats que ceux-ci ; puisqu’ils ont fait des portiques mêlangés alternativement de colonnes &amp; de pilastres. En un mot le pilastre est une chose que je ne saurois souffir. Cette aversion est née avec moi. Plus j’ai étudié l’Architecture, plus j’ai trouvé dans ses vrais principes de quoi me justifier à moi-même cette aversion. On n’employe les pilastres, dira-<pb/><fw
+                    type="pageNum"
+                    >25</fw>t-on, pour éviter la trop grande dépenses des colonnes. Je réponds que si l’on n’est arrêté que par des raisons d’épargne, il n’y a qu’à prendre le parti de supprimer tout ordre d’Architecture. On peut sans ce secours faire des bâtimens qui auront de la beauté. Mais si l’on veut employer les grands ordres d’Architecture, je ne pardonnerai jamais qu’on en retranche la colonne qui est leur partie la plus essentielle.</p>
+                <p><num>3.</num> Défaut. C’est au lieu de la diminution ordinaire des colonnes, de leur donner un renflement vers le tiers de la hauteur de leur fust. Je ne crois pas que la nature ait jamais rien produit, qui puisse autoriser ce renflement. Rendons justice à nos Artistes. Il y a long-temps qu’ils sont revenus des colonnes fuselées, &amp; on n’en trouve point dans aucun de nos ouvrages récens. Les colonnes à bos<pb/><fw
+                    type="pageNum"
+                    >26</fw>sages ne sont pas moins vicieuses que les colonnes fuselées. <persName>Philibert de l’Orme</persName> qui en faisoit grand cas, &amp; qui en a rempli <objectName>le Palais des Tuileries</objectName>, n’avoit pas un goût assez épuré, pour que sa seule autorité doive les faire admettre. Ce gradn Homme mérite des éloges distingués. L’Architecture le comptera toûjours au nombre de ses plus excellens maîtres. Nous lui devons la renaissance de ce bel Art parmi nous : mais ses ouvrages se sentent encore du goût dépravé des siécles antérieux. Les colonnes en bossages ne sont qu’une imagination de caprice. Ce n’est plus une colonne entiere que l’on voit, ce sont différens tronçons de colonnes entassés les uns sur les autres à module inegal, dont l’effet a quelque chose de très-mesquin &amp; d’infiniment dur. <objectName>Le beau Palais du Luxembourg</objectName> n’est pas médiocrement défi<pb/><fw
+                    type="pageNum"
+                    >27</fw>guré par ces colonnes à bossages. Les colonnes torses sont bien pis encore. Celui qui les a imaginées, avoit certainement de l’habileté ; car il en faut beaucoup pour les bien faire : mais s’il avoit eu du goût &amp; du jugement, à coup sûr il n’auroit pas mis ses soins à exécuter une imagination si folle. Les colonnes torses sont en fait d’Architetcure ce que sont dans le corps humain les jambes estropiées d’un bancroche : mais la singularité a plû d’abord à quelques gens ennemis du naturel. Ils ont cru l’ouvrage beau, parce qu’il étoit difficile. D’autres plus bisarres encore nous ont donné des tronçons de colonnes droites, sur lesquelles ils ont misérablement enchâssé les deux tiers d’une colonne torse. D’autres enfin entraînés par le même goût, mais vaincus par la difficulté de l’exécution, ont voulu au moins<pb/><fw
+                    type="pageNum"
+                    >28</fw> se satisfaire en trosant les cannelures d’une colonne droite. Ces extravagances ont sur-tout été affectées aux retables d’Autel. J’admire <objectName>les baldaquins de saint Pierre de Rome, du Val-de Grace &amp; des Invalides</objectName> : mais je ne pardonnerai jamais aux grands Hommes qui en ont donné le dessein, d’avoir fait usage des colonnes torses. Ne donnons point dans le faux brillant : il ne prouve que le défaut de génie. Tenons-nous en au simple &amp; au naturel ; il est l’unique route du beau.</p>
+                <p><num>4.</num> Défaut. C’est au lieu de faire porter les colonnes immédiatement sur le pavé, de les guinder sur des piédestaux. Les colonnes étant, si je puis parler ainsi, les jambes de l’édifice, il est absurde de leur donner à elles-mêmes d’autres jambes. Les piédestaux dont je parle, n’ont été imaginés que par misere.<pb/><fw
+                    type="pageNum"
+                    >29</fw> Quand on a eu des colonnes trop courtes, on a pris le parti de les monter sur des échâsses pour suppléer à leur défaut d’élévation. Le même inconvénient a fait recourir aux doubles piédestaux, quand un seul ne suffisoit pas. Rien ne donne à l’Architecture un air plus pésant &amp; plus gauche que ces massifs énormes &amp; anguleux que l’on fait servir de soûbase à la colonne. <objectName>Le portique de l’Hôtel de Soubise</objectName> n’est pas supportable à cause de ses affreux piédestaux ; &amp; si les oclonnes prenoient depuis le bas, ce seroit un ouvrage charmant. Les colonnes peuvent porter sur un massif de mur continu, c’est-à-dire, sur un socle simple sans base, sans corniche &amp; d’une médiocre hauteur ; &amp; cela toutes les fois que l’on bâtit un portique dont le pavé interieur est plus élevé que le pavé du lieu que le portique environne. Bien loin de blâmer<pb/><fw
+                    type="pageNum"
+                    >30</fw> cette pratique, je suis persuadé qu’elle aura toujours beaucoup de succès. Les colonnes peuvent aussi quelquefois porter chacune sur un petit socle séparé, lorsque les entre-colonnemens sont remplis par une balustrade d’appui, comme <objectName>aux travées de la Chapelle de Versailles</objectName>, &amp; <objectName>au portique du Louvre</objectName>. Cette seconde maniere est moins parfaite ; elle seroit même défectueuse, si elle n’étoit pas excusée par la nécessité de mettre une balustrade d’appui a un portique qui se trouve élevé au premier étage. Mais que dans un rez-de-chaussée on mette des piédestaux sous les colonnes, c’est une faute que rien ne peut excuser. Les Autels de nos Églises offrent presque <sic>tous</sic> ce ridicule spectacle. On y veut des colonnes ; il en coûteroit trop de les avoir d’un module assez grand, pour les faire porter immédiatement sur le pavé ; de-là<pb/><fw
+                    type="pageNum"
+                    >31</fw> la nécessité des piédestaux. À <objectName>l’Autel principal de l’Église des Jésuites de la rue saint Antoine</objectName>, on voit par cette raison des colonnes élevées sur deux piédestaux l’un sur l’autre. Je ne citerai que cette fois ce monstrueux ouvrages. Tout ce qu’on en peut dire, c’est que de toutes les fautes grossieres qu’on peut faire en Architecture, il n’y en a pas une qui ait été oubliée. En un mot, les piédestaux ne sont bons que pour porter une Statue, &amp; c’est manquer essentiellement de goût, que de les destiner à un autre usage. On dira tant qu’on voudra que les piédestaux ont été admis de tout temps, que <persName>Vitruve &amp; tous ses Commentateurs</persName> assignent à chaque ordre le sien ; qu’on en trouve dans <persName>les plus beaux édifices de l’Antiquité</persName> : J’ai mon principe dont je ne me départirai jamais. Toute invention ou qui est con<pb/><fw
+                    type="pageNum"
+                    >32</fw>tre nature, ou dont on ne sauroit rendre une raison solide, eût-elle les plus grands approbateurs, est une invention mauvaise, &amp; qu’il faut proscrire.</p>
+            </div>
+            <metamark rend="simpleLine"/>
+            <div>
+                <head><label>Article II</label> 
+                <lb/>De l’Entablement</head>
+                <p>L’Entablement est le second objet qui se présente dans le modele de la cabane rustique. Les pieces posées horisontalement sur les piliers verticaux pour former un plancher, sont représentées, par ce que nous nommons l’entablement. Or en ne nous écartant point de notre modele, nous conclurrons : <num>1°.</num> Que l’entablement doit toûjours porter sur ses colonnes en plate bande : <num>2°.</num> Que dans sa longueur il ne doit former aucun angle ou ressaut : de-là résulte la condamnation des défauts suivans.</p>
+                <fw
+                    type="catchword">1. Défaut.</fw><pb/><fw type="pageNum">33</fw>
+                <p><num>1°.</num> Défaut. C’est au lieu de donner à l’entablement la forme d’un vrai plancher uniquement porté par les colonnes isolées, de le soûtenir par de grandes arcades ; pratique trop ordinaire dans nos églises &amp; ailleurs. Ces arcades sont vicieuses : <num>1°.</num> Parce qu’elles exigent des piédroits &amp; des impostes, dont le massif adossé aux colonnes, leur ôte cet air de dégagement en quoi consiste leur principale beauté, &amp; donne à tout l’ouvrage un air de pesanteur : <num>2°.</num> Parce que ces piédroits retombent dans l’inconvénient des pilastres. Ils nous présentent des figures quarrées, des angles, des arêtes : figures qui s’écartent du naturel, qui sentent la contrainte, &amp; dont le coup d’œil ne sauroit avoir les graces naïves du parfait arrondissement des colonnes : <num>3°.</num> Parce que ces arcades se trouvent ici employées à un usage contre nature.<!-- C --><pb/><fw>34</fw> Les arcades sont des voûtes. Les voûtes doivent toujours être portées, &amp; ne peuvent jamais servir d’appui. Or ces arcades ne servent ici qu’à porter l’entablement : car si ce n’est pas là leur destination, de quel usage peuvent-elles être ? <num>4°.</num>
+                    <sic>Parce ces</sic> arcades par leur poussée forcent les colonnes à porter de côté ; ce qui est encore contre nature, les colonnes n’étant faites que pour porter à plomb. Il est donc certain que les arcades sont tout-à-fait vicieuses.</p>
+                <p>Je dis plus, elles sont absolument inutiles, &amp; l’entablement étendu en plate-bande sur les colonnes n’a pas besoin de leur secours pour se soûtenir. Je <sic>sai</sic> que si l’on veut faire une plate-bande d’une trop grande portée, elle ne se soûtiendra point, parce que ses appuis seront trop éloignés. Mais quelle nécessité de donner aux architraves ces énormes portées,<pb/><fw
+                    type="pageNum"
+                    >35</fw> dont le spectacle seroit effrayant ? Pourquoi épargner les colonnes dont la sage multiplication sera toûjours d’un agrément singulier ? On sait en Architecture quelle doit être la largeur des entre-colonnemens, pour que rien ne manque à la solidité de l’édifice. Les Anciens nous ont laissé à ce sujet des regles infaillibles. Nous avons trouvé le secret de nous mettre un peu plus au large, en imaginant d’accoupler les colonnes, idée heureuse qui n’étoit venue à aucun d’eux. Pourquoi vouloir aller au-delà, au risque de substituer le lourd &amp; le massif, à l’élégant &amp; au délicat ? Si l’on prétend encore que les architraves en plate-bande sont contraires à la solidité : j’en appelle <objectName>au portique du Louvre</objectName>, &amp; <objectName>aux travées de la Chapelle de Versailles</objectName> ; Voilà des exemples qui valent la meilleure démonstration. Il ne faut point<!-- C ij --><pb/><fw
+                    type="pageNum"
+                    >36</fw> être connoisseur pour admirer ces deux beaux morceaux d’Architecture, aussi exacts que hardis, aussi solides que délicats. Leur beauté frappe tout le monde, parce qu’elle est naturelle, parce qu’elle est vraie. Il est étonnant qu’avec de tels modeles sous les yeux, nos Architectes en reviennent toûjours à leurs misérables arcades.</p>
+                <p><num>2.</num> Défaut. C’est lorsque l’entablement n’est pas en ligne droite sans angles ni ressauts. L’entablement représente la longue piece destinée à porter la couverture. Or s’est-on jamais avisé, &amp; ne seroit-il pas souverainement ridicule de faire cette piece par avancemens &amp; par retraite ? Quelle nécessité ? Quelle bizarrerie ? J’en dis de même de ces entablemens que l’on fait avancer sur les colonnes, &amp; retirer dans les entre-colonnemens. Cette foule d’angles<pb/><fw
+                    type="pageNum"
+                    >37</fw> saillans &amp; rentrans rendent à la vérité l’exécution plus laborieuse : mais ils n’annoncent qu’une bigarrure sans goût &amp; sans dessein. Ces inégalités dans un entablement continu ne sont excusables que lorsque par la rencontre d’un avant-corps, il est sensé y avoir interruption. Mais, si je ne me trompe, l’usage des avant-corps n’est rien moins qu’arbitraire. Des pavillons distribués sur la longueur d’une façade, &amp; qui sont comme autant de petits bâtimens détachés du corps de logis principal, sont les seuls légitimes avant-corps que je connoisse ; tout le reste est pur caprice. Parce qu’on a remarqué le bon effet que font dans un grand bâtiment les avant-corps dont je viens de parler, on a cru qu’on pouvoit mettre de fantaisie tout ce que l’on vouloit en avant-corps ; &amp; l’avant-corps est devenu entre les mains des<!-- C iij --><pb/><fw type="pageNum">38</fw> Architectes médiocres un ornement de ressource pour toutes les occasions, où l’on a voulu éviter la monotonie. C’est un abus. J’en reviens toujours à mon grand principe : on ne doit jamais rien mettre dans un bâtiment, dont on ne puisse rendre une raison solide ; &amp; l’idée que bien des gens ont que dans les choses de goût, il ne faut pas une logique si sévere, est le plus funeste de tous les préjugés.</p>
+            </div>
+            <metamark rend="simpleLine"/>
+            <div>
+                <head><label>Article III</label> Du Fronton</head>
+                <p>Le Fronton est la derniere piece de l’édifice : il représente le pignon du toit ; il ne peut donc jamais être que sur la largeur du bâtiment. Sa forme est essentiellement triangulaire, il doit toûjours être placé au-dessus de l’enta<pb/><fw
+                    type="pageNum"
+                    >39</fw>blement. Concluons de-là à rejetter les défauts suivans.</p>
+                <p><num>1.</num> Défaut. C’est de construire un Fronton sur la longueur du bâtiment. Puisque le fronton n’est que la représentation du pignon du toit, il doit être placé conformément à l’objet qu’il représente. Or le pignon du toit est toûjours pris sur la largeur, &amp; jamais sur la longueur du bâtiment. Que nos Architectes réfléchissent un peu sur ce raisonnement qui est la simplicité même, &amp; il ne leur arrivera pas de placer au milieu d’une longue façade des frontons postiches qui ne signifient rine. Ils pensent donner plus d’agrément en interrompant ainsi l’uniformité : mais qu’ils sçachent que dans tous les Arts c’est pécher contre les regles que de mettre des inutilités. Je remarque toûjours avec regret que le grand homme qui a donné le<!-- C iv --><pb/><fw
+                    type="pageNum"
+                    >40</fw> plan du <objectName>portique du Louvre</objectName>, s’est oublié jusqu’à élever un grand fronton dans le milieu. Il y est d’autant plus déplacé ce fronton, que la balustrade qui regne au-dessus de l’entablement, annonçant nécessairement un édifice couverte en terrasse ; tout ce qui rappelle l’idée d’un toit devient ici fort choquant. Un plus grand inconvénient encore, c’est que la balustrade se trouve coupée par ce Fronton, &amp; s’y raccorde d’une maniere assez maussade. Du moins on a évité l’horrible faute que quelques-uns ont commise en faisant grimper leur balustrade sur les plans inclinés du fronton qu’elle rencontre. Que dirai-je de cette longue file de frontons qui couronne <objectName>la grande gallerie du Louvre</objectName> ? Que c’est une imitation bien plate des toits à l’Allemande. Je ne vois guere de frontons recevables, que ceux qui couvrent le portail<pb/><fw
+                    type="pageNum"
+                    >41</fw> d’une Église. Là ils se trouvent à leur véritable position. Par-tout ailleurs ils sont communément déplacés, parce que les toits à pignon n’y sont plus d’usage.</p>
+                <p><num>2.</num> Défaut. C’est de faire des Frontons qui ne soient pas triangulaires. Le toit se termine toûjours en pointe plus ou moins aigue, le Fronton qui en est la représentation, dot imiter servilement cette forme. Donc les frontons cintrés sont contre nature. Donc à plus forte raison les frontons brisés sont détestables, puisqu’ils annoncent un toit entre-ouvert. Donc à plus forte raison encore les frontons à volute sont de toutes les déraisons la plus consommée.</p>
+                <p><num>3.</num> Défaut. C’est de mettre des frontons les uns au-dessus des autres. Rien de plus absurde que cette pratique. Un fronton en bas suppose un toit, un fronton en haut suppose encore un toit :<pb/><fw
+                    type="pageNum"
+                    >42</fw> voilà donc deux toits l’un sur l’autre. <objectName>Le portail de saint Gervais</objectName> a ce défaut qui dégrade beaucoup son mérite. Quelque grande que soit la prévention en faveur de cet édifice, je ne crois pas, après la raison que je viens d’en donne, qu’aucun homme sensé puisse approuver le double fronton haut &amp; bas que l’on y remarque. C’est bien pis encore quand le fronton se trouve au-dessous de l’entablement. En user de la sorte, c’est mettre le toit dans la maison, &amp; le plancher au-dessus du toit. Cependant compbien n’en trouve-t-on pas d’exemples ! Combien de portes, combien de fenêtres surmontées d’un ridicule Fronton !</p>
+                <metamark rend="tailpiece"/>
+            </div>
+            <metamark rend="simpleLine"></metamark>
+            <pb/>
+            <fw type="pageNum">43</fw>
+            <div>
+                <head><label>Article IV</label> 
+                <lb/>Des différens Étages d’Architecture</head>
+                <p>C’est quelquefois une nécessité de mettre plusieurs ordres d’Architecture les uns sur les autres ; soit à cause que les bâtimens que l’on construit, doivent avoir différens étages ; soit parce que, quand même il n’y auroit qu’un étage seul, la bienséance ou quelqu’autre motif exige une élévation à laquelle ne suffit point un seul ordre d’Architecture. En pareil cas les ordres mis les uns sur les autres, deviennnent une licence que la nécessité autorise, &amp; qui n’aura rien de repréhensible, pourvû qu’on y observe les regles suivantes.</p>
+                <p><num>1°.</num> Il faut retrancher des ordres infé<pb/><fw type="pageNum"
+                    >44</fw>rieurs tout ce qui porte la représentation &amp; l’idée d’un toit ; parce qu’il seroit absurde de bâtir au-dessus du toit. Dès-lors sur toutes choses les frontons doivent disparoître, aussi bien que les modillons, les denticules, les triglyphes &amp; les mutules, qui, selon la pensée de tous les maîtres de l’Art, représentent les extrémités de différentes pieces de charpente. Les y admettre, c’est une faute contre les bonnes regles, &amp; une faute d’autant plus grossiere que rien ne force à la commettre. Je <sic>vas</sic> plus loin, &amp; je prétends qu’il faudroit aussi retrancher de l’ordre inférieur toute la partie de l’entablement que l’on nomme frise &amp; corniche, pour n’y laisser qu’une simple architrave : &amp; en voici la raison. C’est que la grande saillie des corniches n’a été imaginée que pour servir d’appui aux avances des toits, destinées à écarter<pb/><fw
+                    type="pageNum"
+                    >45</fw> du mur la chûte des eaux. Il est donc certain que toute corniche rappelle l’idée de toit, &amp; conséquemment qu’elle ne doit avoir lieu qu’au plus haut étage. D’ailleurs la grande saillie des corniches tranche trop vivement, trouble l’harmonie, &amp; n’offre plus que des parties séparées, d’où il ne résulte pas un tout. La colonne &amp; l’entablement entier font un bâtiment complet. Si donc l’entablement est entier à tous les étages, ce seront plusieurs bâtimens complets élevés les uns au-dessus des autres. Au lieu que si chaque étage n’ayant qu’une simple architrave, l’entablement entier est réservé pour le dernier étage ; alors il y aura liaison &amp; unité, &amp; les parties différentes composeront réellement un tout. La saillie des corniches a par elle-même de grandes incommodités. Les eaux séjournent dessus, &amp; y font avec le temps les plus<pb/><fw
+                    type="pageNum"
+                    >46</fw> grands ravages. Il en résulte une pesanteur qui rend la construction ou essentiellement massive</p>
+            </div>
+        </body>
+    </text>
+</TEI>
